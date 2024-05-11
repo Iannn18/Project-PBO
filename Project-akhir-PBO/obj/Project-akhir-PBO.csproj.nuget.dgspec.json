@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MasFana\\Source\\Repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
+    "C:\\Users\\MasFana\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MasFana\\Source\\Repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
+    "C:\\Users\\MasFana\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MasFana\\Source\\Repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "projectUniqueName": "C:\\Users\\MasFana\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
         "projectName": "Project-akhir-PBO",
-        "projectPath": "C:\\Users\\MasFana\\Source\\Repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "projectPath": "C:\\Users\\MasFana\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
         "packagesPath": "C:\\Users\\MasFana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MasFana\\Source\\Repos\\Project-PBO\\Project-akhir-PBO\\obj\\",
+        "outputPath": "C:\\Users\\MasFana\\source\\repos\\Project-PBO\\Project-akhir-PBO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MasFana\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
