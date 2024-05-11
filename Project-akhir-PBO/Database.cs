@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_akhir_PBO
+namespace Project_akhir_PBO.DB
 {
-	internal class Database
-	{
-	}
+    internal class Database
+    {
+    }
 }
