@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.DB
 {
-    internal class Database
-    {
-    }
+	internal class Database
+	{
+	}
 }
