@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
+    "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
   },
   "projects": {
-    "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
+    "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "projectUniqueName": "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
         "projectName": "Project-akhir-PBO",
-        "projectPath": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\obj\\",
+        "projectPath": "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "packagesPath": "C:\\Users\\thori\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thori\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
