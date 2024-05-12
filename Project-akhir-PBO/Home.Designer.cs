@@ -32,6 +32,7 @@
             textBox1 = new TextBox();
             label1 = new Label();
             panel1 = new Panel();
+            label2 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,11 +73,23 @@
             panel1.Size = new Size(237, 27);
             panel1.TabIndex = 3;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(342, 271);
+            label2.Name = "label2";
+            label2.Size = new Size(286, 54);
+            label2.TabIndex = 4;
+            label2.Text = "apalah apalah";
+            label2.Click += label2_Click;
+            // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1104, 505);
+            Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(label1);
             Controls.Add(button1);
@@ -95,5 +108,6 @@
         private TextBox textBox1;
         private Label label1;
         private Panel panel1;
+        private Label label2;
     }
 }
