@@ -12,13 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\sefia\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\sefia\\.nuget\\packages"
-=======
-      "C:\\Users\\thori\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\thori\\.nuget\\packages"
->>>>>>> 7f71bfcfea0ba777ad5a4aabe6fe3adcb54f22a4
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

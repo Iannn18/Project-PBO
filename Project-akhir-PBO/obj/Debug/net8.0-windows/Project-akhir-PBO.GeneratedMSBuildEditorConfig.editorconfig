@@ -14,10 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Project_akhir_PBO
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO.git\Project-akhir-PBO\
-=======
-build_property.ProjectDir = C:\Users\thori\source\repos\Project-PBO\Project-akhir-PBO\
->>>>>>> 7f71bfcfea0ba777ad5a4aabe6fe3adcb54f22a4
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

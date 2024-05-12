@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\sefia\\OneDrive\\Desktop\\repos\\Project-PBO.git\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
   },
   "projects": {
@@ -16,22 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sefia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-        "projectName": "Project-akhir-PBO",
-        "projectPath": "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-        "packagesPath": "C:\\Users\\thori\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thori\\source\\repos\\Project-PBO\\Project-akhir-PBO\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\thori\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 7f71bfcfea0ba777ad5a4aabe6fe3adcb54f22a4
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
