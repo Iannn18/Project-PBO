@@ -9,10 +9,10 @@ namespace Project_akhir_PBO.DB
 	using Npgsql;
 	using System;
 	using System.Data;
-
+	// Host=masfana-masfana.b.aivencloud.com;Port=10921;Username=masfana;Password=AVNS_NqeUU18_unSmW9kkatm;DB=masfana;SSL Mode=Require;
 	internal class Database
 	{
-		private static string connString = "Host=masfana-masfana.b.aivencloud.com;Port=10921;Username=masfana;Password=AVNS_NqeUU18_unSmW9kkatm;DB=masfana;SSL Mode=Require;";
+		private static string connString = "";
 		private static NpgsqlConnection connection;
 		private static NpgsqlCommand command;
 
