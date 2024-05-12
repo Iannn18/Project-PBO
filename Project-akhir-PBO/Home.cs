@@ -9,8 +9,9 @@ namespace Project_akhir_PBO
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dashboard Kontol = new Dashboard();
-            Kontol.ShowDialog();
+            Home.ActiveForm.Hide();
+            Dashboard dashboard = new Dashboard();
+            dashboard.ShowDialog();
         }
 
         private void Home_Load(object sender, EventArgs e)

@@ -26,5 +26,16 @@ namespace Project_akhir_PBO
         {
 
         }
+        private void Dashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

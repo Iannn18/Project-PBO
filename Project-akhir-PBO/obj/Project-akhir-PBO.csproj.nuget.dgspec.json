@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
+    "C:\\Users\\sefia\\OneDrive\\Desktop\\repos\\Project-PBO.git\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
   },
   "projects": {
-    "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
+    "C:\\Users\\sefia\\OneDrive\\Desktop\\repos\\Project-PBO.git\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "projectUniqueName": "C:\\Users\\sefia\\OneDrive\\Desktop\\repos\\Project-PBO.git\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
         "projectName": "Project-akhir-PBO",
-        "projectPath": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\obj\\",
+        "projectPath": "C:\\Users\\sefia\\OneDrive\\Desktop\\repos\\Project-PBO.git\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "packagesPath": "C:\\Users\\sefia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sefia\\OneDrive\\Desktop\\repos\\Project-PBO.git\\Project-akhir-PBO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sefia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
