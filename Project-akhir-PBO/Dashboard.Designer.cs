@@ -30,31 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             flowLayoutPanel1 = new FlowLayoutPanel();
-            pictureBox1 = new PictureBox();
+            LogoSimaster = new PictureBox();
             flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)LogoSimaster).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.BackColor = Color.Black;
-            flowLayoutPanel1.Controls.Add(pictureBox1);
+            flowLayoutPanel1.Controls.Add(LogoSimaster);
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(287, 673);
             flowLayoutPanel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // LogoSimaster
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(163, 53);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            LogoSimaster.Image = (Image)resources.GetObject("LogoSimaster.Image");
+            LogoSimaster.Location = new Point(3, 3);
+            LogoSimaster.Name = "LogoSimaster";
+            LogoSimaster.Size = new Size(163, 53);
+            LogoSimaster.SizeMode = PictureBoxSizeMode.StretchImage;
+            LogoSimaster.TabIndex = 1;
+            LogoSimaster.TabStop = false;
+            LogoSimaster.Click += pictureBox1_Click;
             // 
             // Dashboard
             // 
@@ -66,13 +66,13 @@
             Text = "Dashboard";
             Load += Dashboard_Load;
             flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)LogoSimaster).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private FlowLayoutPanel flowLayoutPanel1;
-        private PictureBox pictureBox1;
+        private PictureBox LogoSimaster;
     }
 }
