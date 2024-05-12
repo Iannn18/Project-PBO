@@ -21,5 +21,10 @@ namespace Project_akhir_PBO
         {
 
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
