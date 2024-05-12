@@ -31,11 +31,13 @@
             button1 = new Button();
             textBox1 = new TextBox();
             label1 = new Label();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(500, 260);
+            button1.Location = new Point(481, 372);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(82, 22);
@@ -46,7 +48,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(298, 170);
+            textBox1.Location = new Point(1, 2);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(236, 23);
@@ -55,22 +57,34 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(446, 74);
+            label1.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(342, 74);
             label1.Name = "label1";
-            label1.Size = new Size(40, 15);
+            label1.Size = new Size(221, 54);
             label1.TabIndex = 2;
-            label1.Text = "anjing";
+            label1.Text = "Welcome !";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(textBox1);
+            panel1.Location = new Point(352, 193);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(237, 27);
+            panel1.TabIndex = 3;
             // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1104, 505);
+            Controls.Add(panel1);
             Controls.Add(label1);
-            Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "Home";
             Text = "Form1";
+            Load += Home_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -80,5 +94,6 @@
         private Button button1;
         private TextBox textBox1;
         private Label label1;
+        private Panel panel1;
     }
 }

@@ -12,5 +12,10 @@ namespace Project_akhir_PBO
             Dashboard Kontol = new Dashboard();
             Kontol.ShowDialog();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
