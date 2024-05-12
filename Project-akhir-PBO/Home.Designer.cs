@@ -30,13 +30,15 @@
         {
             button1 = new Button();
             textBox1 = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(572, 346);
+            button1.Location = new Point(500, 260);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(82, 22);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -44,19 +46,29 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(340, 226);
+            textBox1.Location = new Point(298, 170);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(269, 27);
+            textBox1.Size = new Size(236, 23);
             textBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(446, 74);
+            label1.Name = "label1";
+            label1.Size = new Size(40, 15);
+            label1.TabIndex = 2;
+            label1.Text = "anjing";
             // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1262, 673);
+            ClientSize = new Size(1104, 505);
+            Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(button1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Home";
             Text = "Form1";
             ResumeLayout(false);
@@ -67,5 +79,6 @@
 
         private Button button1;
         private TextBox textBox1;
+        private Label label1;
     }
 }
