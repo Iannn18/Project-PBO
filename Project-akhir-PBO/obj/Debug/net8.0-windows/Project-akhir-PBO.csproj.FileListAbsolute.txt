@@ -54,7 +54,6 @@ C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-win
 C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Npgsql.dll
 C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.AssemblyReference.cache
-C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
 C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Home.resources
 C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Properties.Resources.resources
 C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.GenerateResource.cache
