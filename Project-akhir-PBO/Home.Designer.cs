@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             button1 = new Button();
-            textBox1 = new TextBox();
+            UsernameBox = new TextBox();
             label1 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            textBox2 = new TextBox();
             pictureBox1 = new PictureBox();
             label2 = new Label();
+            PasswordBox = new TextBox();
             flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -53,12 +53,17 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // textBox1
+            // UsernameBox
             // 
-            textBox1.Location = new Point(711, 236);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(320, 27);
-            textBox1.TabIndex = 1;
+            UsernameBox.ForeColor = SystemColors.InactiveCaption;
+            UsernameBox.Location = new Point(711, 236);
+            UsernameBox.Name = "UsernameBox";
+            UsernameBox.Size = new Size(320, 27);
+            UsernameBox.TabIndex = 1;
+            UsernameBox.Text = "Username";
+            UsernameBox.TextChanged += textBox1_TextChanged;
+            UsernameBox.Enter += UsenameBox_Enter;
+            UsernameBox.Leave += UsenameBox_Leave;
             // 
             // label1
             // 
@@ -80,13 +85,6 @@
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(450, 673);
             flowLayoutPanel1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(711, 287);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(320, 27);
-            textBox2.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -113,19 +111,30 @@
             label2.TabIndex = 6;
             label2.Text = "SIMASTER";
             // 
+            // PasswordBox
+            // 
+            PasswordBox.ForeColor = SystemColors.InactiveCaption;
+            PasswordBox.Location = new Point(711, 287);
+            PasswordBox.Name = "PasswordBox";
+            PasswordBox.Size = new Size(320, 27);
+            PasswordBox.TabIndex = 5;
+            PasswordBox.Text = "Password";
+            PasswordBox.Enter += PasswordBox_Enter;
+            PasswordBox.Leave += PasswordBox_Leave;
+            // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1262, 673);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(PasswordBox);
+            Controls.Add(UsernameBox);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(flowLayoutPanel1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Home";
-            Text = "Form1";
+            Text = "Home";
             Load += Home_Load;
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
@@ -137,10 +146,10 @@
         #endregion
 
         private Button button1;
-        private TextBox textBox1;
+        private TextBox UsernameBox;
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel1;
-        private TextBox textBox2;
+        private TextBox PasswordBox;
         private PictureBox pictureBox1;
         private Label label2;
     }

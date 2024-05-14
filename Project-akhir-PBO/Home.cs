@@ -31,5 +31,46 @@ namespace Project_akhir_PBO
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsenameBox_Enter(object sender, EventArgs e)
+        {
+            if (UsernameBox.Text == "Username")
+            {
+                UsernameBox.Text = "";
+                UsernameBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void UsenameBox_Leave(object sender, EventArgs e)
+        {
+            if (UsernameBox.Text == "")
+            {
+                UsernameBox.Text = "Username";
+                UsernameBox.ForeColor = Color.Silver;
+            }
+        }
+
+        private void PasswordBox_Enter(object sender, EventArgs e)
+        {
+            if (PasswordBox.Text == "Password")
+            {
+                PasswordBox.Text = "";
+                PasswordBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void PasswordBox_Leave(object sender, EventArgs e)
+        {
+            if (PasswordBox.Text == "")
+            {
+                PasswordBox.Text = "Password";
+                PasswordBox.ForeColor = Color.Silver;
+            }
+        }
     }
 }
