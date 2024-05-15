@@ -28,99 +28,265 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
+            label2 = new Label();
+            btnDashboard = new Button();
             label1 = new Label();
-            button1 = new Button();
-            flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox2 = new PictureBox();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            GuruContainer = new FlowLayoutPanel();
+            btnGuru = new Button();
+            btnKelas = new Button();
+            btnMapel = new Button();
+            AdminContainer = new FlowLayoutPanel();
+            btnAdmin = new Button();
+            btnSiswa = new Button();
+            btnPegawai = new Button();
+            GuruTransition = new System.Windows.Forms.Timer(components);
+            AdminTransition = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            GuruContainer.SuspendLayout();
+            AdminContainer.SuspendLayout();
             SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // label2
             // 
-            flowLayoutPanel1.BackColor = Color.Black;
-            flowLayoutPanel1.Controls.Add(pictureBox1);
-            flowLayoutPanel1.Controls.Add(pictureBox2);
-            flowLayoutPanel1.Controls.Add(label1);
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(349, 673);
-            flowLayoutPanel1.TabIndex = 0;
+            label2.AutoSize = true;
+            label2.Location = new Point(1025, 104);
+            label2.Name = "label2";
+            label2.Size = new Size(50, 20);
+            label2.TabIndex = 6;
+            label2.Text = "label2";
             // 
-            // pictureBox1
+            // btnDashboard
             // 
-            pictureBox1.BackColor = Color.Black;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(62, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(93, 25);
-            pictureBox2.Margin = new Padding(25, 25, 10, 25);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(70, 35);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
+            btnDashboard.BackColor = Color.White;
+            btnDashboard.BackgroundImageLayout = ImageLayout.None;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
+            btnDashboard.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDashboard.ForeColor = Color.Black;
+            btnDashboard.Image = (Image)resources.GetObject("btnDashboard.Image");
+            btnDashboard.ImageAlign = ContentAlignment.TopLeft;
+            btnDashboard.Location = new Point(25, 85);
+            btnDashboard.Margin = new Padding(25, 0, 0, 0);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.Size = new Size(300, 50);
+            btnDashboard.TabIndex = 1;
+            btnDashboard.Text = "Dashboard";
+            btnDashboard.UseVisualStyleBackColor = false;
+            btnDashboard.Click += btnDashboard_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Black;
             label1.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(173, 35);
+            label1.Location = new Point(180, 35);
             label1.Margin = new Padding(0, 35, 3, 0);
             label1.Name = "label1";
             label1.Size = new Size(85, 18);
             label1.TabIndex = 1;
             label1.Text = "SIMASTER";
             // 
-            // button1
+            // pictureBox2
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(659, 254);
-            button1.Name = "button1";
-            button1.Size = new Size(192, 51);
-            button1.TabIndex = 1;
-            button1.Text = "Dashboard";
-            button1.UseVisualStyleBackColor = true;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(100, 25);
+            pictureBox2.Margin = new Padding(100, 25, 10, 25);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(70, 35);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BackColor = Color.Black;
+            flowLayoutPanel1.Controls.Add(pictureBox2);
+            flowLayoutPanel1.Controls.Add(label1);
+            flowLayoutPanel1.Controls.Add(btnDashboard);
+            flowLayoutPanel1.Controls.Add(GuruContainer);
+            flowLayoutPanel1.Controls.Add(AdminContainer);
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(350, 673);
+            flowLayoutPanel1.TabIndex = 0;
+            // 
+            // GuruContainer
+            // 
+            GuruContainer.Controls.Add(btnGuru);
+            GuruContainer.Controls.Add(btnKelas);
+            GuruContainer.Controls.Add(btnMapel);
+            GuruContainer.Location = new Point(25, 145);
+            GuruContainer.Margin = new Padding(25, 10, 0, 0);
+            GuruContainer.Name = "GuruContainer";
+            GuruContainer.Size = new Size(300, 50);
+            GuruContainer.TabIndex = 8;
+            // 
+            // btnGuru
+            // 
+            btnGuru.BackColor = Color.White;
+            btnGuru.BackgroundImageLayout = ImageLayout.None;
+            btnGuru.FlatStyle = FlatStyle.Flat;
+            btnGuru.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuru.ForeColor = Color.Black;
+            btnGuru.Image = (Image)resources.GetObject("btnGuru.Image");
+            btnGuru.ImageAlign = ContentAlignment.TopLeft;
+            btnGuru.Location = new Point(0, 0);
+            btnGuru.Margin = new Padding(0);
+            btnGuru.Name = "btnGuru";
+            btnGuru.Size = new Size(300, 50);
+            btnGuru.TabIndex = 7;
+            btnGuru.Text = "Guru";
+            btnGuru.UseVisualStyleBackColor = false;
+            btnGuru.Click += btnGuru_Click;
+            // 
+            // btnKelas
+            // 
+            btnKelas.BackColor = Color.White;
+            btnKelas.BackgroundImageLayout = ImageLayout.None;
+            btnKelas.FlatStyle = FlatStyle.Flat;
+            btnKelas.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKelas.ForeColor = Color.Black;
+            btnKelas.Image = (Image)resources.GetObject("btnKelas.Image");
+            btnKelas.ImageAlign = ContentAlignment.TopLeft;
+            btnKelas.Location = new Point(75, 50);
+            btnKelas.Margin = new Padding(75, 0, 0, 0);
+            btnKelas.Name = "btnKelas";
+            btnKelas.Size = new Size(225, 50);
+            btnKelas.TabIndex = 9;
+            btnKelas.Text = "Kelas";
+            btnKelas.UseVisualStyleBackColor = false;
+            // 
+            // btnMapel
+            // 
+            btnMapel.BackColor = Color.White;
+            btnMapel.BackgroundImageLayout = ImageLayout.None;
+            btnMapel.FlatStyle = FlatStyle.Flat;
+            btnMapel.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMapel.ForeColor = Color.Black;
+            btnMapel.Image = (Image)resources.GetObject("btnMapel.Image");
+            btnMapel.ImageAlign = ContentAlignment.TopLeft;
+            btnMapel.Location = new Point(75, 100);
+            btnMapel.Margin = new Padding(75, 0, 0, 0);
+            btnMapel.Name = "btnMapel";
+            btnMapel.Size = new Size(225, 50);
+            btnMapel.TabIndex = 10;
+            btnMapel.Text = "Mapel";
+            btnMapel.UseVisualStyleBackColor = false;
+            // 
+            // AdminContainer
+            // 
+            AdminContainer.Controls.Add(btnAdmin);
+            AdminContainer.Controls.Add(btnSiswa);
+            AdminContainer.Controls.Add(btnPegawai);
+            AdminContainer.Location = new Point(25, 205);
+            AdminContainer.Margin = new Padding(25, 10, 0, 0);
+            AdminContainer.Name = "AdminContainer";
+            AdminContainer.Size = new Size(300, 50);
+            AdminContainer.TabIndex = 9;
+            // 
+            // btnAdmin
+            // 
+            btnAdmin.BackColor = Color.White;
+            btnAdmin.BackgroundImageLayout = ImageLayout.None;
+            btnAdmin.FlatStyle = FlatStyle.Flat;
+            btnAdmin.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAdmin.ForeColor = Color.Black;
+            btnAdmin.Image = (Image)resources.GetObject("btnAdmin.Image");
+            btnAdmin.ImageAlign = ContentAlignment.TopLeft;
+            btnAdmin.Location = new Point(0, 0);
+            btnAdmin.Margin = new Padding(0);
+            btnAdmin.Name = "btnAdmin";
+            btnAdmin.Size = new Size(300, 50);
+            btnAdmin.TabIndex = 7;
+            btnAdmin.Text = "Admin";
+            btnAdmin.UseVisualStyleBackColor = false;
+            btnAdmin.Click += btnAdmin_Click;
+            // 
+            // btnSiswa
+            // 
+            btnSiswa.BackColor = Color.White;
+            btnSiswa.BackgroundImageLayout = ImageLayout.None;
+            btnSiswa.FlatStyle = FlatStyle.Flat;
+            btnSiswa.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSiswa.ForeColor = Color.Black;
+            btnSiswa.Image = (Image)resources.GetObject("btnSiswa.Image");
+            btnSiswa.ImageAlign = ContentAlignment.TopLeft;
+            btnSiswa.Location = new Point(75, 50);
+            btnSiswa.Margin = new Padding(75, 0, 0, 0);
+            btnSiswa.Name = "btnSiswa";
+            btnSiswa.Size = new Size(225, 50);
+            btnSiswa.TabIndex = 9;
+            btnSiswa.Text = "Siswa";
+            btnSiswa.UseVisualStyleBackColor = false;
+            // 
+            // btnPegawai
+            // 
+            btnPegawai.BackColor = Color.White;
+            btnPegawai.BackgroundImageLayout = ImageLayout.None;
+            btnPegawai.FlatStyle = FlatStyle.Flat;
+            btnPegawai.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPegawai.ForeColor = Color.Black;
+            btnPegawai.Image = (Image)resources.GetObject("btnPegawai.Image");
+            btnPegawai.ImageAlign = ContentAlignment.TopLeft;
+            btnPegawai.Location = new Point(75, 100);
+            btnPegawai.Margin = new Padding(75, 0, 0, 0);
+            btnPegawai.Name = "btnPegawai";
+            btnPegawai.Size = new Size(225, 50);
+            btnPegawai.TabIndex = 10;
+            btnPegawai.Text = "Pegawai";
+            btnPegawai.UseVisualStyleBackColor = false;
+            // 
+            // GuruTransition
+            // 
+            GuruTransition.Interval = 10;
+            GuruTransition.Tick += GuruTransition_Tick;
+            // 
+            // AdminTransition
+            // 
+            AdminTransition.Interval = 10;
+            AdminTransition.Tick += AdminTransition_Tick;
             // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1262, 673);
-            Controls.Add(button1);
+            Controls.Add(label2);
             Controls.Add(flowLayoutPanel1);
             ForeColor = Color.White;
             Name = "Dashboard";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Dashboard";
+            TransparencyKey = Color.Transparent;
             Load += Dashboard_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            GuruContainer.ResumeLayout(false);
+            AdminContainer.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private FlowLayoutPanel flowLayoutPanel1;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private Label label2;
+        private Button btnDashboard;
         private Label label1;
-        private Button button1;
+        private PictureBox pictureBox2;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Button btnGuru;
+        private FlowLayoutPanel GuruContainer;
+        private Button btnKelas;
+        private Button btnMapel;
+        private FlowLayoutPanel AdminContainer;
+        private Button btnAdmin;
+        private Button btnSiswa;
+        private Button btnPegawai;
+        private System.Windows.Forms.Timer GuruTransition;
+        private System.Windows.Forms.Timer AdminTransition;
     }
 }

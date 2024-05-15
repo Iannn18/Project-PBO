@@ -9,7 +9,8 @@ namespace Project_akhir_PBO
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
         }
 
         private void Home_Load(object sender, EventArgs e)
