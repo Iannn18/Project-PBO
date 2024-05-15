@@ -12,6 +12,7 @@ namespace Project_akhir_PBO
 {
     public partial class Dashboard : Form
     {
+    public int tinggi= 75;
         public Dashboard()
         {
             InitializeComponent();
@@ -48,21 +49,15 @@ namespace Project_akhir_PBO
         {
             if (GuruExpand == false)
             {
-                GuruContainer.Height += 10;
-                if (GuruContainer.Height >= 150)
-                {
+                GuruContainer.Height += tinggi;
                     GuruTransition.Stop();
-                    GuruExpand = true;
-                }
+                GuruExpand = true;
             }
             else
             {
-                GuruContainer.Height -= 10;
-                if (GuruContainer.Height <= 50)
-                {
-                    GuruTransition.Stop();
-                    GuruExpand = false;
-                }
+                GuruContainer.Height -= tinggi;
+                GuruTransition.Stop();
+                GuruExpand = false;
             }
         }
 
@@ -70,21 +65,15 @@ namespace Project_akhir_PBO
         {
             if (AdminExpand == false)
             {
-                AdminContainer.Height += 10;
-                if (AdminContainer.Height >= 150)
-                {
+                AdminContainer.Height += tinggi;
                     AdminTransition.Stop();
-                    AdminExpand = true;
-                }
+                AdminExpand = true;
             }
             else
             {
-                AdminContainer.Height -= 10;
-                if (AdminContainer.Height <= 50)
-                {
+                AdminContainer.Height -= tinggi;
                     AdminTransition.Stop();
-                    AdminExpand = false;
-                }
+                AdminExpand = false;
             }
         }
 

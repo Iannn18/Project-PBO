@@ -261,7 +261,6 @@
             Name = "Dashboard";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Dashboard";
-            TransparencyKey = Color.Transparent;
             Load += Dashboard_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             flowLayoutPanel1.ResumeLayout(false);

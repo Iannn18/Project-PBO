@@ -92,3 +92,4 @@ C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\ne
 C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
 C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
 C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
+C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
