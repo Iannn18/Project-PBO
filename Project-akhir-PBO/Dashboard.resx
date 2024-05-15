@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="label2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="btnDashboard.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -369,6 +366,22 @@
         kqQNUjThdy06MGygxDshR9FLW8HvWjzvMfX9zsbfWXdCIik0wjXftbJAox0vu7AiOqLngk21E0k/pZFq
         TCBG5VMmK0xUEGxKk1Cn5/XVG3/tyRFD17HdxmRIFKLl1xdbA89epyXmg04WUbD7Ni7QN4Ffp13a70xM
         wk1T+MC/gFJ/UiaqjAP1YsMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="btnLogOut.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnLogOut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAalJREFUSEvtVu1RwzAM7QgdgREYoSN0BEboBnQDugFsUDaADcoGYQNfY8kq/Al6
+        QoU2JGnipscdx7vTD8uWnhXrI5N/5EBErsqSbrZbWjDLPSRSWhHRtR/JRwjVFM5j5CUcE0uhUh1KSekV
+        QpyC6Sgt3Hw4iOSp7lzJH9XpChdBVFVVTf24gRJsUvDlMJhTJYosyybnbdjbZX1mIn5Q48KXvRGjzOyy
+        Mc5c1R+5pEgwkCJiVzWDOa3rj39RUpa3Wxz6SZpWMaZnX/bGSVIQ4QDKwVVno5M0BLnSYg6cdhtXjYJW
+        UhDqRsFJChxy9ShoJd0XPTaQ2l0ytN4aScuS51AOETfthfZIrVWpQ00kFHOXjBIpgCaO99TNAu/r6lHQ
+        SgogApsK+r6uGgWdpIASenNOd646GydJARu8n8RHHQlGOZfpRQpETjoj5ejQxRt+E3JJid41V0DKc1f1
+        xy/N0+9hMKRWv5pPzp8DatmjPehOuw1mLy5izmuOYaP5sUYPcFUekBggABF+yjTbX44vYmKNBlPL1rVK
+        GA2Icn8Z+yImGPwy/C3/ACaTD/Vd6SW9+OWbAAAAAElFTkSuQmCC
 </value>
   </data>
   <metadata name="GuruTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
