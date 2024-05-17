@@ -11,6 +11,7 @@ namespace Project_akhir_PBO
         {
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
+            this.Hide();
         }
 
         private void Home_Load(object sender, EventArgs e)

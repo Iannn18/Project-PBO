@@ -93,3 +93,13 @@ C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\ne
 C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
 C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
 C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
+C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormMapel.resources
+C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormPegawai.resources
+C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormSiswa.resources
+C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
+C:\Users\sefia\OneDrive\Desktop\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
+C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
+C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
+C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormMapel.resources
+C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormPegawai.resources
+C:\Users\MasFana\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormSiswa.resources

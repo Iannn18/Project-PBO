@@ -30,7 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            label2 = new Label();
             btnDashboard = new Button();
             label1 = new Label();
             pictureBox2 = new PictureBox();
@@ -43,6 +42,7 @@
             btnAdmin = new Button();
             btnSiswa = new Button();
             btnPegawai = new Button();
+            btnLogOut = new Button();
             GuruTransition = new System.Windows.Forms.Timer(components);
             AdminTransition = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -50,15 +50,6 @@
             GuruContainer.SuspendLayout();
             AdminContainer.SuspendLayout();
             SuspendLayout();
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(1025, 104);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 6;
-            label2.Text = "label2";
             // 
             // btnDashboard
             // 
@@ -109,6 +100,7 @@
             flowLayoutPanel1.Controls.Add(btnDashboard);
             flowLayoutPanel1.Controls.Add(GuruContainer);
             flowLayoutPanel1.Controls.Add(AdminContainer);
+            flowLayoutPanel1.Controls.Add(btnLogOut);
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(350, 673);
@@ -159,6 +151,7 @@
             btnKelas.TabIndex = 9;
             btnKelas.Text = "Kelas";
             btnKelas.UseVisualStyleBackColor = false;
+            btnKelas.Click += btnKelas_Click;
             // 
             // btnMapel
             // 
@@ -240,6 +233,23 @@
             btnPegawai.Text = "Pegawai";
             btnPegawai.UseVisualStyleBackColor = false;
             // 
+            // btnLogOut
+            // 
+            btnLogOut.BackColor = Color.Red;
+            btnLogOut.FlatStyle = FlatStyle.Popup;
+            btnLogOut.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogOut.ForeColor = SystemColors.Control;
+            btnLogOut.Image = (Image)resources.GetObject("btnLogOut.Image");
+            btnLogOut.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogOut.Location = new Point(100, 575);
+            btnLogOut.Margin = new Padding(100, 320, 0, 0);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(150, 40);
+            btnLogOut.TabIndex = 2;
+            btnLogOut.Text = "Log Out";
+            btnLogOut.UseVisualStyleBackColor = false;
+            btnLogOut.Click += btnLogOut_Click;
+            // 
             // GuruTransition
             // 
             GuruTransition.Interval = 10;
@@ -254,10 +264,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(1262, 673);
-            Controls.Add(label2);
             Controls.Add(flowLayoutPanel1);
             ForeColor = Color.White;
+            IsMdiContainer = true;
             Name = "Dashboard";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Dashboard";
@@ -268,11 +279,9 @@
             GuruContainer.ResumeLayout(false);
             AdminContainer.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-        private Label label2;
         private Button btnDashboard;
         private Label label1;
         private PictureBox pictureBox2;
@@ -287,5 +296,6 @@
         private Button btnPegawai;
         private System.Windows.Forms.Timer GuruTransition;
         private System.Windows.Forms.Timer AdminTransition;
+        private Button btnLogOut;
     }
 }

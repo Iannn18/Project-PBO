@@ -12,13 +12,23 @@ namespace Project_akhir_PBO
 {
     public partial class Dashboard : Form
     {
-    public int tinggi= 75;
+        FormDashboard formDashboard;
+        FormKelas formKelas;
+        FormMapel formMapel;
+        FormPegawai formPegawai;
+        FormSiswa formSiswa;
+
+
+
+
         public Dashboard()
         {
             InitializeComponent();
         }
+
         bool GuruExpand = false;
         bool AdminExpand = false;
+        public int tinggi = 100;
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
@@ -37,7 +47,23 @@ namespace Project_akhir_PBO
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+            if (formDashboard == null)
+            {
+                formDashboard = new FormDashboard();
+                formDashboard.FormClosed += FormDashboard_FormClosed;
+                formDashboard.MdiParent = this;
+                formDashboard.Dock = DockStyle.Fill;
+                formDashboard.Show();
+            }
+            else
+            {
+                formDashboard.Activate();
+            }
+        }
 
+        private void FormDashboard_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formDashboard = null;
         }
 
         private void btnGuru_Click(object sender, EventArgs e)
@@ -50,7 +76,7 @@ namespace Project_akhir_PBO
             if (GuruExpand == false)
             {
                 GuruContainer.Height += tinggi;
-                    GuruTransition.Stop();
+                GuruTransition.Stop();
                 GuruExpand = true;
             }
             else
@@ -66,13 +92,13 @@ namespace Project_akhir_PBO
             if (AdminExpand == false)
             {
                 AdminContainer.Height += tinggi;
-                    AdminTransition.Stop();
+                AdminTransition.Stop();
                 AdminExpand = true;
             }
             else
             {
                 AdminContainer.Height -= tinggi;
-                    AdminTransition.Stop();
+                AdminTransition.Stop();
                 AdminExpand = false;
             }
         }
@@ -80,6 +106,34 @@ namespace Project_akhir_PBO
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             AdminTransition.Start();
+        }
+
+        private void btnKelas_Click(object sender, EventArgs e)
+        {
+            if (formKelas == null)
+            {
+                formKelas = new FormKelas();
+                formKelas.FormClosed += FormKelas_FormClosed;
+                formKelas.MdiParent = this;
+                formKelas.Dock = DockStyle.Fill;
+                formKelas.Show();
+            }
+            else
+            {
+                formKelas.Activate();
+            }
+        }
+
+        private void FormKelas_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formKelas = null;
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Close();
         }
     }
 }
