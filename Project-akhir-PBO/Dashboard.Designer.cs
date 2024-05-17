@@ -40,8 +40,8 @@
             btnMapel = new Button();
             AdminContainer = new FlowLayoutPanel();
             btnAdmin = new Button();
-            btnSiswa = new Button();
             btnPegawai = new Button();
+            btnSiswa = new Button();
             btnLogOut = new Button();
             GuruTransition = new System.Windows.Forms.Timer(components);
             AdminTransition = new System.Windows.Forms.Timer(components);
@@ -169,12 +169,13 @@
             btnMapel.TabIndex = 10;
             btnMapel.Text = "Mapel";
             btnMapel.UseVisualStyleBackColor = false;
+            btnMapel.Click += btnMapel_Click_1;
             // 
             // AdminContainer
             // 
             AdminContainer.Controls.Add(btnAdmin);
-            AdminContainer.Controls.Add(btnSiswa);
             AdminContainer.Controls.Add(btnPegawai);
+            AdminContainer.Controls.Add(btnSiswa);
             AdminContainer.Location = new Point(25, 205);
             AdminContainer.Margin = new Padding(25, 10, 0, 0);
             AdminContainer.Name = "AdminContainer";
@@ -199,23 +200,6 @@
             btnAdmin.UseVisualStyleBackColor = false;
             btnAdmin.Click += btnAdmin_Click;
             // 
-            // btnSiswa
-            // 
-            btnSiswa.BackColor = Color.White;
-            btnSiswa.BackgroundImageLayout = ImageLayout.None;
-            btnSiswa.FlatStyle = FlatStyle.Flat;
-            btnSiswa.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSiswa.ForeColor = Color.Black;
-            btnSiswa.Image = (Image)resources.GetObject("btnSiswa.Image");
-            btnSiswa.ImageAlign = ContentAlignment.TopLeft;
-            btnSiswa.Location = new Point(75, 50);
-            btnSiswa.Margin = new Padding(75, 0, 0, 0);
-            btnSiswa.Name = "btnSiswa";
-            btnSiswa.Size = new Size(225, 50);
-            btnSiswa.TabIndex = 9;
-            btnSiswa.Text = "Siswa";
-            btnSiswa.UseVisualStyleBackColor = false;
-            // 
             // btnPegawai
             // 
             btnPegawai.BackColor = Color.White;
@@ -225,13 +209,31 @@
             btnPegawai.ForeColor = Color.Black;
             btnPegawai.Image = (Image)resources.GetObject("btnPegawai.Image");
             btnPegawai.ImageAlign = ContentAlignment.TopLeft;
-            btnPegawai.Location = new Point(75, 100);
+            btnPegawai.Location = new Point(75, 50);
             btnPegawai.Margin = new Padding(75, 0, 0, 0);
             btnPegawai.Name = "btnPegawai";
             btnPegawai.Size = new Size(225, 50);
             btnPegawai.TabIndex = 10;
             btnPegawai.Text = "Pegawai";
             btnPegawai.UseVisualStyleBackColor = false;
+            btnPegawai.Click += btnPegawai_Click;
+            // 
+            // btnSiswa
+            // 
+            btnSiswa.BackColor = Color.White;
+            btnSiswa.BackgroundImageLayout = ImageLayout.None;
+            btnSiswa.FlatStyle = FlatStyle.Flat;
+            btnSiswa.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSiswa.ForeColor = Color.Black;
+            btnSiswa.Image = (Image)resources.GetObject("btnSiswa.Image");
+            btnSiswa.ImageAlign = ContentAlignment.TopLeft;
+            btnSiswa.Location = new Point(75, 100);
+            btnSiswa.Margin = new Padding(75, 0, 0, 0);
+            btnSiswa.Name = "btnSiswa";
+            btnSiswa.Size = new Size(225, 50);
+            btnSiswa.TabIndex = 9;
+            btnSiswa.Text = "Siswa";
+            btnSiswa.UseVisualStyleBackColor = false;
             // 
             // btnLogOut
             // 

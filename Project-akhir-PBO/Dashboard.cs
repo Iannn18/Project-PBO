@@ -135,5 +135,47 @@ namespace Project_akhir_PBO
             home.Show();
             this.Close();
         }
+
+        private void btnMapel_Click_1(object sender, EventArgs e)
+        {
+            if (formMapel == null)
+            {
+                formMapel = new FormMapel();
+                formMapel.FormClosed += FormMapel_FormClosed;
+                formMapel.MdiParent = this;
+                formMapel.Dock = DockStyle.Fill;
+                formMapel.Show();
+            }
+            else
+            {
+                formMapel.Activate();
+            }
+        }
+
+        private void FormMapel_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formMapel = null;
+        }
+
+        private void btnPegawai_Click(object sender, EventArgs e)
+        {
+            if(formPegawai == null)
+            {
+                formPegawai = new FormPegawai();
+                formPegawai.FormClosed += FormPegawai_FormClosed;
+                formPegawai.MdiParent = this;
+                formPegawai.Dock = DockStyle.Fill;
+                formPegawai.Show();
+            }
+            else
+            {
+                formPegawai.Activate();
+            }
+        }
+
+        private void FormPegawai_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formPegawai = null;
+        }
     }
 }
