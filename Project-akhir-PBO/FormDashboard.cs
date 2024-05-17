@@ -16,5 +16,10 @@ namespace Project_akhir_PBO
         {
             InitializeComponent();
         }
+
+        private void FormDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

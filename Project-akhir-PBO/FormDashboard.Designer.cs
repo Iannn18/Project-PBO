@@ -51,6 +51,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormDashboard";
             Text = "FormDashboard";
+            Load += FormDashboard_Load;
             ResumeLayout(false);
             PerformLayout();
         }
