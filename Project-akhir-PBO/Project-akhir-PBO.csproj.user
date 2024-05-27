@@ -10,6 +10,18 @@
     <Compile Update="FormKelas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormKelas1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormKelas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormKelas3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormKelas4.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormMapel.cs">
       <SubType>Form</SubType>
     </Compile>
