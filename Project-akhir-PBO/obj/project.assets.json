@@ -191,19 +191,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sefia\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sefia\\OneDrive\\Desktop\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
       "projectName": "Project-akhir-PBO",
-      "projectPath": "C:\\Users\\sefia\\OneDrive\\Desktop\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-      "packagesPath": "C:\\Users\\sefia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sefia\\OneDrive\\Desktop\\repos\\Project-PBO\\Project-akhir-PBO\\obj\\",
+      "projectPath": "C:\\Users\\ASUS\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\Source\\Repos\\Project-PBO\\Project-akhir-PBO\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\sefia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
