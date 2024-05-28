@@ -23,7 +23,6 @@ namespace Project_akhir_PBO
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKelas1));
             sidePanel = new Panel();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
@@ -91,7 +90,7 @@ namespace Project_akhir_PBO
             sidePanel.Location = new Point(0, 0);
             sidePanel.Margin = new Padding(6);
             sidePanel.Name = "sidePanel";
-            sidePanel.Size = new Size(366, 865);
+            sidePanel.Size = new Size(366, 841);
             sidePanel.TabIndex = 0;
             sidePanel.Paint += sidePanel_Paint;
             // 
@@ -99,7 +98,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox6.BackColor = Color.Black;
             pictureBox6.BackgroundImageLayout = ImageLayout.None;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(110, 381);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(47, 40);
@@ -111,7 +109,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox5.BackColor = Color.Black;
             pictureBox5.BackgroundImageLayout = ImageLayout.None;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(153, 301);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(47, 40);
@@ -123,7 +120,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox4.BackColor = Color.Black;
             pictureBox4.BackgroundImageLayout = ImageLayout.None;
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(153, 245);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(47, 40);
@@ -135,7 +131,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox3.BackColor = Color.Black;
             pictureBox3.BackgroundImageLayout = ImageLayout.None;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(110, 189);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(47, 40);
@@ -147,9 +142,8 @@ namespace Project_akhir_PBO
             // 
             pictureBox2.BackColor = Color.Black;
             pictureBox2.BackgroundImageLayout = ImageLayout.None;
-            pictureBox2.ErrorImage = (Image)resources.GetObject("pictureBox2.ErrorImage");
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
+            pictureBox2.ErrorImage = null;
+            pictureBox2.InitialImage = null;
             pictureBox2.Location = new Point(110, 136);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(47, 32);
@@ -161,7 +155,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox1.BackColor = Color.Black;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(88, 30);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(47, 32);
@@ -646,11 +639,11 @@ namespace Project_akhir_PBO
             button24.UseVisualStyleBackColor = false;
             button24.Click += button24_Click;
             // 
-            // Form2
+            // FormKelas1
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1466, 865);
+            ClientSize = new Size(1578, 841);
             Controls.Add(button24);
             Controls.Add(button23);
             Controls.Add(button22);
@@ -677,8 +670,9 @@ namespace Project_akhir_PBO
             Controls.Add(button2);
             Controls.Add(sidePanel);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(6);
-            Name = "Form2";
+            Name = "FormKelas1";
             Text = "SIMASTER";
             Load += Form2_Load;
             sidePanel.ResumeLayout(false);

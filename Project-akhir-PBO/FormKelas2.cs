@@ -257,5 +257,10 @@ namespace Project_akhir_PBO
             // Tampilkan form baru sebagai dialog modal
             regisMhs.ShowDialog();
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

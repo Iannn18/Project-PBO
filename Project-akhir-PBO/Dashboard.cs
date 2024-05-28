@@ -13,7 +13,7 @@ namespace Project_akhir_PBO
     public partial class Dashboard : Form
     {
         FormDashboard formDashboard;
-        FormKelas formKelas;
+        FormKelas1 formKelas1;
         FormMapel formMapel;
         FormPegawai formPegawai;
         FormSiswa formSiswa;
@@ -45,7 +45,7 @@ namespace Project_akhir_PBO
 
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
+        private void btnDashboard_Click(object sender, EventArgs e) 
         {
             if (formDashboard == null)
             {
@@ -110,23 +110,23 @@ namespace Project_akhir_PBO
 
         private void btnKelas_Click(object sender, EventArgs e)
         {
-            if (formKelas == null)
+            if (formKelas1 == null)
             {
-                formKelas = new FormKelas();
-                formKelas.FormClosed += FormKelas_FormClosed;
-                formKelas.MdiParent = this;
-                formKelas.Dock = DockStyle.Fill;
-                formKelas.Show();
+                formKelas1 = new FormKelas1();
+                formKelas1.FormClosed += FormKelas1_FormClosed;
+                formKelas1.MdiParent = this;
+                formKelas1.Dock = DockStyle.Fill;
+                formKelas1.Show();
             }
             else
             {
-                formKelas.Activate();
+                formKelas1.Activate();
             }
         }
 
-        private void FormKelas_FormClosed(object? sender, FormClosedEventArgs e)
+        private void FormKelas1_FormClosed(object? sender, FormClosedEventArgs e)
         {
-            formKelas = null;
+            formKelas1 = null;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

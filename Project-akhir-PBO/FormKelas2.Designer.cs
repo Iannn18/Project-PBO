@@ -23,7 +23,6 @@ namespace Project_akhir_PBO
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKelas2));
             sidePanel = new Panel();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
@@ -102,7 +101,7 @@ namespace Project_akhir_PBO
             sidePanel.Location = new Point(0, 0);
             sidePanel.Margin = new Padding(6);
             sidePanel.Name = "sidePanel";
-            sidePanel.Size = new Size(366, 865);
+            sidePanel.Size = new Size(366, 841);
             sidePanel.TabIndex = 0;
             sidePanel.Paint += sidePanel_Paint;
             // 
@@ -110,7 +109,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox6.BackColor = Color.Black;
             pictureBox6.BackgroundImageLayout = ImageLayout.None;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(110, 381);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(47, 40);
@@ -122,7 +120,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox5.BackColor = Color.Black;
             pictureBox5.BackgroundImageLayout = ImageLayout.None;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(153, 301);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(47, 40);
@@ -134,7 +131,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox4.BackColor = Color.Black;
             pictureBox4.BackgroundImageLayout = ImageLayout.None;
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(153, 245);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(47, 40);
@@ -146,7 +142,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox3.BackColor = Color.Black;
             pictureBox3.BackgroundImageLayout = ImageLayout.None;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(110, 189);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(47, 40);
@@ -158,7 +153,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox2.BackColor = Color.Black;
             pictureBox2.BackgroundImageLayout = ImageLayout.None;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(110, 136);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(47, 32);
@@ -170,7 +164,6 @@ namespace Project_akhir_PBO
             // 
             pictureBox1.BackColor = Color.Black;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(88, 30);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(47, 32);
@@ -288,6 +281,7 @@ namespace Project_akhir_PBO
             dataGridView2.RowHeadersWidth = 62;
             dataGridView2.Size = new Size(237, 592);
             dataGridView2.TabIndex = 2;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
             // dataGridView3
             // 
@@ -396,7 +390,6 @@ namespace Project_akhir_PBO
             button6.BackColor = SystemColors.ButtonHighlight;
             button6.FlatStyle = FlatStyle.Popup;
             button6.ForeColor = SystemColors.ButtonHighlight;
-            button6.Image = (Image)resources.GetObject("button6.Image");
             button6.Location = new Point(839, 250);
             button6.Margin = new Padding(6);
             button6.Name = "button6";
@@ -410,7 +403,6 @@ namespace Project_akhir_PBO
             button7.BackColor = SystemColors.ButtonHighlight;
             button7.FlatStyle = FlatStyle.Popup;
             button7.ForeColor = SystemColors.ButtonHighlight;
-            button7.Image = (Image)resources.GetObject("button7.Image");
             button7.Location = new Point(839, 218);
             button7.Margin = new Padding(6);
             button7.Name = "button7";
@@ -424,7 +416,6 @@ namespace Project_akhir_PBO
             button8.BackColor = SystemColors.ButtonHighlight;
             button8.FlatStyle = FlatStyle.Popup;
             button8.ForeColor = SystemColors.ButtonHighlight;
-            button8.Image = (Image)resources.GetObject("button8.Image");
             button8.Location = new Point(839, 282);
             button8.Margin = new Padding(6);
             button8.Name = "button8";
@@ -438,7 +429,6 @@ namespace Project_akhir_PBO
             button9.BackColor = SystemColors.ButtonHighlight;
             button9.FlatStyle = FlatStyle.Popup;
             button9.ForeColor = SystemColors.ButtonHighlight;
-            button9.Image = (Image)resources.GetObject("button9.Image");
             button9.Location = new Point(839, 314);
             button9.Margin = new Padding(6);
             button9.Name = "button9";
@@ -452,7 +442,6 @@ namespace Project_akhir_PBO
             button10.BackColor = SystemColors.ButtonHighlight;
             button10.FlatStyle = FlatStyle.Popup;
             button10.ForeColor = SystemColors.ButtonHighlight;
-            button10.Image = (Image)resources.GetObject("button10.Image");
             button10.Location = new Point(839, 346);
             button10.Margin = new Padding(6);
             button10.Name = "button10";
@@ -466,7 +455,6 @@ namespace Project_akhir_PBO
             button11.BackColor = SystemColors.ButtonHighlight;
             button11.FlatStyle = FlatStyle.Popup;
             button11.ForeColor = SystemColors.ButtonHighlight;
-            button11.Image = (Image)resources.GetObject("button11.Image");
             button11.Location = new Point(839, 378);
             button11.Margin = new Padding(6);
             button11.Name = "button11";
@@ -480,7 +468,6 @@ namespace Project_akhir_PBO
             button12.BackColor = SystemColors.ButtonHighlight;
             button12.FlatStyle = FlatStyle.Popup;
             button12.ForeColor = SystemColors.ButtonHighlight;
-            button12.Image = (Image)resources.GetObject("button12.Image");
             button12.Location = new Point(839, 410);
             button12.Margin = new Padding(6);
             button12.Name = "button12";
@@ -494,7 +481,6 @@ namespace Project_akhir_PBO
             button13.BackColor = SystemColors.ButtonHighlight;
             button13.FlatStyle = FlatStyle.Popup;
             button13.ForeColor = SystemColors.ButtonHighlight;
-            button13.Image = (Image)resources.GetObject("button13.Image");
             button13.Location = new Point(839, 442);
             button13.Margin = new Padding(6);
             button13.Name = "button13";
@@ -508,7 +494,6 @@ namespace Project_akhir_PBO
             button14.BackColor = SystemColors.ButtonHighlight;
             button14.FlatStyle = FlatStyle.Popup;
             button14.ForeColor = SystemColors.ButtonHighlight;
-            button14.Image = (Image)resources.GetObject("button14.Image");
             button14.Location = new Point(839, 474);
             button14.Margin = new Padding(6);
             button14.Name = "button14";
@@ -522,7 +507,6 @@ namespace Project_akhir_PBO
             button15.BackColor = SystemColors.ButtonHighlight;
             button15.FlatStyle = FlatStyle.Popup;
             button15.ForeColor = SystemColors.ButtonHighlight;
-            button15.Image = (Image)resources.GetObject("button15.Image");
             button15.Location = new Point(839, 506);
             button15.Margin = new Padding(6);
             button15.Name = "button15";
@@ -536,7 +520,6 @@ namespace Project_akhir_PBO
             button16.BackColor = SystemColors.ButtonHighlight;
             button16.FlatStyle = FlatStyle.Popup;
             button16.ForeColor = SystemColors.ButtonHighlight;
-            button16.Image = (Image)resources.GetObject("button16.Image");
             button16.Location = new Point(839, 538);
             button16.Margin = new Padding(6);
             button16.Name = "button16";
@@ -550,7 +533,6 @@ namespace Project_akhir_PBO
             button17.BackColor = SystemColors.ButtonHighlight;
             button17.FlatStyle = FlatStyle.Popup;
             button17.ForeColor = SystemColors.ButtonHighlight;
-            button17.Image = (Image)resources.GetObject("button17.Image");
             button17.Location = new Point(839, 570);
             button17.Margin = new Padding(6);
             button17.Name = "button17";
@@ -564,7 +546,6 @@ namespace Project_akhir_PBO
             button18.BackColor = SystemColors.ButtonHighlight;
             button18.FlatStyle = FlatStyle.Popup;
             button18.ForeColor = SystemColors.ButtonHighlight;
-            button18.Image = (Image)resources.GetObject("button18.Image");
             button18.Location = new Point(839, 602);
             button18.Margin = new Padding(6);
             button18.Name = "button18";
@@ -578,7 +559,6 @@ namespace Project_akhir_PBO
             button19.BackColor = SystemColors.ButtonHighlight;
             button19.FlatStyle = FlatStyle.Popup;
             button19.ForeColor = SystemColors.ButtonHighlight;
-            button19.Image = (Image)resources.GetObject("button19.Image");
             button19.Location = new Point(839, 634);
             button19.Margin = new Padding(6);
             button19.Name = "button19";
@@ -592,7 +572,6 @@ namespace Project_akhir_PBO
             button20.BackColor = SystemColors.ButtonHighlight;
             button20.FlatStyle = FlatStyle.Popup;
             button20.ForeColor = SystemColors.ButtonHighlight;
-            button20.Image = (Image)resources.GetObject("button20.Image");
             button20.Location = new Point(839, 666);
             button20.Margin = new Padding(6);
             button20.Name = "button20";
@@ -606,7 +585,6 @@ namespace Project_akhir_PBO
             button21.BackColor = SystemColors.ButtonHighlight;
             button21.FlatStyle = FlatStyle.Popup;
             button21.ForeColor = SystemColors.ButtonHighlight;
-            button21.Image = (Image)resources.GetObject("button21.Image");
             button21.Location = new Point(839, 698);
             button21.Margin = new Padding(6);
             button21.Name = "button21";
@@ -620,7 +598,6 @@ namespace Project_akhir_PBO
             button22.BackColor = SystemColors.ButtonHighlight;
             button22.FlatStyle = FlatStyle.Popup;
             button22.ForeColor = SystemColors.ButtonHighlight;
-            button22.Image = (Image)resources.GetObject("button22.Image");
             button22.Location = new Point(839, 730);
             button22.Margin = new Padding(6);
             button22.Name = "button22";
@@ -634,7 +611,6 @@ namespace Project_akhir_PBO
             button23.BackColor = SystemColors.ButtonHighlight;
             button23.FlatStyle = FlatStyle.Popup;
             button23.ForeColor = SystemColors.ButtonHighlight;
-            button23.Image = (Image)resources.GetObject("button23.Image");
             button23.Location = new Point(839, 762);
             button23.Margin = new Padding(6);
             button23.Name = "button23";
@@ -643,11 +619,11 @@ namespace Project_akhir_PBO
             button23.UseVisualStyleBackColor = false;
             button23.Click += button23_Click;
             // 
-            // Form3
+            // FormKelas2
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1466, 865);
+            ClientSize = new Size(1578, 841);
             Controls.Add(button23);
             Controls.Add(button22);
             Controls.Add(button21);
@@ -679,8 +655,9 @@ namespace Project_akhir_PBO
             Controls.Add(dataGridView1);
             Controls.Add(sidePanel);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(6);
-            Name = "Form3";
+            Name = "FormKelas2";
             Text = "SIMASTER";
             Load += Form1_Load;
             sidePanel.ResumeLayout(false);
