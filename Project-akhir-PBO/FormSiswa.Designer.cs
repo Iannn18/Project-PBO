@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormSiswa";
+            buttontambahsiswa = new Button();
+            SuspendLayout();
+            // 
+            // buttontambahsiswa
+            // 
+            buttontambahsiswa.BackColor = Color.Black;
+            buttontambahsiswa.ForeColor = Color.White;
+            buttontambahsiswa.Location = new Point(698, 609);
+            buttontambahsiswa.Name = "buttontambahsiswa";
+            buttontambahsiswa.Size = new Size(142, 29);
+            buttontambahsiswa.TabIndex = 0;
+            buttontambahsiswa.Text = "Tambah Siswa";
+            buttontambahsiswa.UseVisualStyleBackColor = false;
+            buttontambahsiswa.Click += buttontambahsiswa_Click;
+            // 
+            // FormSiswa
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1264, 681);
+            Controls.Add(buttontambahsiswa);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FormSiswa";
+            Text = "FormSiswa";
+            Load += FormSiswa_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button buttontambahsiswa;
     }
 }

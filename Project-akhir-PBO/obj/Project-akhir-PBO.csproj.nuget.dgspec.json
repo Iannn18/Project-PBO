@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
+    "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
+    "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "projectUniqueName": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
         "projectName": "Project-akhir-PBO",
-        "projectPath": "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-        "packagesPath": "C:\\Users\\Axioo Pongo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\obj\\",
+        "projectPath": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Axioo Pongo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace Project_akhir_PBO
 {
-    public partial class FormSiswa : Form
+    public partial class Pegawai_tambah : Form
     {
-        public FormSiswa()
+        public Pegawai_tambah()
         {
             InitializeComponent();
         }
 
-        private void buttontambahsiswa_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void FormSiswa_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pegawai_tambah_Load(object sender, EventArgs e)
         {
 
         }
