@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Advan\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
+    "C:\\Users\\acer\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Advan\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
+    "C:\\Users\\acer\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Advan\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "projectUniqueName": "C:\\Users\\acer\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
         "projectName": "Project-akhir-PBO",
-        "projectPath": "C:\\Users\\Advan\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-        "packagesPath": "C:\\Users\\Advan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Advan\\source\\repos\\Project-PBO\\Project-akhir-PBO\\obj\\",
+        "projectPath": "C:\\Users\\acer\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acer\\source\\repos\\Project-PBO\\Project-akhir-PBO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Advan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

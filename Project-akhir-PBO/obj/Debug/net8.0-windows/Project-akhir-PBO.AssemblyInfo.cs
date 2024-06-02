@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Project-akhir-PBO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df36005adcbf30c8274467feac941efbed0a2622")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e948b50265d13ee19978eb113ad70a82ba4e0dd9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Project-akhir-PBO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Project-akhir-PBO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
