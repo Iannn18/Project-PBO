@@ -191,24 +191,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Axioo Pongo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Download\\Documents\\TM PBO\\projjk\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+      "projectUniqueName": "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
       "projectName": "Project-akhir-PBO",
-      "projectPath": "D:\\Download\\Documents\\TM PBO\\projjk\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\Download\\Documents\\TM PBO\\projjk\\Project-PBO\\Project-akhir-PBO\\obj\\",
+      "projectPath": "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+      "packagesPath": "C:\\Users\\Axioo Pongo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Axioo Pongo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

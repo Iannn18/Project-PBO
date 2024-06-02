@@ -17,6 +17,7 @@ namespace Project_akhir_PBO
         FormMapel formMapel;
         FormPegawai formPegawai;
         FormSiswa formSiswa;
+        Formkelasguru formkelasguru;
 
 
 
@@ -110,23 +111,23 @@ namespace Project_akhir_PBO
 
         private void btnKelas_Click(object sender, EventArgs e)
         {
-            if (formKelas1 == null)
+            if (formkelasguru == null)
             {
-                formKelas1 = new FormKelassemua();
-                formKelas1.FormClosed += FormKelas1_FormClosed;
-                formKelas1.MdiParent = this;
-                formKelas1.Dock = DockStyle.Fill;
-                formKelas1.Show();
+                formkelasguru = new Formkelasguru();
+                formkelasguru.FormClosed += Formkelasguru_FormClosed;
+                formkelasguru.MdiParent = this;
+                formkelasguru.Dock = DockStyle.Fill;
+                formkelasguru.Show();
             }
             else
             {
-                formKelas1.Activate();
+                formkelasguru.Activate();
             }
         }
 
-        private void FormKelas1_FormClosed(object? sender, FormClosedEventArgs e)
+        private void Formkelasguru_FormClosed(object? sender, FormClosedEventArgs e)
         {
-            formKelas1 = null;
+            formkelasguru = null;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

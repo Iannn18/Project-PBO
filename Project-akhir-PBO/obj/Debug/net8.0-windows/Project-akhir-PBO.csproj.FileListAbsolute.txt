@@ -257,3 +257,36 @@ D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\bin\Debug\net8
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-.A345DC6F.Up2Date
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.exe
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.deps.json
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.runtimeconfig.json
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.dll
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.pdb
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.AssemblyReference.cache
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas3.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas4.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelassemua.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormMapel.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormPegawai.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormSiswa.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Home.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Properties.Resources.resources
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.GenerateResource.cache
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfoInputs.cache
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfo.cs
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.CoreCompileInputs.cache
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.sourcelink.json
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-.A345DC6F.Up2Date
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.dll
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\refint\Project-akhir-PBO.dll
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.pdb
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
+C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Formkelasguru.resources
