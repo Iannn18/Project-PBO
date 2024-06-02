@@ -224,3 +224,36 @@ C:\Users\acer\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-window
 C:\Users\acer\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.pdb
 C:\Users\acer\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
 C:\Users\acer\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.AssemblyReference.cache
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas2.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas3.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas4.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelassemua.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormMapel.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormPegawai.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormSiswa.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Home.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Properties.Resources.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.GenerateResource.cache
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfoInputs.cache
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfo.cs
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.CoreCompileInputs.cache
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.sourcelink.json
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.dll
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\refint\Project-akhir-PBO.dll
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.pdb
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.exe
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.deps.json
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.runtimeconfig.json
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.dll
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.pdb
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Npgsql.dll
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-.A345DC6F.Up2Date
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll

@@ -13,7 +13,7 @@ namespace Project_akhir_PBO
     public partial class Dashboard : Form
     {
         FormDashboard formDashboard;
-        FormKelas1 formKelas1;
+        FormKelassemua formKelas1;
         FormMapel formMapel;
         FormPegawai formPegawai;
         FormSiswa formSiswa;
@@ -112,7 +112,7 @@ namespace Project_akhir_PBO
         {
             if (formKelas1 == null)
             {
-                formKelas1 = new FormKelas1();
+                formKelas1 = new FormKelassemua();
                 formKelas1.FormClosed += FormKelas1_FormClosed;
                 formKelas1.MdiParent = this;
                 formKelas1.Dock = DockStyle.Fill;

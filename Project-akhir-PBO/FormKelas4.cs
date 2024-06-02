@@ -59,7 +59,7 @@ namespace Project_akhir_PBO
         private void btnKelas_Click(object sender, EventArgs e)
         {
             // Tempat kode ini di dalam event handler atau metode yang memanggil form baru
-            FormKelas1 regisMhs = new FormKelas1();
+            FormKelassemua regisMhs = new FormKelassemua();
             this.Hide(); // Sembunyikan form saat ini
             // Daftarkan event FormClosed untuk menutup form saat ini setelah form baru ditutup
             regisMhs.FormClosed += (sender, args) => this.Close();
