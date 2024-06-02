@@ -45,9 +45,10 @@
             button1.BackColor = Color.Black;
             button1.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(711, 358);
+            button1.Location = new Point(622, 268);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(320, 30);
+            button1.Size = new Size(280, 37);
             button1.TabIndex = 0;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
@@ -56,9 +57,10 @@
             // UsernameBox
             // 
             UsernameBox.ForeColor = SystemColors.InactiveCaption;
-            UsernameBox.Location = new Point(711, 236);
+            UsernameBox.Location = new Point(622, 177);
+            UsernameBox.Margin = new Padding(3, 2, 3, 2);
             UsernameBox.Name = "UsernameBox";
-            UsernameBox.Size = new Size(320, 27);
+            UsernameBox.Size = new Size(280, 23);
             UsernameBox.TabIndex = 1;
             UsernameBox.Text = "Username";
             UsernameBox.TextChanged += textBox1_TextChanged;
@@ -69,9 +71,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Rounded MT Bold", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(731, 143);
+            label1.Location = new Point(640, 107);
             label1.Name = "label1";
-            label1.Size = new Size(280, 58);
+            label1.Size = new Size(223, 46);
             label1.TabIndex = 2;
             label1.Text = "Welcome !";
             // 
@@ -82,18 +84,19 @@
             flowLayoutPanel1.Controls.Add(label2);
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(450, 673);
+            flowLayoutPanel1.Size = new Size(394, 505);
             flowLayoutPanel1.TabIndex = 4;
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(125, 220);
-            pictureBox1.Margin = new Padding(125, 220, 0, 0);
+            pictureBox1.Location = new Point(109, 165);
+            pictureBox1.Margin = new Padding(109, 165, 0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(196, 114);
+            pictureBox1.Size = new Size(172, 86);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
@@ -104,19 +107,20 @@
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(3, 334);
+            label2.Location = new Point(3, 251);
             label2.Name = "label2";
-            label2.Padding = new Padding(140, 0, 0, 0);
-            label2.Size = new Size(309, 35);
+            label2.Padding = new Padding(122, 0, 0, 0);
+            label2.Size = new Size(260, 29);
             label2.TabIndex = 6;
             label2.Text = "SIMASTER";
             // 
             // PasswordBox
             // 
             PasswordBox.ForeColor = SystemColors.InactiveCaption;
-            PasswordBox.Location = new Point(711, 287);
+            PasswordBox.Location = new Point(622, 215);
+            PasswordBox.Margin = new Padding(3, 2, 3, 2);
             PasswordBox.Name = "PasswordBox";
-            PasswordBox.Size = new Size(320, 27);
+            PasswordBox.Size = new Size(280, 23);
             PasswordBox.TabIndex = 5;
             PasswordBox.Text = "Password";
             PasswordBox.Enter += PasswordBox_Enter;
@@ -124,15 +128,14 @@
             // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1262, 673);
+            ClientSize = new Size(1104, 505);
             Controls.Add(PasswordBox);
             Controls.Add(UsernameBox);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(flowLayoutPanel1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Home";
             Text = "Home";
             Load += Home_Load;

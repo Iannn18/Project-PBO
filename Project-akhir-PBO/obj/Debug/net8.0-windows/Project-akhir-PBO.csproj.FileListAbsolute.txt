@@ -136,3 +136,25 @@ C:\Users\ASUS\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-window
 C:\Users\ASUS\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
 C:\Users\ASUS\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas4.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas1.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas2.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas3.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas4.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormMapel.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormPegawai.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormSiswa.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Home.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Properties.Resources.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.GenerateResource.cache
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfo.cs
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.sourcelink.json
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.dll
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\refint\Project-akhir-PBO.dll
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.pdb
