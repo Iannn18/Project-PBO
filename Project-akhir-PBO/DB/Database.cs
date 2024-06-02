@@ -12,7 +12,7 @@ namespace Project_akhir_PBO.DB
 
 	internal class Database
 	{
-		private static string connString = "Host=masfana-masfana.b.aivencloud.com;Port=10921;Username=masfana;Password=AVNS_NqeUU18_unSmW9kkatm;DB=masfana;SSL Mode=Require;";
+		private static string connString = "Host=masfana-masfana.b.aivencloud.com;Port=109;Username=masfana;Password=AVNS_NqeUU18_unSmW9kkatm;DB=masfana;SSL Mode=Require;";
 		private static NpgsqlConnection connection;
 		private static NpgsqlCommand command;
 

@@ -14,7 +14,7 @@ namespace Project_akhir_PBO.Model
 		public int Id_Kelas { get; set; }
 
 		[Required]
-		public string Nama_Kelas { get; set; 
+		public string Nama_Kelas { get; set; } 
 		public int Jumlah_Siswa {  get; set; }
 
 		[ForeignKey("NUPTK")]

@@ -158,3 +158,36 @@ C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-P
 C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.dll
 C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\refint\Project-akhir-PBO.dll
 C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.pdb
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.AssemblyReference.cache
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas1.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas2.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas3.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas4.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormMapel.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormPegawai.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormSiswa.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Home.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Properties.Resources.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.GenerateResource.cache
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfoInputs.cache
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfo.cs
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.CoreCompileInputs.cache
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.sourcelink.json
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.dll
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\refint\Project-akhir-PBO.dll
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.pdb
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.exe
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-.A345DC6F.Up2Date
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.deps.json
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.runtimeconfig.json
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.dll
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.pdb
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
