@@ -191,24 +191,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\acer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Documents\\Rendy\\My Program\\C#\\Simaster\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+      "projectUniqueName": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
       "projectName": "Project-akhir-PBO",
-      "projectPath": "C:\\Users\\USER\\Documents\\Rendy\\My Program\\C#\\Simaster\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Documents\\Rendy\\My Program\\C#\\Simaster\\Project-PBO\\Project-akhir-PBO\\obj\\",
+      "projectPath": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+      "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+      "outputPath": "D:\\KULIAH\\SEMESTER 02\\PBO\\git\\Project-PBO\\Project-akhir-PBO\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
