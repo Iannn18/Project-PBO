@@ -228,7 +228,6 @@ D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
-D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas2.resources
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas3.resources
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas4.resources
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelassemua.resources
@@ -326,3 +325,7 @@ D:\KULIAH\SEMESTER 02\PBO\git\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-win
 D:\KULIAH\SEMESTER 02\PBO\git\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_edit.resources
 D:\KULIAH\SEMESTER 02\PBO\git\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_tambah.resources
 D:\KULIAH\SEMESTER 02\PBO\git\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.siswa_tambah.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Formkelasguru.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_edit.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_tambah.resources
+D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.siswa_tambah.resources

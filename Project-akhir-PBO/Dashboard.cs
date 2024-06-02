@@ -46,7 +46,7 @@ namespace Project_akhir_PBO
 
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e) 
+        private void btnDashboard_Click(object sender, EventArgs e)
         {
             if (formDashboard == null)
             {
@@ -160,7 +160,7 @@ namespace Project_akhir_PBO
 
         private void btnPegawai_Click(object sender, EventArgs e)
         {
-            if(formPegawai == null)
+            if (formPegawai == null)
             {
                 formPegawai = new FormPegawai();
                 formPegawai.FormClosed += FormPegawai_FormClosed;
@@ -177,6 +177,11 @@ namespace Project_akhir_PBO
         private void FormPegawai_FormClosed(object? sender, FormClosedEventArgs e)
         {
             formPegawai = null;
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
