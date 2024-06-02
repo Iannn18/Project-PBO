@@ -12,11 +12,14 @@ namespace Project_akhir_PBO.Model
 	{
 		[Key]
 		public int Id_Kelas { get; set; }
+
 		[Required]
-		public string Nama_Kelas { get; set; }
+		public string Nama_Kelas { get; set; 
 		public int Jumlah_Siswa {  get; set; }
+
 		[ForeignKey("NUPTK")]
 		public virtual Staff Staff { get; set; }
 
+		public virtual ICollection<Siswa> Siswas { get; set; }
 	}
 }

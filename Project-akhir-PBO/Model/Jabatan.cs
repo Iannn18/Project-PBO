@@ -13,6 +13,9 @@ namespace Project_akhir_PBO.Model
 		public int Id_Jabatan { get; set; }
 		[Required]
 		public string Nama_Jabatan { get; set; }
+
 		public string Deskripsi { get; set; }
+		
+		public virtual ICollection<Staff> Staffs { get; set;}
 	}
 }

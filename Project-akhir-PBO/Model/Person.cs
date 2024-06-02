@@ -11,7 +11,9 @@ namespace Project_akhir_PBO.Model
 	{
 		[Required]
 		public DateOnly Tanggal_Lahir { get; set; }
+
 		public string Tempat_Lahir { get; set; }
+
 		public string Alamat {  get; set; }
 	}
 }
