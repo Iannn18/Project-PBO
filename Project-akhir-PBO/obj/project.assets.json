@@ -191,19 +191,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Axioo Pongo\\.nuget\\packages\\": {}
+    "C:\\Users\\Advan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+      "projectUniqueName": "C:\\Users\\Advan\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
       "projectName": "Project-akhir-PBO",
-      "projectPath": "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
-      "packagesPath": "C:\\Users\\Axioo Pongo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Axioo Pongo\\OneDrive\\Dokumen\\Matkul\\Semester 2\\PBO\\PBO Akhir\\Project-PBO\\Project-akhir-PBO\\obj\\",
+      "projectPath": "C:\\Users\\Advan\\source\\repos\\Project-PBO\\Project-akhir-PBO\\Project-akhir-PBO.csproj",
+      "packagesPath": "C:\\Users\\Advan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Advan\\source\\repos\\Project-PBO\\Project-akhir-PBO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Axioo Pongo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Advan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -211,6 +211,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -258,7 +259,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

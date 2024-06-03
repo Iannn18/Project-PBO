@@ -162,8 +162,6 @@ C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windo
 C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
 C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
 C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
-C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas1.resources
-C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas2.resources
 C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas3.resources
 C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas4.resources
 C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormMapel.resources
@@ -290,3 +288,5 @@ C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PB
 C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
 C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
 C:\Users\Axioo Pongo\OneDrive\Dokumen\Matkul\Semester 2\PBO\PBO Akhir\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Formkelasguru.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Formkelasguru.resources
+C:\Users\Advan\source\repos\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelassemua.resources
