@@ -1,6 +1,6 @@
 # Ignore build results
-[Bb]in/
-[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
 
 # Ignore Visual Studio temporary files, build results, and
 # user-specific files
