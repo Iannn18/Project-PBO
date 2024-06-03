@@ -29,37 +29,91 @@
         private void InitializeComponent()
         {
             buttontambahsiswa = new Button();
+            btnEdit = new Button();
+            btnHapus = new Button();
+            dataGridView1 = new DataGridView();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // buttontambahsiswa
             // 
-            buttontambahsiswa.BackColor = Color.Black;
+            buttontambahsiswa.BackColor = Color.Green;
             buttontambahsiswa.ForeColor = Color.White;
-            buttontambahsiswa.Location = new Point(719, 532);
-            buttontambahsiswa.Margin = new Padding(3, 4, 3, 4);
+            buttontambahsiswa.Location = new Point(726, 430);
             buttontambahsiswa.Name = "buttontambahsiswa";
-            buttontambahsiswa.Size = new Size(160, 37);
+            buttontambahsiswa.Size = new Size(88, 47);
             buttontambahsiswa.TabIndex = 0;
-            buttontambahsiswa.Text = "Tambah Siswa";
+            buttontambahsiswa.Text = "Tambah";
             buttontambahsiswa.UseVisualStyleBackColor = false;
             buttontambahsiswa.Click += buttontambahsiswa_Click;
             // 
+            // btnEdit
+            // 
+            btnEdit.BackColor = Color.CornflowerBlue;
+            btnEdit.ForeColor = Color.Black;
+            btnEdit.Location = new Point(857, 430);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(88, 47);
+            btnEdit.TabIndex = 1;
+            btnEdit.Text = "Edit";
+            btnEdit.UseVisualStyleBackColor = false;
+            // 
+            // btnHapus
+            // 
+            btnHapus.BackColor = Color.Red;
+            btnHapus.ForeColor = Color.Black;
+            btnHapus.Location = new Point(988, 430);
+            btnHapus.Name = "btnHapus";
+            btnHapus.Size = new Size(88, 47);
+            btnHapus.TabIndex = 2;
+            btnHapus.Text = "Hapus";
+            btnHapus.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(351, 86);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(725, 319);
+            dataGridView1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(351, 28);
+            label1.Name = "label1";
+            label1.Size = new Size(183, 45);
+            label1.TabIndex = 4;
+            label1.Text = "Data Siswa";
+            // 
             // FormSiswa
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1262, 673);
+            ClientSize = new Size(1104, 505);
+            Controls.Add(label1);
+            Controls.Add(dataGridView1);
+            Controls.Add(btnHapus);
+            Controls.Add(btnEdit);
             Controls.Add(buttontambahsiswa);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FormSiswa";
             Text = "FormSiswa";
             Load += FormSiswa_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button buttontambahsiswa;
+        private Button btnEdit;
+        private Button btnHapus;
+        private DataGridView dataGridView1;
+        private Label label1;
     }
 }
