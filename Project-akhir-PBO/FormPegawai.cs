@@ -14,6 +14,7 @@ namespace Project_akhir_PBO
     public partial class FormPegawai : Form
     {
         private Pegawai_tambah pegawai_tambah;
+
         public FormPegawai()
         {
             InitializeComponent();

@@ -12,6 +12,7 @@ namespace Project_akhir_PBO
 {
     public partial class FormSiswa : Form
     {
+        siswa_tambah formSiswaTambah;
         public FormSiswa()
         {
             InitializeComponent();
@@ -19,7 +20,28 @@ namespace Project_akhir_PBO
 
         private void buttontambahsiswa_Click(object sender, EventArgs e)
         {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                if (formSiswaTambah == null)
+                {
+                    formSiswaTambah = new siswa_tambah();
+                    formSiswaTambah.FormClosed += FormSiswaTambah_FormClosed;
+                    formSiswaTambah.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormSiswaTambah
+                    formSiswaTambah.Dock = DockStyle.Fill;
+                    formSiswaTambah.Show();
+                }
+                else
+                {
+                    formSiswaTambah.Activate();
+                }
+                this.Close();
+            }
+        }
 
+        private void FormSiswaTambah_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formSiswaTambah = null;
         }
 
         private void FormSiswa_Load(object sender, EventArgs e)

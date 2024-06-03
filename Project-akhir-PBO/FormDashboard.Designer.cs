@@ -41,10 +41,9 @@
             // 
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.Location = new Point(709, 278);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Location = new Point(567, 222);
             button1.Name = "button1";
-            button1.Size = new Size(162, 162);
+            button1.Size = new Size(130, 130);
             button1.TabIndex = 0;
             button1.UseVisualStyleBackColor = true;
             // 
@@ -52,20 +51,18 @@
             // 
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Zoom;
-            button2.Location = new Point(999, 278);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Location = new Point(799, 222);
             button2.Name = "button2";
-            button2.Size = new Size(162, 162);
+            button2.Size = new Size(130, 130);
             button2.TabIndex = 1;
             button2.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(715, 469);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Location = new Point(572, 375);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(156, 78);
+            pictureBox1.Size = new Size(125, 62);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -73,25 +70,23 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(999, 469);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Location = new Point(799, 375);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(156, 78);
+            pictureBox2.Size = new Size(125, 62);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
             // FormDashboard
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1578, 841);
+            ClientSize = new Size(1262, 673);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4, 4, 4, 4);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormDashboard";
             Text = "FormDashboard";
             Load += FormDashboard_Load;

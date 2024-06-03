@@ -35,9 +35,10 @@
             // 
             buttontambahsiswa.BackColor = Color.Black;
             buttontambahsiswa.ForeColor = Color.White;
-            buttontambahsiswa.Location = new Point(698, 609);
+            buttontambahsiswa.Location = new Point(719, 532);
+            buttontambahsiswa.Margin = new Padding(3, 4, 3, 4);
             buttontambahsiswa.Name = "buttontambahsiswa";
-            buttontambahsiswa.Size = new Size(142, 29);
+            buttontambahsiswa.Size = new Size(160, 37);
             buttontambahsiswa.TabIndex = 0;
             buttontambahsiswa.Text = "Tambah Siswa";
             buttontambahsiswa.UseVisualStyleBackColor = false;
@@ -45,11 +46,12 @@
             // 
             // FormSiswa
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1262, 673);
             Controls.Add(buttontambahsiswa);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormSiswa";
             Text = "FormSiswa";
             Load += FormSiswa_Load;

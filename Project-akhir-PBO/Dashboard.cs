@@ -16,8 +16,8 @@ namespace Project_akhir_PBO
         FormKelassemua formKelas1;
         FormMapel formMapel;
         FormPegawai formPegawai;
-        FormSiswa formSiswa;
         Formkelasguru formkelasguru;
+        FormSiswa formSiswa;
 
 
 
@@ -179,9 +179,36 @@ namespace Project_akhir_PBO
             formPegawai = null;
         }
 
+        private void btnSiswa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnSiswa_Click_1(object sender, EventArgs e)
+        {
+            if (formSiswa == null)
+            {
+                formSiswa = new FormSiswa();
+                formSiswa.FormClosed += FormSiswa_FormClosed;
+                formSiswa.MdiParent = this;
+                formSiswa.Dock = DockStyle.Fill;
+                formSiswa.Show();
+            }
+            else
+            {
+                formSiswa.Activate();
+            }
+        }
+
+        private void FormSiswa_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formSiswa = null;
         }
     }
 }

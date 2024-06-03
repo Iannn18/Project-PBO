@@ -127,7 +127,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1578, 841);
+            ClientSize = new Size(1262, 673);
             Controls.Add(dataGridPegawai);
             Controls.Add(tambahDataPegawai);
             Controls.Add(labelJudul);

@@ -327,3 +327,39 @@ D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_edit.resources
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_tambah.resources
 D:\Download\Documents\TM PBO\projjk\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.siswa_tambah.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.exe
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.deps.json
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.runtimeconfig.json
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.dll
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.pdb
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Npgsql.dll
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.AssemblyReference.cache
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas3.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas4.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Formkelasguru.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelassemua.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormMapel.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormPegawai.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormSiswa.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Home.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_edit.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_tambah.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Properties.Resources.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.siswa_tambah.resources
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.GenerateResource.cache
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.GeneratedMSBuildEditorConfig.editorconfig
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfoInputs.cache
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.AssemblyInfo.cs
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.csproj.CoreCompileInputs.cache
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.sourcelink.json
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-.A345DC6F.Up2Date
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.dll
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\refint\Project-akhir-PBO.dll
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.pdb
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
+C:\D\GITHUB\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
