@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Project_akhir_PBO.Context;
+using Project_akhir_PBO.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,11 +21,14 @@ namespace Project_akhir_PBO
         Formkelasguru formkelasguru;
         FormSiswa formSiswa;
 
+        userContext? user;
 
 
 
-        public Dashboard()
+
+        public Dashboard(userContext user)
         {
+            this.user = user;
             InitializeComponent();
         }
 
@@ -33,7 +38,8 @@ namespace Project_akhir_PBO
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            // Mencoba akses data akun
+            // MessageBox.Show($"{user!.akun!.nama}");
         }
 
         private void button2_Click(object sender, EventArgs e)

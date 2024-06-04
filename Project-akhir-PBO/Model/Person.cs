@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-	internal class Person
+	public class Person
 	{
 		[Required]
 		public string nama { get; set; }

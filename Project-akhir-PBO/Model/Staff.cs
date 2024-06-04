@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-	internal class Staff : Person
+	public class Staff : Person
 	{
 		[Key]
 		public int NUPTK { get; set; }

@@ -1,7 +1,11 @@
+using Project_akhir_PBO.Context;
+
 namespace Project_akhir_PBO
 {
     public partial class Home : Form
     {
+        userContext? user;
+
         public Home()
         {
             InitializeComponent();
@@ -9,9 +13,20 @@ namespace Project_akhir_PBO
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-            this.Hide();
+            user = new userContext();
+
+            bool status = user.loginQuery(username: UsernameBox.Text, password: PasswordBox.Text);
+            
+            if (status == true)
+            {
+                Dashboard dashboard = new Dashboard(user);
+                dashboard.Show();
+                this.Hide();    
+            } else
+            {
+                MessageBox.Show("Akun tidak valid");
+            }
+
         }
 
         private void Home_Load(object sender, EventArgs e)
