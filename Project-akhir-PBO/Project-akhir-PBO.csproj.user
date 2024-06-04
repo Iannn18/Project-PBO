@@ -1,46 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Dashboard.cs">
+    <Compile Update="view\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Formkelasguru.cs">
+    <Compile Update="view\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormDashboard.cs">
+    <Compile Update="view\FormKelas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormKelas.cs">
+    <Compile Update="view\FormKelas3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormKelassemua.cs">
+    <Compile Update="view\FormKelas4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormKelas3.cs">
+    <Compile Update="view\Formkelasguru.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormKelas4.cs">
+    <Compile Update="view\FormKelassemua.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormMapel.cs">
+    <Compile Update="view\FormMapel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormPegawai.cs">
+    <Compile Update="view\FormPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormSiswa.cs">
+    <Compile Update="view\FormSiswa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Home.cs">
+    <Compile Update="view\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pegawai_edit.cs">
+    <Compile Update="view\Pegawai_edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pegawai_tambah.cs">
+    <Compile Update="view\Pegawai_tambah.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="siswa_tambah.cs">
+    <Compile Update="view\siswa_tambah.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
