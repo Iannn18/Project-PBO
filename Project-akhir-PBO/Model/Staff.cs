@@ -14,32 +14,18 @@ namespace Project_akhir_PBO.Model
 		public int NUPTK { get; set; }
 
 		[Required]
-		public string Nama_Staff { get; set; }
 
 		[ForeignKey("Id_Jabatan")]
-		public int Id_Jabatan { get; set; }
-		public virtual Jabatan Jabatan { get; set; }
+		// public int Id_Jabatan { get; set; }
+		public string jabatan { get; set; }
 
-		public virtual ICollection<Kelas> Kelass { get; set; }
-		
-		public virtual ICollection<Nomor_Telepon_Staff> Nomor_Telepon_Staffs { get; set; }
-		
-		public virtual ICollection<Mapel> Mapels { get; set; }
+
+        public Staff(string nama, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, int NUPTK, string jabatan) : base(nama, tanggal_lahir, tempat_lahir, alamat, nomor_telepon) 
+        {
+            this.NUPTK = NUPTK;
+            this.jabatan = jabatan;
+        }
 	}
-	
-	internal class Nomor_Telepon_Staff
-	{
-		[Key]
-        public int Id_Nomor_Telepon_Staff { get; set; }
-
-		public long Nomor_Telepon_staff { get; set; }
-
-		[ForeignKey("NUPTK")]
-		public int NUPTK { get; set; }
-
-        public virtual Staff Staff { get; set; }
-
-    }
 
 	internal class Mapel
 	{

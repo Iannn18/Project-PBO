@@ -14,17 +14,19 @@ namespace Project_akhir_PBO.Model
 		public int NISN { get; set; }
 
 		[Required]
-		public string Nama_Siswa{ get; set; }
 
 		[ForeignKey("Id_Kelas")]
 		public virtual Kelas Kelas { get; set; }
 
 
 		public virtual ICollection<Raport> Raports { get; set; }
-		
 		public virtual ICollection<Absensi> Absensis { get; set; }
-
 		public virtual ICollection<Nomor_Telepon_Siswa> Nomor_Telepon_Siswas { get; set; }
+
+		public Siswa(string nama, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, int NISN) : base(nama, tanggal_lahir, tempat_lahir, alamat, nomor_telepon)
+		{
+			this.NISN = NISN;
+		}
 	}
 
 	internal class Raport

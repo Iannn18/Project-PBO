@@ -140,8 +140,6 @@ C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-P
 C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Dashboard.resources
 C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormDashboard.resources
 C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas.resources
-C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas1.resources
-C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas2.resources
 C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas3.resources
 C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelas4.resources
 C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormMapel.resources
@@ -399,3 +397,19 @@ C:\Users\young\Desktop\PBO PROCJECT HADEH\Project-PBO\Project-akhir-PBO\obj\Debu
 C:\Users\young\Desktop\PBO PROCJECT HADEH\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.pdb
 C:\Users\young\Desktop\PBO PROCJECT HADEH\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
 C:\Users\young\Desktop\PBO PROCJECT HADEH\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.exe
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.deps.json
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.runtimeconfig.json
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.dll
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Project-akhir-PBO.pdb
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Formkelasguru.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.FormKelassemua.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_edit.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.Pegawai_tambah.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project_akhir_PBO.siswa_tambah.resources
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-.A345DC6F.Up2Date
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\Project-akhir-PBO.genruntimeconfig.cache
+C:\Users\USER\Documents\Rendy\My Program\C#\Simaster\Project-PBO\Project-akhir-PBO\obj\Debug\net8.0-windows\ref\Project-akhir-PBO.dll
