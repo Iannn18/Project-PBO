@@ -61,5 +61,10 @@ namespace Project_akhir_PBO
         {
             formPegawai = null;
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
