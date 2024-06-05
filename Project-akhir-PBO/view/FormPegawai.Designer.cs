@@ -35,8 +35,6 @@
             Nama = new DataGridViewTextBoxColumn();
             NUPTK = new DataGridViewTextBoxColumn();
             Jabatan = new DataGridViewTextBoxColumn();
-            Edit = new DataGridViewLinkColumn();
-            Hapus = new DataGridViewLinkColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridPegawai).BeginInit();
             SuspendLayout();
             // 
@@ -55,7 +53,7 @@
             // 
             tambahDataPegawai.BackColor = Color.Black;
             tambahDataPegawai.ForeColor = Color.White;
-            tambahDataPegawai.Location = new Point(719, 532);
+            tambahDataPegawai.Location = new Point(754, 532);
             tambahDataPegawai.Name = "tambahDataPegawai";
             tambahDataPegawai.Padding = new Padding(5);
             tambahDataPegawai.Size = new Size(160, 37);
@@ -67,11 +65,11 @@
             // dataGridPegawai
             // 
             dataGridPegawai.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridPegawai.Columns.AddRange(new DataGridViewColumn[] { Status, Nama, NUPTK, Jabatan, Edit, Hapus });
-            dataGridPegawai.Location = new Point(360, 118);
+            dataGridPegawai.Columns.AddRange(new DataGridViewColumn[] { Status, Nama, NUPTK, Jabatan });
+            dataGridPegawai.Location = new Point(475, 118);
             dataGridPegawai.Name = "dataGridPegawai";
             dataGridPegawai.RowHeadersWidth = 51;
-            dataGridPegawai.Size = new Size(803, 408);
+            dataGridPegawai.Size = new Size(701, 408);
             dataGridPegawai.TabIndex = 4;
             dataGridPegawai.CellContentClick += dataGridPegawai_CellContentClick;
             // 
@@ -89,7 +87,7 @@
             Nama.MinimumWidth = 6;
             Nama.Name = "Nama";
             Nama.ReadOnly = true;
-            Nama.Width = 125;
+            Nama.Width = 270;
             // 
             // NUPTK
             // 
@@ -106,22 +104,6 @@
             Jabatan.Name = "Jabatan";
             Jabatan.ReadOnly = true;
             Jabatan.Width = 125;
-            // 
-            // Edit
-            // 
-            Edit.HeaderText = "";
-            Edit.MinimumWidth = 6;
-            Edit.Name = "Edit";
-            Edit.ReadOnly = true;
-            Edit.Width = 125;
-            // 
-            // Hapus
-            // 
-            Hapus.HeaderText = "";
-            Hapus.MinimumWidth = 6;
-            Hapus.Name = "Hapus";
-            Hapus.ReadOnly = true;
-            Hapus.Width = 125;
             // 
             // FormPegawai
             // 
@@ -149,7 +131,5 @@
         private DataGridViewTextBoxColumn Nama;
         private DataGridViewTextBoxColumn NUPTK;
         private DataGridViewTextBoxColumn Jabatan;
-        private DataGridViewLinkColumn Edit;
-        private DataGridViewLinkColumn Hapus;
     }
 }
