@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            comboBox1 = new ComboBox();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            textBox6 = new TextBox();
+            textBox5 = new TextBox();
+            textBox4 = new TextBox();
             button1 = new Button();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
@@ -43,6 +51,14 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(textBox6);
+            panel1.Controls.Add(textBox5);
+            panel1.Controls.Add(textBox4);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(textBox3);
             panel1.Controls.Add(textBox2);
@@ -51,18 +67,89 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(520, 124);
+            panel1.Location = new Point(513, 33);
             panel1.Name = "panel1";
-            panel1.Size = new Size(425, 289);
+            panel1.Size = new Size(472, 437);
             panel1.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "X-A", "X-B", "X-C", "X-D", "X-E", "X-F", "X-G", "X-H", "XI-A", "XI-B", "XI-C", "XI-D", "XI-E", "XI-F", "XI-G", "XI-H", "XII-A", "XII-B", "XII-C", "XII-D", "XII-E", "XII-F", "XII-G", "XII-H" });
+            comboBox1.Location = new Point(171, 305);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(267, 23);
+            comboBox1.TabIndex = 16;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(33, 308);
+            label8.Name = "label8";
+            label8.Size = new Size(34, 15);
+            label8.TabIndex = 15;
+            label8.Text = "Kelas";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(31, 267);
+            label7.Name = "label7";
+            label7.Size = new Size(45, 15);
+            label7.TabIndex = 14;
+            label7.Text = "Alamat";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(30, 229);
+            label6.Name = "label6";
+            label6.Size = new Size(75, 15);
+            label6.TabIndex = 13;
+            label6.Text = "Tempat Lahir";
+            label6.Click += label6_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(30, 193);
+            label5.Name = "label5";
+            label5.Size = new Size(70, 15);
+            label5.TabIndex = 12;
+            label5.Text = "No. Telepon";
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(172, 264);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(266, 23);
+            textBox6.TabIndex = 10;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(171, 226);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(267, 23);
+            textBox5.TabIndex = 9;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(171, 190);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(267, 23);
+            textBox4.TabIndex = 8;
             // 
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaptionText;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(30, 219);
+            button1.Location = new Point(33, 371);
             button1.Name = "button1";
-            button1.Size = new Size(354, 28);
+            button1.Size = new Size(405, 28);
             button1.TabIndex = 7;
             button1.Text = "Submit";
             button1.UseVisualStyleBackColor = false;
@@ -72,42 +159,39 @@
             // 
             textBox3.Font = new Font("Segoe UI", 8F);
             textBox3.ForeColor = SystemColors.GrayText;
-            textBox3.Location = new Point(117, 160);
+            textBox3.Location = new Point(171, 155);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(267, 22);
             textBox3.TabIndex = 6;
-            textBox3.Text = " Masukan Kelas";
             // 
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 8F);
             textBox2.ForeColor = SystemColors.GrayText;
-            textBox2.Location = new Point(117, 122);
+            textBox2.Location = new Point(171, 120);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(267, 22);
             textBox2.TabIndex = 5;
-            textBox2.Text = " Masukan NISN";
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 8F);
             textBox1.ForeColor = SystemColors.GrayText;
-            textBox1.Location = new Point(117, 87);
+            textBox1.Location = new Point(171, 85);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(267, 22);
             textBox1.TabIndex = 4;
-            textBox1.Text = " Masukan Nama";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(30, 160);
+            label4.Location = new Point(29, 160);
             label4.Name = "label4";
-            label4.Size = new Size(34, 15);
+            label4.Size = new Size(77, 15);
             label4.TabIndex = 3;
-            label4.Text = "Kelas";
+            label4.Text = "Tanggal Lahir";
             // 
             // label3
             // 
@@ -169,5 +253,13 @@
         private Label label3;
         private Label label2;
         private Button button1;
+        private TextBox textBox6;
+        private TextBox textBox5;
+        private TextBox textBox4;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private ComboBox comboBox1;
     }
 }

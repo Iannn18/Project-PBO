@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dataGridView1 = new DataGridView();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             buttonSimpandetailtugas = new Button();
             buttonBataldetailtugas = new Button();
-            Column3 = new DataGridViewCheckBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
             Column1 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(593, 377);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label1
             // 
@@ -101,29 +103,34 @@
             buttonBataldetailtugas.Text = "Batal";
             buttonBataldetailtugas.UseVisualStyleBackColor = false;
             // 
+            // Column1
+            // 
+            Column1.HeaderText = "Nama Lengkap Siswa";
+            Column1.Name = "Column1";
+            Column1.Width = 200;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "NISN";
+            Column4.Name = "Column4";
+            Column4.Resizable = DataGridViewTriState.True;
+            Column4.Width = 150;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle1.Format = "N1";
+            dataGridViewCellStyle1.NullValue = null;
+            Column2.DefaultCellStyle = dataGridViewCellStyle1;
+            Column2.HeaderText = "Nilai";
+            Column2.MaxInputLength = 100;
+            Column2.Name = "Column2";
+            // 
             // Column3
             // 
             Column3.HeaderText = "Status";
             Column3.Name = "Column3";
             Column3.Resizable = DataGridViewTriState.True;
             Column3.SortMode = DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Nilai";
-            Column2.Name = "Column2";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "NISN";
-            Column4.Name = "Column4";
-            Column4.Width = 150;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Nama Lengkap Siswa";
-            Column1.Name = "Column1";
-            Column1.Width = 200;
             // 
             // detailTugas
             // 

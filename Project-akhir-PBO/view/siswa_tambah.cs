@@ -31,5 +31,10 @@ namespace Project_akhir_PBO
         {
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

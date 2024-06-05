@@ -66,5 +66,10 @@ namespace Project_akhir_PBO
         {
 
         }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

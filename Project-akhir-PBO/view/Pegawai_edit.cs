@@ -68,5 +68,15 @@ namespace Project_akhir_PBO
         {
             formPegawai = null;
         }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelJabatan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
