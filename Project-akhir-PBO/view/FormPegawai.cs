@@ -1,4 +1,4 @@
-﻿using Project_akhir_PBO.Model;
+﻿using Project_akhir_PBO.DB;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,14 +19,22 @@ namespace Project_akhir_PBO
         public FormPegawai()
         {
             InitializeComponent();
-
-
-
         }
 
         private void FormPegawai_Load(object sender, EventArgs e)
         {
+            LoadData();
+        }
 
+        private void LoadData()
+        {
+            string query = "SELECT nama_staff AS \"Nama Pegawai\", nuptk AS NUPTK, jabatan AS Jabatan FROM staff INNER JOIN jabatan ON staff.id_jabatan = jabatan.id_jabatan";
+            DataTable dt = Database.queryExecutor(query);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                dataGridPegawai.Rows.Add("", row["Nama Pegawai"], row["NUPTK"], row["Jabatan"]);
+            }
         }
 
         private void tambahDataPegawai_Click(object sender, EventArgs e)
@@ -60,7 +68,6 @@ namespace Project_akhir_PBO
 
         private void dataGridPegawai_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void editPegawai_Click(object sender, EventArgs e)
@@ -87,7 +94,7 @@ namespace Project_akhir_PBO
             }
         }
 
-        private void Pegawai_edit_FormClosed(object? sender, FormClosedEventArgs e)
+        private void Pegawai_edit_FormClosed(object sender, FormClosedEventArgs e)
         {
             formPegawai_edit = null;
         }

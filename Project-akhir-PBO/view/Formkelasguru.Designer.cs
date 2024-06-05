@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             label1 = new Label();
             dataGridViewkelasguru = new DataGridView();
             NamaLengkap = new DataGridViewTextBoxColumn();
@@ -44,9 +45,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(365, 30);
+            label1.Location = new Point(456, 38);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(152, 41);
+            label1.Size = new Size(181, 48);
             label1.TabIndex = 0;
             label1.Text = "Kelas X-A";
             label1.Click += label1_Click;
@@ -55,15 +57,20 @@
             // 
             dataGridViewkelasguru.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewkelasguru.Columns.AddRange(new DataGridViewColumn[] { NamaLengkap, Hadir, Izin, Sakit, Alfa, Edit });
-            dataGridViewkelasguru.Location = new Point(413, 99);
+            dataGridViewkelasguru.Location = new Point(516, 124);
+            dataGridViewkelasguru.Margin = new Padding(4);
             dataGridViewkelasguru.Name = "dataGridViewkelasguru";
             dataGridViewkelasguru.RowHeadersWidth = 51;
-            dataGridViewkelasguru.Size = new Size(952, 682);
+            dataGridViewkelasguru.Size = new Size(1190, 852);
             dataGridViewkelasguru.TabIndex = 1;
             dataGridViewkelasguru.CellContentClick += dataGridViewkelasguru_CellContentClick;
             // 
             // NamaLengkap
             // 
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            NamaLengkap.DefaultCellStyle = dataGridViewCellStyle1;
             NamaLengkap.HeaderText = "NamaLengkap";
             NamaLengkap.MinimumWidth = 6;
             NamaLengkap.Name = "NamaLengkap";
@@ -112,14 +119,16 @@
             // 
             // Formkelasguru
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1578, 841);
+            ClientSize = new Size(1946, 1051);
             Controls.Add(dataGridViewkelasguru);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "Formkelasguru";
             Text = "Formkelasguru";
+            Load += Formkelasguru_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewkelasguru).EndInit();
             ResumeLayout(false);
             PerformLayout();
