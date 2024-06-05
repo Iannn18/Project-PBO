@@ -38,6 +38,8 @@
             button1 = new Button();
             button2 = new Button();
             panel1 = new Panel();
+            labelJabatan = new Label();
+            cmbJabatan = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,6 +48,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(85, 27);
             label1.Name = "label1";
             label1.Size = new Size(180, 28);
@@ -57,6 +60,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(23, 85);
             label2.Name = "label2";
             label2.Size = new Size(49, 20);
@@ -67,6 +71,7 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(23, 132);
             label3.Name = "label3";
             label3.Size = new Size(32, 20);
@@ -77,6 +82,7 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(23, 180);
             label4.Name = "label4";
             label4.Size = new Size(42, 20);
@@ -131,6 +137,7 @@
             // 
             // button2
             // 
+            button2.ForeColor = Color.Black;
             button2.Location = new Point(178, 275);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
@@ -143,6 +150,8 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(labelJabatan);
+            panel1.Controls.Add(cmbJabatan);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(label2);
@@ -158,6 +167,25 @@
             panel1.Size = new Size(337, 445);
             panel1.TabIndex = 10;
             panel1.Paint += panel1_Paint;
+            // 
+            // labelJabatan
+            // 
+            labelJabatan.AutoSize = true;
+            labelJabatan.ForeColor = Color.Black;
+            labelJabatan.Location = new Point(23, 214);
+            labelJabatan.Name = "labelJabatan";
+            labelJabatan.Size = new Size(60, 20);
+            labelJabatan.TabIndex = 11;
+            labelJabatan.Text = "Jabatan";
+            // 
+            // cmbJabatan
+            // 
+            cmbJabatan.FormattingEnabled = true;
+            cmbJabatan.Items.AddRange(new object[] { "Staff", "Guru" });
+            cmbJabatan.Location = new Point(95, 211);
+            cmbJabatan.Name = "cmbJabatan";
+            cmbJabatan.Size = new Size(151, 28);
+            cmbJabatan.TabIndex = 10;
             // 
             // Pegawai_edit
             // 
@@ -186,5 +214,7 @@
         private Button button1;
         private Button button2;
         private Panel panel1;
+        private Label labelJabatan;
+        private ComboBox cmbJabatan;
     }
 }
