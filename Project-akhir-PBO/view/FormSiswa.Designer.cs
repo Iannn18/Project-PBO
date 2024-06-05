@@ -33,11 +33,9 @@
             btnHapus = new Button();
             dataGridView1 = new DataGridView();
             label1 = new Label();
-            namaSiswa = new DataGridViewTextBoxColumn();
-            hadirSiswa = new DataGridViewTextBoxColumn();
-            izinSiswa = new DataGridViewTextBoxColumn();
-            sakitSiswa = new DataGridViewTextBoxColumn();
-            alpaSiswa = new DataGridViewTextBoxColumn();
+            clmNISNSiswa = new DataGridViewTextBoxColumn();
+            clmNamaSiswa = new DataGridViewTextBoxColumn();
+            clmKelas = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -45,10 +43,9 @@
             // 
             buttontambahsiswa.BackColor = Color.Green;
             buttontambahsiswa.ForeColor = Color.White;
-            buttontambahsiswa.Location = new Point(830, 573);
-            buttontambahsiswa.Margin = new Padding(3, 4, 3, 4);
+            buttontambahsiswa.Location = new Point(726, 430);
             buttontambahsiswa.Name = "buttontambahsiswa";
-            buttontambahsiswa.Size = new Size(101, 63);
+            buttontambahsiswa.Size = new Size(88, 47);
             buttontambahsiswa.TabIndex = 0;
             buttontambahsiswa.Text = "Tambah";
             buttontambahsiswa.UseVisualStyleBackColor = false;
@@ -58,10 +55,9 @@
             // 
             btnEdit.BackColor = Color.CornflowerBlue;
             btnEdit.ForeColor = Color.Black;
-            btnEdit.Location = new Point(979, 573);
-            btnEdit.Margin = new Padding(3, 4, 3, 4);
+            btnEdit.Location = new Point(857, 430);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(101, 63);
+            btnEdit.Size = new Size(88, 47);
             btnEdit.TabIndex = 1;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = false;
@@ -70,10 +66,9 @@
             // 
             btnHapus.BackColor = Color.Red;
             btnHapus.ForeColor = Color.Black;
-            btnHapus.Location = new Point(1129, 573);
-            btnHapus.Margin = new Padding(3, 4, 3, 4);
+            btnHapus.Location = new Point(988, 430);
             btnHapus.Name = "btnHapus";
-            btnHapus.Size = new Size(101, 63);
+            btnHapus.Size = new Size(88, 47);
             btnHapus.TabIndex = 2;
             btnHapus.Text = "Hapus";
             btnHapus.UseVisualStyleBackColor = false;
@@ -81,12 +76,11 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { namaSiswa, hadirSiswa, izinSiswa, sakitSiswa, alpaSiswa });
-            dataGridView1.Location = new Point(413, 125);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clmNISNSiswa, clmNamaSiswa, clmKelas });
+            dataGridView1.Location = new Point(361, 94);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(817, 423);
+            dataGridView1.Size = new Size(715, 317);
             dataGridView1.TabIndex = 3;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -95,59 +89,44 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(401, 37);
+            label1.Location = new Point(351, 28);
             label1.Name = "label1";
-            label1.Size = new Size(229, 54);
+            label1.Size = new Size(183, 45);
             label1.TabIndex = 4;
             label1.Text = "Data Siswa";
             // 
-            // namaSiswa
+            // clmNISNSiswa
             // 
-            namaSiswa.HeaderText = "Nama";
-            namaSiswa.MinimumWidth = 6;
-            namaSiswa.Name = "namaSiswa";
-            namaSiswa.Width = 270;
+            clmNISNSiswa.HeaderText = "NISN";
+            clmNISNSiswa.MinimumWidth = 6;
+            clmNISNSiswa.Name = "clmNISNSiswa";
+            clmNISNSiswa.Width = 150;
             // 
-            // hadirSiswa
+            // clmNamaSiswa
             // 
-            hadirSiswa.HeaderText = "Hadir";
-            hadirSiswa.MinimumWidth = 6;
-            hadirSiswa.Name = "hadirSiswa";
-            hadirSiswa.Width = 125;
+            clmNamaSiswa.HeaderText = "Nama";
+            clmNamaSiswa.MinimumWidth = 6;
+            clmNamaSiswa.Name = "clmNamaSiswa";
+            clmNamaSiswa.Width = 300;
             // 
-            // izinSiswa
+            // clmKelas
             // 
-            izinSiswa.HeaderText = "Izin";
-            izinSiswa.MinimumWidth = 6;
-            izinSiswa.Name = "izinSiswa";
-            izinSiswa.Width = 125;
-            // 
-            // sakitSiswa
-            // 
-            sakitSiswa.HeaderText = "Sakit";
-            sakitSiswa.MinimumWidth = 6;
-            sakitSiswa.Name = "sakitSiswa";
-            sakitSiswa.Width = 125;
-            // 
-            // alpaSiswa
-            // 
-            alpaSiswa.HeaderText = "Alpa";
-            alpaSiswa.MinimumWidth = 6;
-            alpaSiswa.Name = "alpaSiswa";
-            alpaSiswa.Width = 125;
+            clmKelas.HeaderText = "Kelas";
+            clmKelas.MinimumWidth = 6;
+            clmKelas.Name = "clmKelas";
+            clmKelas.Width = 150;
             // 
             // FormSiswa
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1262, 673);
+            ClientSize = new Size(1104, 505);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(btnHapus);
             Controls.Add(btnEdit);
             Controls.Add(buttontambahsiswa);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FormSiswa";
             Text = "FormSiswa";
             Load += FormSiswa_Load;
@@ -163,10 +142,8 @@
         private Button btnHapus;
         private DataGridView dataGridView1;
         private Label label1;
-        private DataGridViewTextBoxColumn namaSiswa;
-        private DataGridViewTextBoxColumn hadirSiswa;
-        private DataGridViewTextBoxColumn izinSiswa;
-        private DataGridViewTextBoxColumn sakitSiswa;
-        private DataGridViewTextBoxColumn alpaSiswa;
+        private DataGridViewTextBoxColumn clmNISNSiswa;
+        private DataGridViewTextBoxColumn clmNamaSiswa;
+        private DataGridViewTextBoxColumn clmKelas;
     }
 }

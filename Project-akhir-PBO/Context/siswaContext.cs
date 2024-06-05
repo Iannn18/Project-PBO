@@ -8,6 +8,6 @@ namespace Project_akhir_PBO.Context
 {
     public class siswaContext
     {
-
+         
     }
 }
