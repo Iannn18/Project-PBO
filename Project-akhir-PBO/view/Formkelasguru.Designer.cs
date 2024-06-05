@@ -31,7 +31,6 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             label1 = new Label();
             dataGridViewkelasguru = new DataGridView();
-            coba = new DataGridViewTextBoxColumn();
             NamaLengkap = new DataGridViewTextBoxColumn();
             Hadir = new DataGridViewTextBoxColumn();
             Izin = new DataGridViewTextBoxColumn();
@@ -46,9 +45,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(319, 22);
+            label1.Location = new Point(456, 38);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(124, 32);
+            label1.Size = new Size(181, 48);
             label1.TabIndex = 0;
             label1.Text = "Kelas X-A";
             label1.Click += label1_Click;
@@ -56,27 +56,21 @@
             // dataGridViewkelasguru
             // 
             dataGridViewkelasguru.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewkelasguru.Columns.AddRange(new DataGridViewColumn[] { coba, NamaLengkap, Hadir, Izin, Sakit, Alfa, Edit });
-            dataGridViewkelasguru.Location = new Point(361, 74);
-            dataGridViewkelasguru.Margin = new Padding(3, 2, 3, 2);
+            dataGridViewkelasguru.Columns.AddRange(new DataGridViewColumn[] { NamaLengkap, Hadir, Izin, Sakit, Alfa, Edit });
+            dataGridViewkelasguru.Location = new Point(516, 124);
+            dataGridViewkelasguru.Margin = new Padding(4);
             dataGridViewkelasguru.Name = "dataGridViewkelasguru";
             dataGridViewkelasguru.RowHeadersWidth = 51;
-            dataGridViewkelasguru.Size = new Size(833, 512);
+            dataGridViewkelasguru.Size = new Size(1190, 852);
             dataGridViewkelasguru.TabIndex = 1;
             dataGridViewkelasguru.CellContentClick += dataGridViewkelasguru_CellContentClick;
             // 
-            // coba
-            // 
-            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.Black;
-            dataGridViewCellStyle1.SelectionForeColor = Color.DimGray;
-            coba.DefaultCellStyle = dataGridViewCellStyle1;
-            coba.HeaderText = "COBA";
-            coba.MaxInputLength = 100;
-            coba.Name = "coba";
-            // 
             // NamaLengkap
             // 
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            NamaLengkap.DefaultCellStyle = dataGridViewCellStyle1;
             NamaLengkap.HeaderText = "NamaLengkap";
             NamaLengkap.MinimumWidth = 6;
             NamaLengkap.Name = "NamaLengkap";
@@ -125,15 +119,16 @@
             // 
             // Formkelasguru
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1213, 591);
+            ClientSize = new Size(1946, 1051);
             Controls.Add(dataGridViewkelasguru);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
+            Margin = new Padding(4);
             Name = "Formkelasguru";
             Text = "Formkelasguru";
+            Load += Formkelasguru_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewkelasguru).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -143,7 +138,6 @@
 
         private Label label1;
         private DataGridView dataGridViewkelasguru;
-        private DataGridViewTextBoxColumn coba;
         private DataGridViewTextBoxColumn NamaLengkap;
         private DataGridViewTextBoxColumn Hadir;
         private DataGridViewTextBoxColumn Izin;
