@@ -35,6 +35,8 @@
             Nama = new DataGridViewTextBoxColumn();
             NUPTK = new DataGridViewTextBoxColumn();
             Jabatan = new DataGridViewTextBoxColumn();
+            hapusPegawai = new Button();
+            editPegawai = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridPegawai).BeginInit();
             SuspendLayout();
             // 
@@ -53,7 +55,7 @@
             // 
             tambahDataPegawai.BackColor = Color.Black;
             tambahDataPegawai.ForeColor = Color.White;
-            tambahDataPegawai.Location = new Point(754, 532);
+            tambahDataPegawai.Location = new Point(679, 532);
             tambahDataPegawai.Name = "tambahDataPegawai";
             tambahDataPegawai.Padding = new Padding(5);
             tambahDataPegawai.Size = new Size(160, 37);
@@ -105,11 +107,38 @@
             Jabatan.ReadOnly = true;
             Jabatan.Width = 125;
             // 
+            // hapusPegawai
+            // 
+            hapusPegawai.BackColor = Color.Black;
+            hapusPegawai.ForeColor = Color.White;
+            hapusPegawai.Location = new Point(1016, 532);
+            hapusPegawai.Name = "hapusPegawai";
+            hapusPegawai.Padding = new Padding(5);
+            hapusPegawai.Size = new Size(160, 37);
+            hapusPegawai.TabIndex = 5;
+            hapusPegawai.Text = "Hapus";
+            hapusPegawai.UseVisualStyleBackColor = false;
+            // 
+            // editPegawai
+            // 
+            editPegawai.BackColor = Color.Black;
+            editPegawai.ForeColor = Color.White;
+            editPegawai.Location = new Point(850, 532);
+            editPegawai.Name = "editPegawai";
+            editPegawai.Padding = new Padding(5);
+            editPegawai.Size = new Size(160, 37);
+            editPegawai.TabIndex = 6;
+            editPegawai.Text = "Edit Data";
+            editPegawai.UseVisualStyleBackColor = false;
+            editPegawai.Click += editPegawai_Click;
+            // 
             // FormPegawai
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1262, 673);
+            Controls.Add(editPegawai);
+            Controls.Add(hapusPegawai);
             Controls.Add(dataGridPegawai);
             Controls.Add(tambahDataPegawai);
             Controls.Add(labelJudul);
@@ -131,5 +160,7 @@
         private DataGridViewTextBoxColumn Nama;
         private DataGridViewTextBoxColumn NUPTK;
         private DataGridViewTextBoxColumn Jabatan;
+        private Button hapusPegawai;
+        private Button editPegawai;
     }
 }

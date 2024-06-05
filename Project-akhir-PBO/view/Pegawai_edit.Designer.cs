@@ -46,9 +46,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label1.Location = new Point(74, 20);
+            label1.Location = new Point(85, 27);
             label1.Name = "label1";
-            label1.Size = new Size(142, 21);
+            label1.Size = new Size(180, 28);
             label1.TabIndex = 1;
             label1.Text = "Edit Akun Pegawai";
             label1.Click += label1_Click;
@@ -57,9 +57,9 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Location = new Point(20, 64);
+            label2.Location = new Point(23, 85);
             label2.Name = "label2";
-            label2.Size = new Size(39, 15);
+            label2.Size = new Size(49, 20);
             label2.TabIndex = 2;
             label2.Text = "Nama";
             // 
@@ -67,9 +67,9 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Location = new Point(20, 99);
+            label3.Location = new Point(23, 132);
             label3.Name = "label3";
-            label3.Size = new Size(26, 15);
+            label3.Size = new Size(32, 20);
             label3.TabIndex = 3;
             label3.Text = "NIP";
             // 
@@ -77,9 +77,9 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Location = new Point(20, 135);
+            label4.Location = new Point(23, 180);
             label4.Name = "label4";
-            label4.Size = new Size(33, 15);
+            label4.Size = new Size(42, 20);
             label4.TabIndex = 4;
             label4.Text = "PASS";
             label4.Click += label4_Click;
@@ -88,9 +88,10 @@
             // 
             textBox1.Font = new Font("Segoe UI", 8F);
             textBox1.ForeColor = SystemColors.GrayText;
-            textBox1.Location = new Point(83, 62);
+            textBox1.Location = new Point(95, 83);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(187, 22);
+            textBox1.Size = new Size(213, 25);
             textBox1.TabIndex = 5;
             textBox1.Text = " Masukan Nama";
             // 
@@ -98,9 +99,10 @@
             // 
             textBox2.Font = new Font("Segoe UI", 8F);
             textBox2.ForeColor = SystemColors.GrayText;
-            textBox2.Location = new Point(83, 99);
+            textBox2.Location = new Point(95, 132);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(187, 22);
+            textBox2.Size = new Size(213, 25);
             textBox2.TabIndex = 6;
             textBox2.Text = " Masukan NIP";
             // 
@@ -108,9 +110,10 @@
             // 
             textBox3.Font = new Font("Segoe UI", 8F);
             textBox3.ForeColor = SystemColors.GrayText;
-            textBox3.Location = new Point(83, 133);
+            textBox3.Location = new Point(95, 177);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(186, 22);
+            textBox3.Size = new Size(212, 25);
             textBox3.TabIndex = 7;
             textBox3.Text = " Masukan Password";
             // 
@@ -118,21 +121,24 @@
             // 
             button1.BackColor = Color.Black;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(57, 206);
+            button1.Location = new Point(65, 275);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(78, 30);
+            button1.Size = new Size(89, 40);
             button1.TabIndex = 8;
             button1.Text = "Ubah Data";
             button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            button2.Location = new Point(156, 206);
+            button2.Location = new Point(178, 275);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(84, 30);
+            button2.Size = new Size(96, 40);
             button2.TabIndex = 9;
             button2.Text = "Kembali";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // panel1
             // 
@@ -146,19 +152,21 @@
             panel1.Controls.Add(textBox3);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(textBox1);
-            panel1.Location = new Point(603, 126);
+            panel1.Location = new Point(703, 82);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(288, 334);
+            panel1.Size = new Size(337, 445);
             panel1.TabIndex = 10;
             panel1.Paint += panel1_Paint;
             // 
             // Pegawai_edit
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1262, 673);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Pegawai_edit";
             Text = "Pegawai_edit";
             Load += Pegawai_edit_Load;

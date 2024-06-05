@@ -14,6 +14,7 @@ namespace Project_akhir_PBO
     public partial class FormPegawai : Form
     {
         private Pegawai_tambah pegawai_tambah;
+        private Pegawai_edit formPegawai_edit;
 
         public FormPegawai()
         {
@@ -60,6 +61,35 @@ namespace Project_akhir_PBO
         private void dataGridPegawai_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void editPegawai_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                string dataToShow = clickedButton.Text;
+
+                if (formPegawai_edit == null)
+                {
+                    formPegawai_edit = new Pegawai_edit();
+                    formPegawai_edit.FormClosed += Pegawai_edit_FormClosed;
+                    formPegawai_edit.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
+                    formPegawai_edit.Dock = DockStyle.Fill;
+                    formPegawai_edit.Show();
+                }
+                else
+                {
+                    formPegawai_edit.Activate();
+                }
+
+                this.Close();
+            }
+        }
+
+        private void Pegawai_edit_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formPegawai_edit = null;
         }
     }
 }
