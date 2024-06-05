@@ -27,7 +27,7 @@ namespace Project_akhir_PBO.Model
         }
 	}
 
-	internal class Mapel
+    public class Mapel
 	{
 		[Key]
         public string Kode_Mapel { get; set; }
@@ -46,7 +46,7 @@ namespace Project_akhir_PBO.Model
         public virtual ICollection<Detail_Raport> Detail_Raports { get; set; }
     }
 
-	internal class Penugasan
+    public class Penugasan
 	{
         [Key]
         public int Id_Tugas { get; set; }
@@ -69,7 +69,7 @@ namespace Project_akhir_PBO.Model
         public virtual ICollection<Penilaian> Penilaians { get; set; }
     }
 
-	internal class Penilaian
+    public class Penilaian
 	{
         [Key]
         public int Id_Penilaian { get; set; }
@@ -87,7 +87,7 @@ namespace Project_akhir_PBO.Model
         public int Nilai { get; set; }
     }
 
-    internal class Status_Tugas 
+    public class Status_Tugas 
     {
         [Key]
         public int Id_Status { get; set; }

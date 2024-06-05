@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-	internal class Siswa : Person
+	public class Siswa : Person
 	{
 		[Key]
-		public int NISN { get; set; }
+		public string NISN { get; set; }
 
 		[Required]
 
@@ -23,13 +23,13 @@ namespace Project_akhir_PBO.Model
 		public virtual ICollection<Absensi> Absensis { get; set; }
 		public virtual ICollection<Nomor_Telepon_Siswa> Nomor_Telepon_Siswas { get; set; }
 
-		public Siswa(string nama, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, int NISN) : base(nama, tanggal_lahir, tempat_lahir, alamat, nomor_telepon)
+		public Siswa(string nama, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, string NISN) : base(nama, tanggal_lahir, tempat_lahir, alamat, nomor_telepon)
 		{
 			this.NISN = NISN;
 		}
 	}
 
-	internal class Raport
+    public class Raport
 	{
 		[Key]
         public int Id_Raport { get; set; }
@@ -43,9 +43,9 @@ namespace Project_akhir_PBO.Model
 
 
         public virtual ICollection<Detail_Raport> Detail_Raports { get; set; }
-    }	
+    }
 
-	internal class Detail_Raport
+    public class Detail_Raport
 	{
 		[Key]
         public int Id_Detail_Raport { get; set; }
@@ -54,9 +54,9 @@ namespace Project_akhir_PBO.Model
         public string Kode_Mapel { get; set; }
 
 		public virtual Mapel Mapel { get; set; }
-    }	
+    }
 
-	internal class Absensi
+    public class Absensi
 	{
 		[Key]
         public int Id_Absensi { get; set; }
@@ -67,9 +67,9 @@ namespace Project_akhir_PBO.Model
         public virtual Siswa Siswa { get; set; }
 
 		public DateTime Waktu_Hadir { get; set; }
-    }	
+    }
 
-	internal class Nomor_Telepon_Siswa
+    public class Nomor_Telepon_Siswa
 	{
 		[Key]
         public int Id_Nomor_Telepon_Siswa { get; set; }
