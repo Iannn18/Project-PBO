@@ -28,36 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            label1 = new Label();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            labelnamaMapel = new Label();
             label2 = new Label();
             dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewComboBoxColumn();
             panel1 = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
             buttonDetailtgs1 = new Button();
             buttonTambahTugas = new Button();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // labelnamaMapel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label1.Location = new Point(635, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(120, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Nama Mapel";
+            labelnamaMapel.AutoSize = true;
+            labelnamaMapel.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            labelnamaMapel.ForeColor = Color.Black;
+            labelnamaMapel.Location = new Point(635, 34);
+            labelnamaMapel.Name = "labelnamaMapel";
+            labelnamaMapel.Size = new Size(120, 25);
+            labelnamaMapel.TabIndex = 0;
+            labelnamaMapel.Text = "Nama Mapel";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(941, 36);
             label2.Name = "label2";
             label2.Size = new Size(51, 23);
@@ -74,6 +76,24 @@
             dataGridView1.Size = new Size(418, 561);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle5.ForeColor = Color.Black;
+            Column1.DefaultCellStyle = dataGridViewCellStyle5;
+            Column1.HeaderText = "Nama Lengkap Siswa";
+            Column1.Name = "Column1";
+            Column1.Width = 250;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle6.ForeColor = Color.Black;
+            Column2.DefaultCellStyle = dataGridViewCellStyle6;
+            Column2.HeaderText = "Status Kehadiran";
+            Column2.Items.AddRange(new object[] { "Hadir", "Ijin", "Sakit", "Alfa" });
+            Column2.Name = "Column2";
+            Column2.Resizable = DataGridViewTriState.True;
+            Column2.Width = 125;
             // 
             // panel1
             // 
@@ -98,6 +118,7 @@
             // 
             // buttonDetailtgs1
             // 
+            buttonDetailtgs1.ForeColor = Color.Black;
             buttonDetailtgs1.Location = new Point(3, 3);
             buttonDetailtgs1.Name = "buttonDetailtgs1";
             buttonDetailtgs1.Size = new Size(191, 94);
@@ -116,24 +137,6 @@
             buttonTambahTugas.Text = "+";
             buttonTambahTugas.UseVisualStyleBackColor = true;
             // 
-            // Column1
-            // 
-            dataGridViewCellStyle1.ForeColor = Color.Black;
-            Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            Column1.HeaderText = "Nama Lengkap Siswa";
-            Column1.Name = "Column1";
-            Column1.Width = 250;
-            // 
-            // Column2
-            // 
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            Column2.DefaultCellStyle = dataGridViewCellStyle2;
-            Column2.HeaderText = "Status Kehadiran";
-            Column2.Items.AddRange(new object[] { "Hadir", "Ijin", "Sakit", "Alfa" });
-            Column2.Name = "Column2";
-            Column2.Resizable = DataGridViewTriState.True;
-            Column2.Width = 125;
-            // 
             // Mapeltugas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -143,7 +146,7 @@
             Controls.Add(panel1);
             Controls.Add(dataGridView1);
             Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(labelnamaMapel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Mapeltugas";
             Text = "Mapeltugas";
@@ -157,7 +160,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label labelnamaMapel;
         private Label label2;
         private DataGridView dataGridView1;
         private Panel panel1;

@@ -5,7 +5,7 @@ namespace Project_akhir_PBO
 {
     public partial class FormKelassemua : Form
     {
-
+        private Mapeltugas formMapeltugas;
         public FormKelassemua()
         {
             InitializeComponent();
@@ -13,6 +13,30 @@ namespace Project_akhir_PBO
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                string dataToShow = clickedButton.Text;
+
+                if (formMapeltugas == null)
+                {
+                    formMapeltugas = new Mapeltugas();
+                    formMapeltugas.FormClosed += Mapeltugas_FormClosed;
+                    formMapeltugas.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
+                    formMapeltugas.Dock = DockStyle.Fill;
+                    formMapeltugas.Show();
+                }
+                else
+                {
+                    formMapeltugas.Activate();
+                }
+
+                this.Close();
+            }
+        }
+        private void Mapeltugas_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formMapeltugas = null;
         }
 
         private void button1_Click(object sender, EventArgs e)

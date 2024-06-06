@@ -46,5 +46,10 @@ namespace Project_akhir_PBO
         {
             formKelassemua = null;
         }
+
+        private void FormMapel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
