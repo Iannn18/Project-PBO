@@ -30,44 +30,4 @@ namespace Project_akhir_PBO.Model
 			this.nama_kelas = nama_kelas;
 		}
 	}
-
-    public class Raport
-	{
-		[Key]
-        public int Id_Raport { get; set; }
-
-		[Required]
-        public string Semester { get; set; }
-
-		[ForeignKey("NISN")]
-		public int NISN { get; set; }
-        public virtual Siswa Siswa { get; set; }
-
-
-        public virtual ICollection<Detail_Raport> Detail_Raports { get; set; }
-    }
-
-    public class Detail_Raport
-	{
-		[Key]
-        public int Id_Detail_Raport { get; set; }
-
-		[ForeignKey("Kode_Mapel")]
-        public string Kode_Mapel { get; set; }
-
-		public virtual Mapel Mapel { get; set; }
-    }
-
-    public class Absensi
-	{
-		[Key]
-        public int Id_Absensi { get; set; }
-
-		[ForeignKey("NISN")]
-        public int NISN { get; set; }
-
-        public virtual Siswa Siswa { get; set; }
-
-		public DateTime Waktu_Hadir { get; set; }
-    }
 }
