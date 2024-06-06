@@ -154,6 +154,9 @@ namespace Project_akhir_PBO
 
         }
 
+        private void FormKelassemua_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

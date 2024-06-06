@@ -30,8 +30,8 @@
         {
             TextboxJudultugas = new TextBox();
             panel1 = new Panel();
-            textBoxTopikTugas = new TextBox();
             textBoxTulispertanyaan = new TextBox();
+            textBoxTopikTugas = new TextBox();
             buttonBuatTugas = new Button();
             buttonBatalbuattugas = new Button();
             panel1.SuspendLayout();
@@ -59,6 +59,16 @@
             panel1.Size = new Size(652, 425);
             panel1.TabIndex = 1;
             // 
+            // textBoxTulispertanyaan
+            // 
+            textBoxTulispertanyaan.BorderStyle = BorderStyle.None;
+            textBoxTulispertanyaan.Font = new Font("Segoe UI", 10F);
+            textBoxTulispertanyaan.Location = new Point(50, 137);
+            textBoxTulispertanyaan.Name = "textBoxTulispertanyaan";
+            textBoxTulispertanyaan.Size = new Size(538, 18);
+            textBoxTulispertanyaan.TabIndex = 2;
+            textBoxTulispertanyaan.Text = "Tulis Pertanyaan";
+            // 
             // textBoxTopikTugas
             // 
             textBoxTopikTugas.BackColor = Color.White;
@@ -69,16 +79,6 @@
             textBoxTopikTugas.Size = new Size(100, 20);
             textBoxTopikTugas.TabIndex = 1;
             textBoxTopikTugas.Text = " Topik";
-            // 
-            // textBoxTulispertanyaan
-            // 
-            textBoxTulispertanyaan.BorderStyle = BorderStyle.None;
-            textBoxTulispertanyaan.Font = new Font("Segoe UI", 10F);
-            textBoxTulispertanyaan.Location = new Point(50, 137);
-            textBoxTulispertanyaan.Name = "textBoxTulispertanyaan";
-            textBoxTulispertanyaan.Size = new Size(538, 18);
-            textBoxTulispertanyaan.TabIndex = 2;
-            textBoxTulispertanyaan.Text = "Tulis Pertanyaan";
             // 
             // buttonBuatTugas
             // 
@@ -104,6 +104,7 @@
             buttonBatalbuattugas.TabIndex = 3;
             buttonBatalbuattugas.Text = "Batal";
             buttonBatalbuattugas.UseVisualStyleBackColor = false;
+            buttonBatalbuattugas.Click += buttonBatalbuattugas_Click;
             // 
             // TambahTugas
             // 

@@ -12,6 +12,7 @@ namespace Project_akhir_PBO
 {
     public partial class Mapeltugas : Form
     {
+        private TambahTugas formTambahTugas;
         public Mapeltugas()
         {
             InitializeComponent();
@@ -36,5 +37,35 @@ namespace Project_akhir_PBO
         {
 
         }
+
+        private void buttonTambahTugas_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                string dataToShow = clickedButton.Text;
+
+                if (formTambahTugas == null)
+                {
+                    formTambahTugas = new TambahTugas();
+                    formTambahTugas.FormClosed += TambahTugas_FormClosed;
+                    formTambahTugas.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
+                    formTambahTugas.Dock = DockStyle.Fill;
+                    formTambahTugas.Show();
+                }
+                else
+                {
+                    formTambahTugas.Activate();
+                }
+
+                this.Close();
+            }
+        }
+        private void TambahTugas_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formTambahTugas = null;
+        }
+
+
     }
 }
