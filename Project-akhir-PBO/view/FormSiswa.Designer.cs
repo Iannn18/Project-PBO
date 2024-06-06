@@ -24,10 +24,10 @@
             btnEdit = new Button();
             btnHapus = new Button();
             dataGridView1 = new DataGridView();
-            label1 = new Label();
             clmNISNSiswa = new DataGridViewTextBoxColumn();
             clmNamaSiswa = new DataGridViewTextBoxColumn();
             clmKelas = new DataGridViewTextBoxColumn();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -67,6 +67,7 @@
             btnHapus.TabIndex = 2;
             btnHapus.Text = "Hapus";
             btnHapus.UseVisualStyleBackColor = false;
+            btnHapus.Click += btnHapus_Click;
             // 
             // dataGridView1
             // 
@@ -79,18 +80,6 @@
             dataGridView1.Size = new Size(1021, 528);
             dataGridView1.TabIndex = 3;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(501, 47);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(273, 65);
-            label1.TabIndex = 4;
-            label1.Text = "Data Siswa";
             // 
             // clmNISNSiswa
             // 
@@ -121,6 +110,18 @@
             clmKelas.MinimumWidth = 6;
             clmKelas.Name = "clmKelas";
             clmKelas.Width = 150;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(501, 47);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(273, 65);
+            label1.TabIndex = 4;
+            label1.Text = "Data Siswa";
             // 
             // FormSiswa
             // 
