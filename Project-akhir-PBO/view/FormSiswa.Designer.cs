@@ -2,15 +2,8 @@
 {
     partial class FormSiswa
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,12 +15,11 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             buttontambahsiswa = new Button();
             btnEdit = new Button();
             btnHapus = new Button();
@@ -43,9 +35,10 @@
             // 
             buttontambahsiswa.BackColor = Color.Green;
             buttontambahsiswa.ForeColor = Color.White;
-            buttontambahsiswa.Location = new Point(726, 430);
+            buttontambahsiswa.Location = new Point(1037, 717);
+            buttontambahsiswa.Margin = new Padding(4, 5, 4, 5);
             buttontambahsiswa.Name = "buttontambahsiswa";
-            buttontambahsiswa.Size = new Size(88, 47);
+            buttontambahsiswa.Size = new Size(126, 78);
             buttontambahsiswa.TabIndex = 0;
             buttontambahsiswa.Text = "Tambah";
             buttontambahsiswa.UseVisualStyleBackColor = false;
@@ -55,9 +48,10 @@
             // 
             btnEdit.BackColor = Color.CornflowerBlue;
             btnEdit.ForeColor = Color.Black;
-            btnEdit.Location = new Point(857, 430);
+            btnEdit.Location = new Point(1224, 717);
+            btnEdit.Margin = new Padding(4, 5, 4, 5);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(88, 47);
+            btnEdit.Size = new Size(126, 78);
             btnEdit.TabIndex = 1;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = false;
@@ -66,9 +60,10 @@
             // 
             btnHapus.BackColor = Color.Red;
             btnHapus.ForeColor = Color.Black;
-            btnHapus.Location = new Point(988, 430);
+            btnHapus.Location = new Point(1411, 717);
+            btnHapus.Margin = new Padding(4, 5, 4, 5);
             btnHapus.Name = "btnHapus";
-            btnHapus.Size = new Size(88, 47);
+            btnHapus.Size = new Size(126, 78);
             btnHapus.TabIndex = 2;
             btnHapus.Text = "Hapus";
             btnHapus.UseVisualStyleBackColor = false;
@@ -77,10 +72,11 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clmNISNSiswa, clmNamaSiswa, clmKelas });
-            dataGridView1.Location = new Point(361, 94);
+            dataGridView1.Location = new Point(516, 157);
+            dataGridView1.Margin = new Padding(4, 5, 4, 5);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(715, 317);
+            dataGridView1.Size = new Size(1021, 528);
             dataGridView1.TabIndex = 3;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -89,14 +85,18 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(351, 28);
+            label1.Location = new Point(501, 47);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(183, 45);
+            label1.Size = new Size(273, 65);
             label1.TabIndex = 4;
             label1.Text = "Data Siswa";
             // 
             // clmNISNSiswa
             // 
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            clmNISNSiswa.DefaultCellStyle = dataGridViewCellStyle1;
             clmNISNSiswa.HeaderText = "NISN";
             clmNISNSiswa.MinimumWidth = 6;
             clmNISNSiswa.Name = "clmNISNSiswa";
@@ -104,6 +104,9 @@
             // 
             // clmNamaSiswa
             // 
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
+            clmNamaSiswa.DefaultCellStyle = dataGridViewCellStyle2;
             clmNamaSiswa.HeaderText = "Nama";
             clmNamaSiswa.MinimumWidth = 6;
             clmNamaSiswa.Name = "clmNamaSiswa";
@@ -111,6 +114,9 @@
             // 
             // clmKelas
             // 
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            clmKelas.DefaultCellStyle = dataGridViewCellStyle3;
             clmKelas.HeaderText = "Kelas";
             clmKelas.MinimumWidth = 6;
             clmKelas.Name = "clmKelas";
@@ -118,15 +124,16 @@
             // 
             // FormSiswa
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1104, 505);
+            ClientSize = new Size(1577, 842);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(btnHapus);
             Controls.Add(btnEdit);
             Controls.Add(buttontambahsiswa);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FormSiswa";
             Text = "FormSiswa";
             Load += FormSiswa_Load;
