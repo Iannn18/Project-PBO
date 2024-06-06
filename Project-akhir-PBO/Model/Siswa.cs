@@ -12,7 +12,8 @@ namespace Project_akhir_PBO.Model
 	{
 		[Key]
 		public string NISN { get; set; }
-		public string Nomor_Telepon_Siswa { get; set; }
+		// public string Nomor_Telepon_Siswa { get; set; }
+		public string nama_kelas { get; set; }
 
 		[Required]
 
@@ -22,10 +23,11 @@ namespace Project_akhir_PBO.Model
 		public virtual ICollection<Raport> Raports { get; set; }
 		public virtual ICollection<Absensi> Absensis { get; set; }
 
-		public Siswa(string nama, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, string NISN, string Nomor_Telepon_Siswa) : base(nama, tanggal_lahir, tempat_lahir, alamat, nomor_telepon)
+		public Siswa(string nama, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, string NISN, string nama_kelas) : base(nama, tanggal_lahir, tempat_lahir, alamat, nomor_telepon)
 		{
 			this.NISN = NISN;
-			this.Nomor_Telepon_Siswa = Nomor_Telepon_Siswa;
+			// this.Nomor_Telepon_Siswa = Nomor_Telepon_Siswa;
+			this.nama_kelas = nama_kelas;
 		}
 	}
 

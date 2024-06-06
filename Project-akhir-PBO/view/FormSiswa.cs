@@ -3,16 +3,35 @@ using System.Data;
 using System.Windows.Forms;
 using Npgsql;
 using Project_akhir_PBO.DB;
+using Project_akhir_PBO.Context;
+using Project_akhir_PBO.Model;
 
 namespace Project_akhir_PBO
 {
     public partial class FormSiswa : Form
     {
         siswa_tambah formSiswaTambah;
+        siswaContext siswaContext;
 
         public FormSiswa()
         {
             InitializeComponent();
+
+            siswaContext = new siswaContext();
+
+            siswaContext.loadSiswa();
+
+            dataGridView1.Rows.Clear();
+
+            foreach(Siswa data in siswaContext.daftarSiswa!)
+            {
+                dataGridView1.Rows.Add(data.NISN, data.nama, data.nama_kelas);
+            }
+
+            // MessageBox.Show($"nisn: {siswaContext.daftarSiswa![0].NISN}, nama: {siswaContext.daftarSiswa![0].nama}");
+
+            // dataGridView1.DataSource = siswaContext.daftarSiswa;
+
         }
 
         private void buttontambahsiswa_Click(object sender, EventArgs e)
@@ -43,24 +62,13 @@ namespace Project_akhir_PBO
 
         private void FormSiswa_Load(object sender, EventArgs e)
         {
-            LoadData();
+
+            
         }
 
         private void LoadData()
         {
-            string query = @"
-                SELECT s.nisn AS NISN, s.nama_siswa AS Nama, k.nama_kelas AS Kelas
-                FROM siswa s
-                JOIN kelas k ON s.id_kelas = k.id_kelas";
-
-            DataTable dt = Database.queryExecutor(query);
-
-            dataGridView1.Rows.Clear();
-
-            foreach (DataRow row in dt.Rows)
-            {
-                dataGridView1.Rows.Add(row["NISN"], row["Nama"], row["Kelas"]);
-            }
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
