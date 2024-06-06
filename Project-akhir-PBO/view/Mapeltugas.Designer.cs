@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             label1 = new Label();
             label2 = new Label();
             dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewCheckBoxColumn();
-            Column3 = new DataGridViewCheckBoxColumn();
-            Column4 = new DataGridViewCheckBoxColumn();
-            Column5 = new DataGridViewCheckBoxColumn();
             panel1 = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
             buttonDetailtgs1 = new Button();
             buttonTambahTugas = new Button();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
@@ -49,7 +48,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            label1.Location = new Point(586, 36);
+            label1.Location = new Point(635, 34);
             label1.Name = "label1";
             label1.Size = new Size(120, 25);
             label1.TabIndex = 0;
@@ -59,7 +58,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(1023, 36);
+            label2.Location = new Point(941, 36);
             label2.Name = "label2";
             label2.Size = new Size(51, 23);
             label2.TabIndex = 1;
@@ -69,41 +68,12 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
-            dataGridView1.Location = new Point(576, 92);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2 });
+            dataGridView1.Location = new Point(635, 80);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(543, 561);
+            dataGridView1.Size = new Size(418, 561);
             dataGridView1.TabIndex = 2;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Nama Lengkap Siswa";
-            Column1.Name = "Column1";
-            Column1.Width = 200;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Hadir";
-            Column2.Name = "Column2";
-            Column2.Width = 75;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Izin";
-            Column3.Name = "Column3";
-            Column3.Width = 75;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Sakit";
-            Column4.Name = "Column4";
-            Column4.Width = 75;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Alfa";
-            Column5.Name = "Column5";
-            Column5.Width = 75;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // panel1
             // 
@@ -146,6 +116,24 @@
             buttonTambahTugas.Text = "+";
             buttonTambahTugas.UseVisualStyleBackColor = true;
             // 
+            // Column1
+            // 
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            Column1.HeaderText = "Nama Lengkap Siswa";
+            Column1.Name = "Column1";
+            Column1.Width = 250;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            Column2.DefaultCellStyle = dataGridViewCellStyle2;
+            Column2.HeaderText = "Status Kehadiran";
+            Column2.Items.AddRange(new object[] { "Hadir", "Ijin", "Sakit", "Alfa" });
+            Column2.Name = "Column2";
+            Column2.Resizable = DataGridViewTriState.True;
+            Column2.Width = 125;
+            // 
             // Mapeltugas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -172,15 +160,12 @@
         private Label label1;
         private Label label2;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewCheckBoxColumn Column2;
-        private DataGridViewCheckBoxColumn Column3;
-        private DataGridViewCheckBoxColumn Column4;
-        private DataGridViewCheckBoxColumn Column5;
         private Panel panel1;
         private Button buttonTugas1;
         private Button buttonTambahTugas;
         private FlowLayoutPanel flowLayoutPanel1;
         private Button buttonDetailtgs1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewComboBoxColumn Column2;
     }
 }

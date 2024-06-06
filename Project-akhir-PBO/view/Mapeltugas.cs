@@ -31,5 +31,10 @@ namespace Project_akhir_PBO
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
