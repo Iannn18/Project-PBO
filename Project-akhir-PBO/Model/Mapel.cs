@@ -24,6 +24,6 @@ namespace Project_akhir_PBO.Model
 
         public virtual ICollection<Penugasan> Penugasans { get; set; }
 
-        public virtual ICollection<Detail_Raport> Detail_Raports { get; set; }
+        public virtual ICollection<DetailRaport> DetailRaports { get; set; }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-    internal class DetailRaport
+    public class DetailRaport
     {
         [Key]
         public int Id_Detail_Raport { get; set; }
