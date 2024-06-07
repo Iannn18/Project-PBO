@@ -13,9 +13,15 @@ namespace Project_akhir_PBO.Model
         [Key]
         public int Id_Detail_Raport { get; set; }
 
-        [ForeignKey("Kode_Mapel")]
-        public string Kode_Mapel { get; set; }
+        [Required]
+        public int Kode_Mapel { get; set; }
 
+        [ForeignKey("Kode_Mapel")]
         public virtual Mapel Mapel { get; set; }
+
+        [Required]
+        public int Score { get; set; }
+
+        public virtual ICollection<Raport> Raports { get; set; }
     }
 }

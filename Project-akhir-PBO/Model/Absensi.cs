@@ -13,11 +13,19 @@ namespace Project_akhir_PBO.Model
         [Key]
         public int Id_Absensi { get; set; }
 
-        [ForeignKey("NISN")]
-        public int NISN { get; set; }
+        [Required]
+        public DateTime Waktu_Hadir { get; set; }
 
+        [Required]
+        [MaxLength(255)]
+        public string NISN { get; set; }
+
+        [ForeignKey("NISN")]
         public virtual Siswa Siswa { get; set; }
 
-        public DateTime Waktu_Hadir { get; set; }
+        public long Id_Status_Absen { get; set; }
+
+        [ForeignKey("Id_Status_Absen")]
+        public virtual StatusAbsensi StatusAbsensi { get; set; }
     }
 }

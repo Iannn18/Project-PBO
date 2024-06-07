@@ -7,17 +7,15 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-    public class Jabatan
+    public class StatusAbsensi
     {
         [Key]
-        public int Id_Jabatan { get; set; }
+        public int Id_Status_Absen { get; set; }
 
         [Required]
         [MaxLength(255)]
-        public string jabatan { get; set; }
+        public string Nama_Status { get; set; }
 
-        public string Deskripsi { get; set; }
-
-        public virtual ICollection<Staff> Staffs { get; set; }
+        public virtual ICollection<Absensi> Absensis { get; set; }
     }
 }
