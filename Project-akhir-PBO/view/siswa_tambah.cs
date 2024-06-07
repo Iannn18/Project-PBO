@@ -36,5 +36,40 @@ namespace Project_akhir_PBO
         {
 
         }
+
+        private void textBoxnamasiswa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxnisnsiswa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxtanggalsiswa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxnohpsiswa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxlahirsiswa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxalamatsiswa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxkelassiswa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

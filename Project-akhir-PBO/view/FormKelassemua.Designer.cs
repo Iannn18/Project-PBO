@@ -47,7 +47,7 @@ namespace Project_akhir_PBO
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(422, 27);
+            button2.Location = new Point(513, 58);
             button2.Margin = new Padding(6);
             button2.Name = "button2";
             button2.Size = new Size(179, 85);
@@ -63,7 +63,7 @@ namespace Project_akhir_PBO
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(648, 27);
+            button1.Location = new Point(739, 58);
             button1.Margin = new Padding(6);
             button1.Name = "button1";
             button1.Size = new Size(179, 85);
@@ -79,7 +79,7 @@ namespace Project_akhir_PBO
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(873, 27);
+            button3.Location = new Point(964, 58);
             button3.Margin = new Padding(6);
             button3.Name = "button3";
             button3.Size = new Size(179, 85);
@@ -95,7 +95,7 @@ namespace Project_akhir_PBO
             button4.FlatStyle = FlatStyle.Popup;
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(1090, 27);
+            button4.Location = new Point(1181, 58);
             button4.Margin = new Padding(6);
             button4.Name = "button4";
             button4.Size = new Size(179, 85);
@@ -111,7 +111,7 @@ namespace Project_akhir_PBO
             button5.FlatStyle = FlatStyle.Popup;
             button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(422, 142);
+            button5.Location = new Point(513, 173);
             button5.Margin = new Padding(6);
             button5.Name = "button5";
             button5.Size = new Size(179, 85);
@@ -127,7 +127,7 @@ namespace Project_akhir_PBO
             button6.FlatStyle = FlatStyle.Popup;
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(422, 254);
+            button6.Location = new Point(513, 285);
             button6.Margin = new Padding(6);
             button6.Name = "button6";
             button6.Size = new Size(179, 85);
@@ -143,7 +143,7 @@ namespace Project_akhir_PBO
             button7.FlatStyle = FlatStyle.Popup;
             button7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(422, 366);
+            button7.Location = new Point(513, 397);
             button7.Margin = new Padding(6);
             button7.Name = "button7";
             button7.Size = new Size(179, 85);
@@ -159,7 +159,7 @@ namespace Project_akhir_PBO
             button8.FlatStyle = FlatStyle.Popup;
             button8.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button8.ForeColor = Color.White;
-            button8.Location = new Point(422, 478);
+            button8.Location = new Point(513, 509);
             button8.Margin = new Padding(6);
             button8.Name = "button8";
             button8.Size = new Size(179, 85);
@@ -175,7 +175,7 @@ namespace Project_akhir_PBO
             button9.FlatStyle = FlatStyle.Popup;
             button9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button9.ForeColor = Color.White;
-            button9.Location = new Point(422, 594);
+            button9.Location = new Point(513, 625);
             button9.Margin = new Padding(6);
             button9.Name = "button9";
             button9.Size = new Size(179, 85);
@@ -191,7 +191,7 @@ namespace Project_akhir_PBO
             button10.FlatStyle = FlatStyle.Popup;
             button10.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button10.ForeColor = Color.White;
-            button10.Location = new Point(648, 142);
+            button10.Location = new Point(739, 173);
             button10.Margin = new Padding(6);
             button10.Name = "button10";
             button10.Size = new Size(179, 85);
@@ -207,7 +207,7 @@ namespace Project_akhir_PBO
             button11.FlatStyle = FlatStyle.Popup;
             button11.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button11.ForeColor = Color.White;
-            button11.Location = new Point(873, 142);
+            button11.Location = new Point(964, 173);
             button11.Margin = new Padding(6);
             button11.Name = "button11";
             button11.Size = new Size(179, 85);
@@ -223,7 +223,7 @@ namespace Project_akhir_PBO
             button12.FlatStyle = FlatStyle.Popup;
             button12.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button12.ForeColor = Color.White;
-            button12.Location = new Point(1090, 142);
+            button12.Location = new Point(1181, 173);
             button12.Margin = new Padding(6);
             button12.Name = "button12";
             button12.Size = new Size(179, 85);
@@ -239,7 +239,7 @@ namespace Project_akhir_PBO
             button13.FlatStyle = FlatStyle.Popup;
             button13.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button13.ForeColor = Color.White;
-            button13.Location = new Point(648, 254);
+            button13.Location = new Point(739, 285);
             button13.Margin = new Padding(6);
             button13.Name = "button13";
             button13.Size = new Size(179, 85);
@@ -255,7 +255,7 @@ namespace Project_akhir_PBO
             button14.FlatStyle = FlatStyle.Popup;
             button14.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button14.ForeColor = Color.White;
-            button14.Location = new Point(873, 254);
+            button14.Location = new Point(964, 285);
             button14.Margin = new Padding(6);
             button14.Name = "button14";
             button14.Size = new Size(179, 85);
@@ -271,7 +271,7 @@ namespace Project_akhir_PBO
             button15.FlatStyle = FlatStyle.Popup;
             button15.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button15.ForeColor = Color.White;
-            button15.Location = new Point(1090, 254);
+            button15.Location = new Point(1181, 285);
             button15.Margin = new Padding(6);
             button15.Name = "button15";
             button15.Size = new Size(179, 85);
@@ -287,7 +287,7 @@ namespace Project_akhir_PBO
             button16.FlatStyle = FlatStyle.Popup;
             button16.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button16.ForeColor = Color.White;
-            button16.Location = new Point(648, 366);
+            button16.Location = new Point(739, 397);
             button16.Margin = new Padding(6);
             button16.Name = "button16";
             button16.Size = new Size(179, 85);
@@ -303,7 +303,7 @@ namespace Project_akhir_PBO
             button17.FlatStyle = FlatStyle.Popup;
             button17.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button17.ForeColor = Color.White;
-            button17.Location = new Point(873, 366);
+            button17.Location = new Point(964, 397);
             button17.Margin = new Padding(6);
             button17.Name = "button17";
             button17.Size = new Size(179, 85);
@@ -319,7 +319,7 @@ namespace Project_akhir_PBO
             button18.FlatStyle = FlatStyle.Popup;
             button18.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button18.ForeColor = Color.White;
-            button18.Location = new Point(1090, 366);
+            button18.Location = new Point(1181, 397);
             button18.Margin = new Padding(6);
             button18.Name = "button18";
             button18.Size = new Size(179, 85);
@@ -335,7 +335,7 @@ namespace Project_akhir_PBO
             button19.FlatStyle = FlatStyle.Popup;
             button19.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button19.ForeColor = Color.White;
-            button19.Location = new Point(648, 478);
+            button19.Location = new Point(739, 509);
             button19.Margin = new Padding(6);
             button19.Name = "button19";
             button19.Size = new Size(179, 85);
@@ -351,7 +351,7 @@ namespace Project_akhir_PBO
             button20.FlatStyle = FlatStyle.Popup;
             button20.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button20.ForeColor = Color.White;
-            button20.Location = new Point(873, 478);
+            button20.Location = new Point(964, 509);
             button20.Margin = new Padding(6);
             button20.Name = "button20";
             button20.Size = new Size(179, 85);
@@ -367,7 +367,7 @@ namespace Project_akhir_PBO
             button21.FlatStyle = FlatStyle.Popup;
             button21.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button21.ForeColor = Color.White;
-            button21.Location = new Point(1090, 478);
+            button21.Location = new Point(1181, 509);
             button21.Margin = new Padding(6);
             button21.Name = "button21";
             button21.Size = new Size(179, 85);
@@ -383,7 +383,7 @@ namespace Project_akhir_PBO
             button22.FlatStyle = FlatStyle.Popup;
             button22.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button22.ForeColor = Color.White;
-            button22.Location = new Point(648, 594);
+            button22.Location = new Point(739, 625);
             button22.Margin = new Padding(6);
             button22.Name = "button22";
             button22.Size = new Size(179, 85);
@@ -399,7 +399,7 @@ namespace Project_akhir_PBO
             button23.FlatStyle = FlatStyle.Popup;
             button23.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button23.ForeColor = Color.White;
-            button23.Location = new Point(873, 594);
+            button23.Location = new Point(964, 625);
             button23.Margin = new Padding(6);
             button23.Name = "button23";
             button23.Size = new Size(179, 85);
@@ -415,7 +415,7 @@ namespace Project_akhir_PBO
             button24.FlatStyle = FlatStyle.Popup;
             button24.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button24.ForeColor = Color.White;
-            button24.Location = new Point(1090, 594);
+            button24.Location = new Point(1181, 625);
             button24.Margin = new Padding(6);
             button24.Name = "button24";
             button24.Size = new Size(179, 85);
@@ -427,9 +427,9 @@ namespace Project_akhir_PBO
             // 
             // FormKelassemua
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1578, 841);
             Controls.Add(button24);
             Controls.Add(button23);
             Controls.Add(button22);
