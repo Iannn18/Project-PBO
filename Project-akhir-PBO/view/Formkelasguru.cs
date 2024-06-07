@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Project_akhir_PBO.DB;
+using Project_akhir_PBO.view;
 
 namespace Project_akhir_PBO
 {
     public partial class Formkelasguru : Form
     {
+        private Rapor_siswa formRaporSiswa;
         public Formkelasguru()
         {
             InitializeComponent();
@@ -49,5 +51,35 @@ namespace Project_akhir_PBO
                 dataGridViewkelasguru.Columns.Remove("nama_siswa");
             }
         }
+
+        private void dataGridViewkelasguru_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                // Periksa jika kolom yang diklik adalah kolom yang diinginkan
+                if (dataGridViewkelasguru.Columns[e.ColumnIndex].Name == "NamaLengkap")
+                {
+                    if (formRaporSiswa == null || formRaporSiswa.IsDisposed)
+                    {
+                        formRaporSiswa = new Rapor_siswa();
+                        formRaporSiswa.FormClosed += Rapor_siswa_FormClosed;
+                        formRaporSiswa.MdiParent = this.MdiParent; // Set MDI parent
+                        formRaporSiswa.Dock = DockStyle.Fill;
+                        formRaporSiswa.Show();
+                    }
+                    else
+                    {
+                        formRaporSiswa.Activate();
+                    }
+                }
+            }
+        }
+
+        private void Rapor_siswa_FormClosed(object sender, FormClosedEventArgs e)
+        {
+     
+            formRaporSiswa = null;
+        }
+
     }
 }
