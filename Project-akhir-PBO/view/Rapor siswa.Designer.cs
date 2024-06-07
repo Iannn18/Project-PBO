@@ -95,6 +95,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Location = new Point(600, 29);
             label1.Name = "label1";
             label1.Size = new Size(56, 20);
@@ -104,6 +105,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = SystemColors.ActiveCaptionText;
             label2.Location = new Point(600, 49);
             label2.Name = "label2";
             label2.Size = new Size(46, 20);
@@ -113,6 +115,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = SystemColors.ActiveCaptionText;
             label3.Location = new Point(600, 69);
             label3.Name = "label3";
             label3.Size = new Size(77, 20);
@@ -122,6 +125,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = SystemColors.ActiveCaptionText;
             label4.Location = new Point(600, 89);
             label4.Name = "label4";
             label4.Size = new Size(101, 20);
@@ -131,6 +135,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = SystemColors.ActiveCaptionText;
             label5.Location = new Point(600, 109);
             label5.Name = "label5";
             label5.Size = new Size(64, 20);
@@ -140,6 +145,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.ForeColor = SystemColors.ActiveCaptionText;
             label6.Location = new Point(600, 129);
             label6.Name = "label6";
             label6.Size = new Size(71, 20);
@@ -149,6 +155,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.ForeColor = SystemColors.ActiveCaptionText;
             label7.Location = new Point(600, 158);
             label7.Name = "label7";
             label7.Size = new Size(131, 20);
@@ -158,6 +165,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.ForeColor = SystemColors.ActiveCaptionText;
             label8.Location = new Point(600, 187);
             label8.Name = "label8";
             label8.Size = new Size(112, 20);
@@ -167,6 +175,7 @@
             // label9
             // 
             label9.AutoSize = true;
+            label9.ForeColor = SystemColors.ActiveCaptionText;
             label9.Location = new Point(600, 216);
             label9.Name = "label9";
             label9.Size = new Size(137, 20);
@@ -176,6 +185,7 @@
             // label10
             // 
             label10.AutoSize = true;
+            label10.ForeColor = SystemColors.ActiveCaptionText;
             label10.Location = new Point(600, 245);
             label10.Name = "label10";
             label10.Size = new Size(137, 20);
@@ -185,6 +195,7 @@
             // label11
             // 
             label11.AutoSize = true;
+            label11.ForeColor = SystemColors.ActiveCaptionText;
             label11.Location = new Point(600, 275);
             label11.Name = "label11";
             label11.Size = new Size(52, 20);
@@ -194,6 +205,7 @@
             // label12
             // 
             label12.AutoSize = true;
+            label12.ForeColor = SystemColors.ActiveCaptionText;
             label12.Location = new Point(600, 306);
             label12.Name = "label12";
             label12.Size = new Size(54, 20);
@@ -203,6 +215,7 @@
             // label13
             // 
             label13.AutoSize = true;
+            label13.ForeColor = SystemColors.ActiveCaptionText;
             label13.Location = new Point(600, 335);
             label13.Name = "label13";
             label13.Size = new Size(64, 20);
@@ -212,6 +225,7 @@
             // label14
             // 
             label14.AutoSize = true;
+            label14.ForeColor = SystemColors.ActiveCaptionText;
             label14.Location = new Point(600, 364);
             label14.Name = "label14";
             label14.Size = new Size(52, 20);
@@ -221,6 +235,7 @@
             // label15
             // 
             label15.AutoSize = true;
+            label15.ForeColor = SystemColors.ActiveCaptionText;
             label15.Location = new Point(600, 393);
             label15.Name = "label15";
             label15.Size = new Size(57, 20);
@@ -230,6 +245,7 @@
             // label16
             // 
             label16.AutoSize = true;
+            label16.ForeColor = SystemColors.ActiveCaptionText;
             label16.Location = new Point(599, 422);
             label16.Name = "label16";
             label16.Size = new Size(97, 20);
@@ -239,6 +255,7 @@
             // label17
             // 
             label17.AutoSize = true;
+            label17.ForeColor = SystemColors.ActiveCaptionText;
             label17.Location = new Point(599, 451);
             label17.Name = "label17";
             label17.Size = new Size(64, 20);
@@ -248,6 +265,7 @@
             // label18
             // 
             label18.AutoSize = true;
+            label18.ForeColor = SystemColors.ActiveCaptionText;
             label18.Location = new Point(599, 482);
             label18.Name = "label18";
             label18.Size = new Size(144, 20);
@@ -257,6 +275,7 @@
             // label19
             // 
             label19.AutoSize = true;
+            label19.ForeColor = SystemColors.ActiveCaptionText;
             label19.Location = new Point(599, 515);
             label19.Name = "label19";
             label19.Size = new Size(92, 20);
@@ -266,6 +285,7 @@
             // label20
             // 
             label20.AutoSize = true;
+            label20.ForeColor = SystemColors.ActiveCaptionText;
             label20.Location = new Point(599, 535);
             label20.Name = "label20";
             label20.Size = new Size(53, 20);
@@ -275,6 +295,7 @@
             // label21
             // 
             label21.AutoSize = true;
+            label21.ForeColor = SystemColors.ActiveCaptionText;
             label21.Location = new Point(600, 566);
             label21.Name = "label21";
             label21.Size = new Size(39, 20);
@@ -284,6 +305,7 @@
             // label22
             // 
             label22.AutoSize = true;
+            label22.ForeColor = SystemColors.ActiveCaptionText;
             label22.Location = new Point(600, 628);
             label22.Name = "label22";
             label22.Size = new Size(47, 20);
@@ -293,6 +315,7 @@
             // label23
             // 
             label23.AutoSize = true;
+            label23.ForeColor = SystemColors.ActiveCaptionText;
             label23.Location = new Point(599, 597);
             label23.Name = "label23";
             label23.Size = new Size(48, 20);
@@ -302,6 +325,7 @@
             // nama
             // 
             nama.AutoSize = true;
+            nama.ForeColor = SystemColors.ActiveCaptionText;
             nama.Location = new Point(710, 29);
             nama.Name = "nama";
             nama.Size = new Size(58, 20);
@@ -311,6 +335,7 @@
             // nisn
             // 
             nisn.AutoSize = true;
+            nisn.ForeColor = SystemColors.ActiveCaptionText;
             nisn.Location = new Point(710, 49);
             nisn.Name = "nisn";
             nisn.Size = new Size(58, 20);
@@ -320,6 +345,7 @@
             // semester
             // 
             semester.AutoSize = true;
+            semester.ForeColor = SystemColors.ActiveCaptionText;
             semester.Location = new Point(710, 69);
             semester.Name = "semester";
             semester.Size = new Size(58, 20);
@@ -329,6 +355,7 @@
             // tanggalLahir
             // 
             tanggalLahir.AutoSize = true;
+            tanggalLahir.ForeColor = SystemColors.ActiveCaptionText;
             tanggalLahir.Location = new Point(710, 89);
             tanggalLahir.Name = "tanggalLahir";
             tanggalLahir.Size = new Size(58, 20);
@@ -338,6 +365,7 @@
             // alamat
             // 
             alamat.AutoSize = true;
+            alamat.ForeColor = SystemColors.ActiveCaptionText;
             alamat.Location = new Point(710, 109);
             alamat.Name = "alamat";
             alamat.Size = new Size(58, 20);
@@ -347,6 +375,7 @@
             // noTelp
             // 
             noTelp.AutoSize = true;
+            noTelp.ForeColor = SystemColors.ActiveCaptionText;
             noTelp.Location = new Point(710, 129);
             noTelp.Name = "noTelp";
             noTelp.Size = new Size(58, 20);
@@ -356,6 +385,7 @@
             // bahasa
             // 
             bahasa.AutoSize = true;
+            bahasa.ForeColor = SystemColors.ActiveCaptionText;
             bahasa.Location = new Point(803, 158);
             bahasa.Name = "bahasa";
             bahasa.Size = new Size(56, 20);
@@ -365,6 +395,7 @@
             // BIG
             // 
             BIG.AutoSize = true;
+            BIG.ForeColor = SystemColors.ActiveCaptionText;
             BIG.Location = new Point(803, 187);
             BIG.Name = "BIG";
             BIG.Size = new Size(58, 20);
@@ -374,6 +405,7 @@
             // matWa
             // 
             matWa.AutoSize = true;
+            matWa.ForeColor = SystemColors.ActiveCaptionText;
             matWa.Location = new Point(803, 216);
             matWa.Name = "matWa";
             matWa.Size = new Size(58, 20);
@@ -383,6 +415,7 @@
             // matMin
             // 
             matMin.AutoSize = true;
+            matMin.ForeColor = SystemColors.ActiveCaptionText;
             matMin.Location = new Point(803, 245);
             matMin.Name = "matMin";
             matMin.Size = new Size(58, 20);
@@ -392,6 +425,7 @@
             // fisika
             // 
             fisika.AutoSize = true;
+            fisika.ForeColor = SystemColors.ActiveCaptionText;
             fisika.Location = new Point(803, 275);
             fisika.Name = "fisika";
             fisika.Size = new Size(58, 20);
@@ -401,6 +435,7 @@
             // kimia
             // 
             kimia.AutoSize = true;
+            kimia.ForeColor = SystemColors.ActiveCaptionText;
             kimia.Location = new Point(803, 306);
             kimia.Name = "kimia";
             kimia.Size = new Size(58, 20);
@@ -410,6 +445,7 @@
             // biologi
             // 
             biologi.AutoSize = true;
+            biologi.ForeColor = SystemColors.ActiveCaptionText;
             biologi.Location = new Point(803, 335);
             biologi.Name = "biologi";
             biologi.Size = new Size(58, 20);
@@ -419,6 +455,7 @@
             // pkn
             // 
             pkn.AutoSize = true;
+            pkn.ForeColor = SystemColors.ActiveCaptionText;
             pkn.Location = new Point(803, 364);
             pkn.Name = "pkn";
             pkn.Size = new Size(58, 20);
@@ -428,6 +465,7 @@
             // pkwu
             // 
             pkwu.AutoSize = true;
+            pkwu.ForeColor = SystemColors.ActiveCaptionText;
             pkwu.Location = new Point(803, 393);
             pkwu.Name = "pkwu";
             pkwu.Size = new Size(58, 20);
@@ -437,6 +475,7 @@
             // seni
             // 
             seni.AutoSize = true;
+            seni.ForeColor = SystemColors.ActiveCaptionText;
             seni.Location = new Point(803, 422);
             seni.Name = "seni";
             seni.Size = new Size(58, 20);
@@ -446,6 +485,7 @@
             // agama
             // 
             agama.AutoSize = true;
+            agama.ForeColor = SystemColors.ActiveCaptionText;
             agama.Location = new Point(803, 451);
             agama.Name = "agama";
             agama.Size = new Size(58, 20);
@@ -455,6 +495,7 @@
             // penjas
             // 
             penjas.AutoSize = true;
+            penjas.ForeColor = SystemColors.ActiveCaptionText;
             penjas.Location = new Point(803, 482);
             penjas.Name = "penjas";
             penjas.Size = new Size(58, 20);
@@ -464,6 +505,7 @@
             // hadir
             // 
             hadir.AutoSize = true;
+            hadir.ForeColor = SystemColors.ActiveCaptionText;
             hadir.Location = new Point(803, 535);
             hadir.Name = "hadir";
             hadir.Size = new Size(58, 20);
@@ -473,6 +515,7 @@
             // izin
             // 
             izin.AutoSize = true;
+            izin.ForeColor = SystemColors.ActiveCaptionText;
             izin.Location = new Point(803, 566);
             izin.Name = "izin";
             izin.Size = new Size(58, 20);
@@ -503,6 +546,7 @@
             textBoxbahasa.Name = "textBoxbahasa";
             textBoxbahasa.Size = new Size(125, 27);
             textBoxbahasa.TabIndex = 48;
+            textBoxbahasa.TextChanged += textBoxbahasa_TextChanged;
             // 
             // textBoxBIG
             // 
@@ -611,11 +655,12 @@
             // 
             // button1
             // 
+            button1.ForeColor = SystemColors.ActiveCaptionText;
             button1.Location = new Point(481, 297);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 64;
-            button1.Text = "button1";
+            button1.Text = "Edit Data";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
