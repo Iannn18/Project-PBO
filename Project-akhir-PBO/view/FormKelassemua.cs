@@ -11,7 +11,7 @@ namespace Project_akhir_PBO
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonKelasXA_Click(object sender, EventArgs e)
         {
             Button clickedButton = sender as Button;
             if (clickedButton != null)
@@ -39,117 +39,117 @@ namespace Project_akhir_PBO
             formMapeltugas = null;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonKelasXB_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void buttonKelasXF_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonKelasXC_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonKelasXD_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void buttonKelasXH_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void buttonKelasXG_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonKelasXE_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void buttonKelasXI_A_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void buttonKelasXI_B_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void buttonKelasXI_C_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void buttonKelasXI_D_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        private void buttonKelasXI_F_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button17_Click(object sender, EventArgs e)
+        private void buttonKelasXI_G_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void buttonKelasXI_H_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button19_Click(object sender, EventArgs e)
+        private void buttonKelasXII_B_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button20_Click(object sender, EventArgs e)
+        private void buttonKelasXII_C_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button21_Click(object sender, EventArgs e)
+        private void buttonKelasXII_D_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button22_Click(object sender, EventArgs e)
+        private void buttonKelasXII_F_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button23_Click(object sender, EventArgs e)
+        private void buttonKelasXII_G_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button24_Click(object sender, EventArgs e)
+        private void buttonKelasXII_H_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void buttonKelasXI_E_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void buttonKelasXII_A_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void buttonKelasXII_E_Click(object sender, EventArgs e)
         {
 
         }

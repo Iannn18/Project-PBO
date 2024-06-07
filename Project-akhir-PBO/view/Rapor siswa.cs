@@ -34,10 +34,15 @@ namespace Project_akhir_PBO.view
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBoxbahasa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bahasa_Click(object sender, EventArgs e)
         {
 
         }

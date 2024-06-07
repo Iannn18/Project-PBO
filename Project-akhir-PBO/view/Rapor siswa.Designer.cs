@@ -391,6 +391,7 @@
             bahasa.Size = new Size(56, 20);
             bahasa.TabIndex = 32;
             bahasa.Text = "Bahasa";
+            bahasa.Click += bahasa_Click;
             // 
             // BIG
             // 
