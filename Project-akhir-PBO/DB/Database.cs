@@ -13,7 +13,7 @@ namespace Project_akhir_PBO.DB
         private static readonly string DB_HOST = "pgfana-fanaiven.e.aivencloud.com";
         private static readonly string DB_DATABASE = "pbo";
         private static readonly string DB_USERNAME = "pgfana";
-        private static readonly string DB_PASSWORD = "AVNS_LYMvQ33jMqpNeXW4Dhq$";
+        private static readonly string DB_PASSWORD = "AVNS_LYMvQ33jMqpNeXW4Dhq";
         private static readonly string DB_PORT = "18704";
         
         private static string connString = $"Host={DB_HOST};Username={DB_USERNAME};Password={DB_PASSWORD};Database={DB_DATABASE};Port={DB_PORT};SSL Mode=Require;";
