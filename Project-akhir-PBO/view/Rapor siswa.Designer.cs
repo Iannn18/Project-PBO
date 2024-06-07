@@ -73,23 +73,8 @@
             izin = new Label();
             sakit = new Label();
             alpa = new Label();
-            textBoxbahasa = new TextBox();
-            textBoxBIG = new TextBox();
-            textBoxmatWa = new TextBox();
-            textBoxmatMin = new TextBox();
-            textBoxfisika = new TextBox();
-            textBoxkimia = new TextBox();
-            textBoxbiologi = new TextBox();
-            textBoxpkn = new TextBox();
-            textBoxpkwu = new TextBox();
-            textBoxseni = new TextBox();
-            textBoxagama = new TextBox();
-            textBoxpenjas = new TextBox();
-            textBoxhadir = new TextBox();
-            textBoxizin = new TextBox();
-            textBoxsakit = new TextBox();
-            textBoxAlpa = new TextBox();
             button1 = new Button();
+            btnKembali = new Button();
             SuspendLayout();
             // 
             // label1
@@ -328,9 +313,9 @@
             nama.ForeColor = SystemColors.ActiveCaptionText;
             nama.Location = new Point(710, 29);
             nama.Name = "nama";
-            nama.Size = new Size(58, 20);
+            nama.Size = new Size(106, 20);
             nama.TabIndex = 26;
-            nama.Text = "label24";
+            nama.Text = "Dita Leni Rafia";
             // 
             // nisn
             // 
@@ -338,9 +323,9 @@
             nisn.ForeColor = SystemColors.ActiveCaptionText;
             nisn.Location = new Point(710, 49);
             nisn.Name = "nisn";
-            nisn.Size = new Size(58, 20);
+            nisn.Size = new Size(81, 20);
             nisn.TabIndex = 27;
-            nisn.Text = "label24";
+            nisn.Text = "123808123";
             // 
             // semester
             // 
@@ -348,9 +333,9 @@
             semester.ForeColor = SystemColors.ActiveCaptionText;
             semester.Location = new Point(710, 69);
             semester.Name = "semester";
-            semester.Size = new Size(58, 20);
+            semester.Size = new Size(25, 20);
             semester.TabIndex = 28;
-            semester.Text = "label24";
+            semester.Text = "13";
             // 
             // tanggalLahir
             // 
@@ -358,9 +343,9 @@
             tanggalLahir.ForeColor = SystemColors.ActiveCaptionText;
             tanggalLahir.Location = new Point(710, 89);
             tanggalLahir.Name = "tanggalLahir";
-            tanggalLahir.Size = new Size(58, 20);
+            tanggalLahir.Size = new Size(85, 20);
             tanggalLahir.TabIndex = 29;
-            tanggalLahir.Text = "label24";
+            tanggalLahir.Text = "2004-08-17";
             // 
             // alamat
             // 
@@ -368,9 +353,9 @@
             alamat.ForeColor = SystemColors.ActiveCaptionText;
             alamat.Location = new Point(710, 109);
             alamat.Name = "alamat";
-            alamat.Size = new Size(58, 20);
+            alamat.Size = new Size(154, 20);
             alamat.TabIndex = 30;
-            alamat.Text = "label24";
+            alamat.Text = "Jalan Kebaikan No. 10";
             // 
             // noTelp
             // 
@@ -378,9 +363,9 @@
             noTelp.ForeColor = SystemColors.ActiveCaptionText;
             noTelp.Location = new Point(710, 129);
             noTelp.Name = "noTelp";
-            noTelp.Size = new Size(58, 20);
+            noTelp.Size = new Size(65, 20);
             noTelp.TabIndex = 31;
-            noTelp.Text = "label24";
+            noTelp.Text = "0824434";
             // 
             // bahasa
             // 
@@ -543,123 +528,10 @@
             alpa.TabIndex = 47;
             alpa.Text = "label24";
             // 
-            // textBoxbahasa
-            // 
-            textBoxbahasa.Location = new Point(934, 151);
-            textBoxbahasa.Name = "textBoxbahasa";
-            textBoxbahasa.Size = new Size(125, 27);
-            textBoxbahasa.TabIndex = 48;
-            textBoxbahasa.TextChanged += textBoxbahasa_TextChanged;
-            // 
-            // textBoxBIG
-            // 
-            textBoxBIG.Location = new Point(934, 180);
-            textBoxBIG.Name = "textBoxBIG";
-            textBoxBIG.Size = new Size(125, 27);
-            textBoxBIG.TabIndex = 49;
-            // 
-            // textBoxmatWa
-            // 
-            textBoxmatWa.Location = new Point(934, 209);
-            textBoxmatWa.Name = "textBoxmatWa";
-            textBoxmatWa.Size = new Size(125, 27);
-            textBoxmatWa.TabIndex = 50;
-            // 
-            // textBoxmatMin
-            // 
-            textBoxmatMin.Location = new Point(934, 238);
-            textBoxmatMin.Name = "textBoxmatMin";
-            textBoxmatMin.Size = new Size(125, 27);
-            textBoxmatMin.TabIndex = 51;
-            // 
-            // textBoxfisika
-            // 
-            textBoxfisika.Location = new Point(934, 268);
-            textBoxfisika.Name = "textBoxfisika";
-            textBoxfisika.Size = new Size(125, 27);
-            textBoxfisika.TabIndex = 52;
-            // 
-            // textBoxkimia
-            // 
-            textBoxkimia.Location = new Point(934, 299);
-            textBoxkimia.Name = "textBoxkimia";
-            textBoxkimia.Size = new Size(125, 27);
-            textBoxkimia.TabIndex = 53;
-            // 
-            // textBoxbiologi
-            // 
-            textBoxbiologi.Location = new Point(934, 328);
-            textBoxbiologi.Name = "textBoxbiologi";
-            textBoxbiologi.Size = new Size(125, 27);
-            textBoxbiologi.TabIndex = 54;
-            // 
-            // textBoxpkn
-            // 
-            textBoxpkn.Location = new Point(934, 357);
-            textBoxpkn.Name = "textBoxpkn";
-            textBoxpkn.Size = new Size(125, 27);
-            textBoxpkn.TabIndex = 55;
-            // 
-            // textBoxpkwu
-            // 
-            textBoxpkwu.Location = new Point(934, 386);
-            textBoxpkwu.Name = "textBoxpkwu";
-            textBoxpkwu.Size = new Size(125, 27);
-            textBoxpkwu.TabIndex = 56;
-            // 
-            // textBoxseni
-            // 
-            textBoxseni.Location = new Point(934, 415);
-            textBoxseni.Name = "textBoxseni";
-            textBoxseni.Size = new Size(125, 27);
-            textBoxseni.TabIndex = 57;
-            // 
-            // textBoxagama
-            // 
-            textBoxagama.Location = new Point(934, 444);
-            textBoxagama.Name = "textBoxagama";
-            textBoxagama.Size = new Size(125, 27);
-            textBoxagama.TabIndex = 58;
-            // 
-            // textBoxpenjas
-            // 
-            textBoxpenjas.Location = new Point(934, 475);
-            textBoxpenjas.Name = "textBoxpenjas";
-            textBoxpenjas.Size = new Size(125, 27);
-            textBoxpenjas.TabIndex = 59;
-            // 
-            // textBoxhadir
-            // 
-            textBoxhadir.Location = new Point(934, 528);
-            textBoxhadir.Name = "textBoxhadir";
-            textBoxhadir.Size = new Size(125, 27);
-            textBoxhadir.TabIndex = 60;
-            // 
-            // textBoxizin
-            // 
-            textBoxizin.Location = new Point(934, 559);
-            textBoxizin.Name = "textBoxizin";
-            textBoxizin.Size = new Size(125, 27);
-            textBoxizin.TabIndex = 61;
-            // 
-            // textBoxsakit
-            // 
-            textBoxsakit.Location = new Point(934, 590);
-            textBoxsakit.Name = "textBoxsakit";
-            textBoxsakit.Size = new Size(125, 27);
-            textBoxsakit.TabIndex = 62;
-            // 
-            // textBoxAlpa
-            // 
-            textBoxAlpa.Location = new Point(934, 621);
-            textBoxAlpa.Name = "textBoxAlpa";
-            textBoxAlpa.Size = new Size(125, 27);
-            textBoxAlpa.TabIndex = 63;
-            // 
             // button1
             // 
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(481, 297);
+            button1.Location = new Point(482, 275);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 64;
@@ -667,28 +539,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // btnKembali
+            // 
+            btnKembali.Location = new Point(482, 326);
+            btnKembali.Name = "btnKembali";
+            btnKembali.Size = new Size(94, 29);
+            btnKembali.TabIndex = 65;
+            btnKembali.Text = "Kembali";
+            btnKembali.UseVisualStyleBackColor = true;
+            // 
             // Rapor_siswa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1262, 673);
+            Controls.Add(btnKembali);
             Controls.Add(button1);
-            Controls.Add(textBoxAlpa);
-            Controls.Add(textBoxsakit);
-            Controls.Add(textBoxizin);
-            Controls.Add(textBoxhadir);
-            Controls.Add(textBoxpenjas);
-            Controls.Add(textBoxagama);
-            Controls.Add(textBoxseni);
-            Controls.Add(textBoxpkwu);
-            Controls.Add(textBoxpkn);
-            Controls.Add(textBoxbiologi);
-            Controls.Add(textBoxkimia);
-            Controls.Add(textBoxfisika);
-            Controls.Add(textBoxmatMin);
-            Controls.Add(textBoxmatWa);
-            Controls.Add(textBoxBIG);
-            Controls.Add(textBoxbahasa);
             Controls.Add(alpa);
             Controls.Add(sakit);
             Controls.Add(izin);
@@ -773,7 +639,6 @@
         private Label tanggalLahir;
         private Label alamat;
         private Label noTelp;
-        private Label bahasa;
         private Label BIG;
         private Label matWa;
         private Label matMin;
@@ -789,22 +654,8 @@
         private Label izin;
         private Label sakit;
         private Label alpa;
-        private TextBox textBoxbahasa;
-        private TextBox textBoxBIG;
-        private TextBox textBoxmatWa;
-        private TextBox textBoxmatMin;
-        private TextBox textBoxfisika;
-        private TextBox textBoxkimia;
-        private TextBox textBoxbiologi;
-        private TextBox textBoxpkn;
-        private TextBox textBoxpkwu;
-        private TextBox textBoxseni;
-        private TextBox textBoxagama;
-        private TextBox textBoxpenjas;
-        private TextBox textBoxhadir;
-        private TextBox textBoxizin;
-        private TextBox textBoxsakit;
-        private TextBox textBoxAlpa;
         private Button button1;
+        public Label bahasa;
+        private Button btnKembali;
     }
 }

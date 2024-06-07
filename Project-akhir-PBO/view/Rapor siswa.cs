@@ -12,6 +12,7 @@ namespace Project_akhir_PBO.view
 {
     public partial class Rapor_siswa : Form
     {
+        EditRaporSiswa editRaporSiswa;
         public Rapor_siswa()
         {
             InitializeComponent();
@@ -34,7 +35,30 @@ namespace Project_akhir_PBO.view
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bahasa.Text = "90";
+            Button button = sender as Button;
+            if (button != null)
+            {
+                if (editRaporSiswa == null)
+                {
+                    editRaporSiswa = new EditRaporSiswa(this);
+                    editRaporSiswa.FormClosed += EditRaporSiswa_FormClosed;
+                    editRaporSiswa.MdiParent = this.MdiParent;
+                    editRaporSiswa.Dock = DockStyle.Fill;
+                    editRaporSiswa.Show();
+                }
+                else
+                {
+                    editRaporSiswa.Activate();
+                }
+
+                this.Hide();
+            }
+            //bahasa.Text = textBoxbahasa.Text;
+        }
+
+        private void EditRaporSiswa_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            editRaporSiswa = null;
         }
 
         private void textBoxbahasa_TextChanged(object sender, EventArgs e)
