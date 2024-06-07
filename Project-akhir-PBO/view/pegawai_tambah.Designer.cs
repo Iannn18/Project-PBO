@@ -28,259 +28,251 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            comboBox1 = new ComboBox();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox1 = new TextBox();
-            label5 = new Label();
-            button1 = new Button();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            panel1.SuspendLayout();
+            panelPegawai = new Panel();
+            labelJbtnPgw = new Label();
+            labelAlmtPgw = new Label();
+            labelTmptLahirPgw = new Label();
+            cBoxJabatan = new ComboBox();
+            tBoxAlamatPegawai = new TextBox();
+            tBoxTmptLahirPegawai = new TextBox();
+            tBoxTelponPegawai = new TextBox();
+            labelTelponPgw = new Label();
+            btnSubmitPgw = new Button();
+            labelTglLahirPgw = new Label();
+            labelNUPTK = new Label();
+            labelNamaPgw = new Label();
+            labelJudulHalaman = new Label();
+            tBoxTglLahirPegawai = new TextBox();
+            tBoxNUPTK = new TextBox();
+            tBoxNamaPegawai = new TextBox();
+            panelPegawai.SuspendLayout();
             SuspendLayout();
             // 
-            // panel1
+            // panelPegawai
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(textBox6);
-            panel1.Controls.Add(textBox5);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Location = new Point(730, 58);
-            panel1.Margin = new Padding(4, 5, 4, 5);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(793, 749);
-            panel1.TabIndex = 1;
-            panel1.Paint += panel1_Paint;
+            panelPegawai.BorderStyle = BorderStyle.FixedSingle;
+            panelPegawai.Controls.Add(labelJbtnPgw);
+            panelPegawai.Controls.Add(labelAlmtPgw);
+            panelPegawai.Controls.Add(labelTmptLahirPgw);
+            panelPegawai.Controls.Add(cBoxJabatan);
+            panelPegawai.Controls.Add(tBoxAlamatPegawai);
+            panelPegawai.Controls.Add(tBoxTmptLahirPegawai);
+            panelPegawai.Controls.Add(tBoxTelponPegawai);
+            panelPegawai.Controls.Add(labelTelponPgw);
+            panelPegawai.Controls.Add(btnSubmitPgw);
+            panelPegawai.Controls.Add(labelTglLahirPgw);
+            panelPegawai.Controls.Add(labelNUPTK);
+            panelPegawai.Controls.Add(labelNamaPgw);
+            panelPegawai.Controls.Add(labelJudulHalaman);
+            panelPegawai.Controls.Add(tBoxTglLahirPegawai);
+            panelPegawai.Controls.Add(tBoxNUPTK);
+            panelPegawai.Controls.Add(tBoxNamaPegawai);
+            panelPegawai.Location = new Point(584, 46);
+            panelPegawai.Margin = new Padding(3, 4, 3, 4);
+            panelPegawai.Name = "panelPegawai";
+            panelPegawai.Size = new Size(635, 600);
+            panelPegawai.TabIndex = 1;
+            panelPegawai.Paint += labelJudulHalaman_Paint;
             // 
-            // label8
+            // labelJbtnPgw
             // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.Black;
-            label8.Location = new Point(46, 457);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(72, 25);
-            label8.TabIndex = 16;
-            label8.Text = "Jabatan";
+            labelJbtnPgw.AutoSize = true;
+            labelJbtnPgw.ForeColor = Color.Black;
+            labelJbtnPgw.Location = new Point(37, 366);
+            labelJbtnPgw.Name = "labelJbtnPgw";
+            labelJbtnPgw.Size = new Size(60, 20);
+            labelJbtnPgw.TabIndex = 16;
+            labelJbtnPgw.Text = "Jabatan";
             // 
-            // label7
+            // labelAlmtPgw
             // 
-            label7.AutoSize = true;
-            label7.ForeColor = Color.Black;
-            label7.Location = new Point(46, 395);
-            label7.Margin = new Padding(4, 0, 4, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(68, 25);
-            label7.TabIndex = 15;
-            label7.Text = "Alamat";
+            labelAlmtPgw.AutoSize = true;
+            labelAlmtPgw.ForeColor = Color.Black;
+            labelAlmtPgw.Location = new Point(37, 316);
+            labelAlmtPgw.Name = "labelAlmtPgw";
+            labelAlmtPgw.Size = new Size(57, 20);
+            labelAlmtPgw.TabIndex = 15;
+            labelAlmtPgw.Text = "Alamat";
             // 
-            // label6
+            // labelTmptLahirPgw
             // 
-            label6.AutoSize = true;
-            label6.ForeColor = Color.Black;
-            label6.Location = new Point(43, 335);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(112, 25);
-            label6.TabIndex = 14;
-            label6.Text = "Tempat Lahir";
+            labelTmptLahirPgw.AutoSize = true;
+            labelTmptLahirPgw.ForeColor = Color.Black;
+            labelTmptLahirPgw.Location = new Point(34, 268);
+            labelTmptLahirPgw.Name = "labelTmptLahirPgw";
+            labelTmptLahirPgw.Size = new Size(95, 20);
+            labelTmptLahirPgw.TabIndex = 14;
+            labelTmptLahirPgw.Text = "Tempat Lahir";
             // 
-            // comboBox1
+            // cBoxJabatan
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Guru", "Staff TU" });
-            comboBox1.Location = new Point(239, 452);
-            comboBox1.Margin = new Padding(4, 5, 4, 5);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(511, 33);
-            comboBox1.TabIndex = 13;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            cBoxJabatan.FormattingEnabled = true;
+            cBoxJabatan.Items.AddRange(new object[] { "Guru", "Staff TU" });
+            cBoxJabatan.Location = new Point(191, 362);
+            cBoxJabatan.Margin = new Padding(3, 4, 3, 4);
+            cBoxJabatan.Name = "cBoxJabatan";
+            cBoxJabatan.Size = new Size(410, 28);
+            cBoxJabatan.TabIndex = 13;
+            cBoxJabatan.SelectedIndexChanged += cBoxJabatan_SelectedIndexChanged;
             // 
-            // textBox6
+            // tBoxAlamatPegawai
             // 
-            textBox6.Location = new Point(239, 390);
-            textBox6.Margin = new Padding(4, 5, 4, 5);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(511, 31);
-            textBox6.TabIndex = 12;
-            textBox6.TextChanged += textBox6_TextChanged;
+            tBoxAlamatPegawai.Location = new Point(191, 312);
+            tBoxAlamatPegawai.Margin = new Padding(3, 4, 3, 4);
+            tBoxAlamatPegawai.Name = "tBoxAlamatPegawai";
+            tBoxAlamatPegawai.Size = new Size(410, 27);
+            tBoxAlamatPegawai.TabIndex = 12;
+            tBoxAlamatPegawai.TextChanged += tBoxAlamatPegawai_TextChanged;
             // 
-            // textBox5
+            // tBoxTmptLahirPegawai
             // 
-            textBox5.Location = new Point(239, 330);
-            textBox5.Margin = new Padding(4, 5, 4, 5);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(511, 31);
-            textBox5.TabIndex = 11;
-            textBox5.TextChanged += textBox5_TextChanged;
+            tBoxTmptLahirPegawai.Location = new Point(191, 264);
+            tBoxTmptLahirPegawai.Margin = new Padding(3, 4, 3, 4);
+            tBoxTmptLahirPegawai.Name = "tBoxTmptLahirPegawai";
+            tBoxTmptLahirPegawai.Size = new Size(410, 27);
+            tBoxTmptLahirPegawai.TabIndex = 11;
+            tBoxTmptLahirPegawai.TextChanged += tBoxTmptLahirPegawai_TextChanged;
             // 
-            // textBox1
+            // tBoxTelponPegawai
             // 
-            textBox1.Location = new Point(239, 272);
-            textBox1.Margin = new Padding(4, 5, 4, 5);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(511, 31);
-            textBox1.TabIndex = 10;
-            textBox1.TextChanged += textBox1_TextChanged;
+            tBoxTelponPegawai.Location = new Point(191, 218);
+            tBoxTelponPegawai.Margin = new Padding(3, 4, 3, 4);
+            tBoxTelponPegawai.Name = "tBoxTelponPegawai";
+            tBoxTelponPegawai.Size = new Size(410, 27);
+            tBoxTelponPegawai.TabIndex = 10;
+            tBoxTelponPegawai.TextChanged += tBoxTelponPegawai_TextChanged;
             // 
-            // label5
+            // labelTelponPgw
             // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.Black;
-            label5.Location = new Point(46, 277);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(106, 25);
-            label5.TabIndex = 9;
-            label5.Text = "No. Telepon";
+            labelTelponPgw.AutoSize = true;
+            labelTelponPgw.ForeColor = Color.Black;
+            labelTelponPgw.Location = new Point(37, 222);
+            labelTelponPgw.Name = "labelTelponPgw";
+            labelTelponPgw.Size = new Size(89, 20);
+            labelTelponPgw.TabIndex = 9;
+            labelTelponPgw.Text = "No. Telepon";
             // 
-            // button1
+            // btnSubmitPgw
             // 
-            button1.BackColor = SystemColors.ActiveCaptionText;
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(17, 638);
-            button1.Margin = new Padding(4, 5, 4, 5);
-            button1.Name = "button1";
-            button1.Size = new Size(734, 48);
-            button1.TabIndex = 8;
-            button1.Text = "Submit";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnSubmitPgw.BackColor = SystemColors.ActiveCaptionText;
+            btnSubmitPgw.ForeColor = SystemColors.ButtonHighlight;
+            btnSubmitPgw.Location = new Point(14, 510);
+            btnSubmitPgw.Margin = new Padding(3, 4, 3, 4);
+            btnSubmitPgw.Name = "btnSubmitPgw";
+            btnSubmitPgw.Size = new Size(587, 38);
+            btnSubmitPgw.TabIndex = 8;
+            btnSubmitPgw.Text = "Submit";
+            btnSubmitPgw.UseVisualStyleBackColor = false;
+            btnSubmitPgw.Click += btnSubmitPgw_Click;
             // 
-            // label4
+            // labelTglLahirPgw
             // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.Black;
-            label4.Location = new Point(46, 222);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(115, 25);
-            label4.TabIndex = 7;
-            label4.Text = "Tanggal Lahir";
+            labelTglLahirPgw.AutoSize = true;
+            labelTglLahirPgw.ForeColor = Color.Black;
+            labelTglLahirPgw.Location = new Point(37, 178);
+            labelTglLahirPgw.Name = "labelTglLahirPgw";
+            labelTglLahirPgw.Size = new Size(97, 20);
+            labelTglLahirPgw.TabIndex = 7;
+            labelTglLahirPgw.Text = "Tanggal Lahir";
             // 
-            // label3
+            // labelNUPTK
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(46, 173);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(66, 25);
-            label3.TabIndex = 6;
-            label3.Text = "NUPTK";
+            labelNUPTK.AutoSize = true;
+            labelNUPTK.ForeColor = Color.Black;
+            labelNUPTK.Location = new Point(37, 138);
+            labelNUPTK.Name = "labelNUPTK";
+            labelNUPTK.Size = new Size(55, 20);
+            labelNUPTK.TabIndex = 6;
+            labelNUPTK.Text = "NUPTK";
             // 
-            // label2
+            // labelNamaPgw
             // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(46, 120);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(59, 25);
-            label2.TabIndex = 5;
-            label2.Text = "Nama";
+            labelNamaPgw.AutoSize = true;
+            labelNamaPgw.ForeColor = Color.Black;
+            labelNamaPgw.Location = new Point(37, 96);
+            labelNamaPgw.Name = "labelNamaPgw";
+            labelNamaPgw.Size = new Size(49, 20);
+            labelNamaPgw.TabIndex = 5;
+            labelNamaPgw.Text = "Nama";
             // 
-            // label1
+            // labelJudulHalaman
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(46, 17);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(328, 41);
-            label1.TabIndex = 4;
-            label1.Text = "Tambah Akun Pegawai";
-            label1.Click += label1_Click;
+            labelJudulHalaman.AutoSize = true;
+            labelJudulHalaman.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelJudulHalaman.ForeColor = Color.Black;
+            labelJudulHalaman.Location = new Point(37, 14);
+            labelJudulHalaman.Name = "labelJudulHalaman";
+            labelJudulHalaman.Size = new Size(273, 35);
+            labelJudulHalaman.TabIndex = 4;
+            labelJudulHalaman.Text = "Tambah Akun Pegawai";
+            labelJudulHalaman.Click += labelJudulHalaman_Click;
             // 
-            // textBox4
+            // tBoxTglLahirPegawai
             // 
-            textBox4.Font = new Font("Segoe UI", 8F);
-            textBox4.ForeColor = SystemColors.GrayText;
-            textBox4.Location = new Point(239, 217);
-            textBox4.Margin = new Padding(4, 5, 4, 5);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(511, 29);
-            textBox4.TabIndex = 3;
-            textBox4.TextChanged += textBox4_TextChanged;
+            tBoxTglLahirPegawai.Font = new Font("Segoe UI", 8F);
+            tBoxTglLahirPegawai.ForeColor = SystemColors.GrayText;
+            tBoxTglLahirPegawai.Location = new Point(191, 174);
+            tBoxTglLahirPegawai.Margin = new Padding(3, 4, 3, 4);
+            tBoxTglLahirPegawai.Name = "tBoxTglLahirPegawai";
+            tBoxTglLahirPegawai.Size = new Size(410, 25);
+            tBoxTglLahirPegawai.TabIndex = 3;
+            tBoxTglLahirPegawai.TextChanged += tBoxTglLahirPegawai_TextChanged;
             // 
-            // textBox3
+            // tBoxNUPTK
             // 
-            textBox3.Font = new Font("Segoe UI", 8F);
-            textBox3.ForeColor = SystemColors.GrayText;
-            textBox3.Location = new Point(239, 168);
-            textBox3.Margin = new Padding(4, 5, 4, 5);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(511, 29);
-            textBox3.TabIndex = 2;
-            textBox3.TextChanged += textBox3_TextChanged;
+            tBoxNUPTK.Font = new Font("Segoe UI", 8F);
+            tBoxNUPTK.ForeColor = SystemColors.GrayText;
+            tBoxNUPTK.Location = new Point(191, 134);
+            tBoxNUPTK.Margin = new Padding(3, 4, 3, 4);
+            tBoxNUPTK.Name = "tBoxNUPTK";
+            tBoxNUPTK.Size = new Size(410, 25);
+            tBoxNUPTK.TabIndex = 2;
+            tBoxNUPTK.TextChanged += tBoxNUPTK_TextChanged;
             // 
-            // textBox2
+            // tBoxNamaPegawai
             // 
-            textBox2.Font = new Font("Segoe UI", 8F);
-            textBox2.ForeColor = SystemColors.GrayText;
-            textBox2.Location = new Point(239, 120);
-            textBox2.Margin = new Padding(4, 5, 4, 5);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(511, 29);
-            textBox2.TabIndex = 1;
-            textBox2.TextChanged += textBox2_TextChanged;
+            tBoxNamaPegawai.Font = new Font("Segoe UI", 8F);
+            tBoxNamaPegawai.ForeColor = SystemColors.GrayText;
+            tBoxNamaPegawai.Location = new Point(191, 96);
+            tBoxNamaPegawai.Margin = new Padding(3, 4, 3, 4);
+            tBoxNamaPegawai.Name = "tBoxNamaPegawai";
+            tBoxNamaPegawai.Size = new Size(410, 25);
+            tBoxNamaPegawai.TabIndex = 1;
+            tBoxNamaPegawai.TextChanged += tBoxNamaPegawai_TextChanged;
             // 
             // Pegawai_tambah
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1806, 1135);
-            Controls.Add(panel1);
+            ClientSize = new Size(1445, 882);
+            Controls.Add(panelPegawai);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Pegawai_tambah";
             Text = "Pegawai_tambah";
             Load += Pegawai_tambah_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panelPegawai.ResumeLayout(false);
+            panelPegawai.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-        private Panel panel1;
-        private TextBox textBox2;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private Label label1;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private Button button1;
-        private Label label5;
-        private Label label6;
-        private ComboBox comboBox1;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox1;
-        private Label label7;
-        private Label label8;
+        private Panel panelPegawai;
+        private TextBox tBoxNamaPegawai;
+        private TextBox tBoxTglLahirPegawai;
+        private TextBox tBoxNUPTK;
+        private Label labelJudulHalaman;
+        private Label labelTglLahirPgw;
+        private Label labelNUPTK;
+        private Label labelNamaPgw;
+        private Button btnSubmitPgw;
+        private Label labelTelponPgw;
+        private Label labelTmptLahirPgw;
+        private ComboBox cBoxJabatan;
+        private TextBox tBoxAlamatPegawai;
+        private TextBox tBoxTmptLahirPegawai;
+        private TextBox tBoxTelponPegawai;
+        private Label labelAlmtPgw;
+        private Label labelJbtnPgw;
     }
 }

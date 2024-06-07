@@ -18,17 +18,17 @@ namespace Project_akhir_PBO
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void labelTglLahir_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labelHalaman_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panelEditPegawai_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -38,7 +38,7 @@ namespace Project_akhir_PBO
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnKembali_Click(object sender, EventArgs e)
         {
             //jika tombol ini di klik , maka akan kembali ke form pegawai
             Button button = sender as Button;
@@ -69,12 +69,67 @@ namespace Project_akhir_PBO
             formPegawai = null;
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void tBoxTmptLahirPgw_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         private void labelJabatan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxNamaPegawai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxNUPTK_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxTglLahirPgw_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxTeleponPgw_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxAlamatPgw_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBoxJabatan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNama_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNUPTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTelepon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTmptLahir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelAlamat_Click(object sender, EventArgs e)
         {
 
         }

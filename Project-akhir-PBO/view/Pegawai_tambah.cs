@@ -15,11 +15,11 @@ namespace Project_akhir_PBO
             this.formPegawai = formPegawai;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void labelJudulHalaman_Paint(object sender, PaintEventArgs e)
         {
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labelJudulHalaman_Click(object sender, EventArgs e)
         {
         }
 
@@ -27,43 +27,43 @@ namespace Project_akhir_PBO
         {
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void tBoxNamaPegawai_TextChanged(object sender, EventArgs e)
         {
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void tBoxNUPTK_TextChanged(object sender, EventArgs e)
         {
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void tBoxTglLahirPegawai_TextChanged(object sender, EventArgs e)
         {
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void tBoxTelponPegawai_TextChanged(object sender, EventArgs e)
         {
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void tBoxTmptLahirPegawai_TextChanged(object sender, EventArgs e)
         {
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void tBoxAlamatPegawai_TextChanged(object sender, EventArgs e)
         {
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void cBoxJabatan_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSubmitPgw_Click(object sender, EventArgs e)
         {
-            string nuptk = textBox3.Text;
-            string namaStaff = textBox2.Text;
-            DateTime tanggalLahir = DateTime.Parse(textBox4.Text);
-            string nomorTelepon = textBox1.Text;
-            string tempatLahir = textBox5.Text;
-            string alamat = textBox6.Text;
-            int idJabatan = comboBox1.SelectedIndex + 1;
+            string nuptk = tBoxNUPTK.Text;
+            string namaStaff = tBoxNamaPegawai.Text;
+            DateTime tanggalLahir = DateTime.Parse(tBoxTglLahirPegawai.Text);
+            string nomorTelepon = tBoxTelponPegawai.Text;
+            string tempatLahir = tBoxTmptLahirPegawai.Text;
+            string alamat = tBoxAlamatPegawai.Text;
+            int idJabatan = cBoxJabatan.SelectedIndex + 1;
 
             string confirmationMessage = $"Apakah Anda ingin menambahkan pegawai berikut?\n\n" +
                                          $"NUPTK: {nuptk}\n" +
@@ -72,7 +72,7 @@ namespace Project_akhir_PBO
                                          $"No. Telepon: {nomorTelepon}\n" +
                                          $"Tempat Lahir: {tempatLahir}\n" +
                                          $"Alamat: {alamat}\n" +
-                                         $"Jabatan: {comboBox1.SelectedItem.ToString()}";
+                                         $"Jabatan: {cBoxJabatan.SelectedItem.ToString()}";
 
             DialogResult dialogResult = MessageBox.Show(confirmationMessage, "Konfirmasi Penambahan Pegawai", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
