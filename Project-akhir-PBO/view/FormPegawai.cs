@@ -34,7 +34,7 @@ namespace Project_akhir_PBO
 
             foreach (DataRow row in dt.Rows)
             {
-                dataGridPegawai.Rows.Add("", row["Nama Pegawai"], row["NUPTK"], row["Jabatan"]);
+                dataGridPegawai.Rows.Add(row["Nama Pegawai"], row["NUPTK"], row["Jabatan"]);
             }
         }
 

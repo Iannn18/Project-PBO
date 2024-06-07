@@ -18,13 +18,11 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             labelJudul = new Label();
             tambahDataPegawai = new Button();
             dataGridPegawai = new DataGridView();
             hapusPegawai = new Button();
             editPegawai = new Button();
-            Status = new DataGridViewTextBoxColumn();
             NamaPegawai = new DataGridViewTextBoxColumn();
             NUPTK = new DataGridViewTextBoxColumn();
             Jabatan = new DataGridViewTextBoxColumn();
@@ -36,10 +34,9 @@
             labelJudul.AutoSize = true;
             labelJudul.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelJudul.ForeColor = Color.Black;
-            labelJudul.Location = new Point(450, 46);
-            labelJudul.Margin = new Padding(4, 0, 4, 0);
+            labelJudul.Location = new Point(360, 37);
             labelJudul.Name = "labelJudul";
-            labelJudul.Size = new Size(282, 43);
+            labelJudul.Size = new Size(233, 35);
             labelJudul.TabIndex = 0;
             labelJudul.Text = "Daftar Pegawai";
             // 
@@ -47,11 +44,10 @@
             // 
             tambahDataPegawai.BackColor = Color.Black;
             tambahDataPegawai.ForeColor = Color.White;
-            tambahDataPegawai.Location = new Point(849, 665);
-            tambahDataPegawai.Margin = new Padding(4, 4, 4, 4);
+            tambahDataPegawai.Location = new Point(679, 532);
             tambahDataPegawai.Name = "tambahDataPegawai";
-            tambahDataPegawai.Padding = new Padding(6, 6, 6, 6);
-            tambahDataPegawai.Size = new Size(200, 46);
+            tambahDataPegawai.Padding = new Padding(5, 5, 5, 5);
+            tambahDataPegawai.Size = new Size(160, 37);
             tambahDataPegawai.TabIndex = 3;
             tambahDataPegawai.Text = "Tambah Pegawai";
             tambahDataPegawai.UseVisualStyleBackColor = false;
@@ -60,12 +56,11 @@
             // dataGridPegawai
             // 
             dataGridPegawai.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridPegawai.Columns.AddRange(new DataGridViewColumn[] { Status, NamaPegawai, NUPTK, Jabatan });
-            dataGridPegawai.Location = new Point(594, 148);
-            dataGridPegawai.Margin = new Padding(4, 4, 4, 4);
+            dataGridPegawai.Columns.AddRange(new DataGridViewColumn[] { NamaPegawai, NUPTK, Jabatan });
+            dataGridPegawai.Location = new Point(475, 118);
             dataGridPegawai.Name = "dataGridPegawai";
             dataGridPegawai.RowHeadersWidth = 51;
-            dataGridPegawai.Size = new Size(876, 510);
+            dataGridPegawai.Size = new Size(701, 408);
             dataGridPegawai.TabIndex = 4;
             dataGridPegawai.CellContentClick += dataGridPegawai_CellContentClick;
             // 
@@ -73,11 +68,10 @@
             // 
             hapusPegawai.BackColor = Color.Black;
             hapusPegawai.ForeColor = Color.White;
-            hapusPegawai.Location = new Point(1270, 665);
-            hapusPegawai.Margin = new Padding(4, 4, 4, 4);
+            hapusPegawai.Location = new Point(1016, 532);
             hapusPegawai.Name = "hapusPegawai";
-            hapusPegawai.Padding = new Padding(6, 6, 6, 6);
-            hapusPegawai.Size = new Size(200, 46);
+            hapusPegawai.Padding = new Padding(5, 5, 5, 5);
+            hapusPegawai.Size = new Size(160, 37);
             hapusPegawai.TabIndex = 5;
             hapusPegawai.Text = "Hapus";
             hapusPegawai.UseVisualStyleBackColor = false;
@@ -86,32 +80,20 @@
             // 
             editPegawai.BackColor = Color.Black;
             editPegawai.ForeColor = Color.White;
-            editPegawai.Location = new Point(1062, 665);
-            editPegawai.Margin = new Padding(4, 4, 4, 4);
+            editPegawai.Location = new Point(850, 532);
             editPegawai.Name = "editPegawai";
-            editPegawai.Padding = new Padding(6, 6, 6, 6);
-            editPegawai.Size = new Size(200, 46);
+            editPegawai.Padding = new Padding(5, 5, 5, 5);
+            editPegawai.Size = new Size(160, 37);
             editPegawai.TabIndex = 6;
             editPegawai.Text = "Edit Data";
             editPegawai.UseVisualStyleBackColor = false;
             editPegawai.Click += editPegawai_Click;
             // 
-            // Status
+            // NamaPegawai
             // 
             dataGridViewCellStyle1.ForeColor = Color.Black;
             dataGridViewCellStyle1.SelectionForeColor = Color.Black;
-            Status.DefaultCellStyle = dataGridViewCellStyle1;
-            Status.HeaderText = "Status";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
-            Status.ReadOnly = true;
-            Status.Width = 125;
-            // 
-            // NamaPegawai
-            // 
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
-            NamaPegawai.DefaultCellStyle = dataGridViewCellStyle2;
+            NamaPegawai.DefaultCellStyle = dataGridViewCellStyle1;
             NamaPegawai.HeaderText = "Nama Pegawai";
             NamaPegawai.MinimumWidth = 6;
             NamaPegawai.Name = "NamaPegawai";
@@ -120,9 +102,9 @@
             // 
             // NUPTK
             // 
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            NUPTK.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
+            NUPTK.DefaultCellStyle = dataGridViewCellStyle2;
             NUPTK.HeaderText = "NUPTK";
             NUPTK.MinimumWidth = 6;
             NUPTK.Name = "NUPTK";
@@ -131,9 +113,9 @@
             // 
             // Jabatan
             // 
-            dataGridViewCellStyle4.ForeColor = Color.Black;
-            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
-            Jabatan.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            Jabatan.DefaultCellStyle = dataGridViewCellStyle3;
             Jabatan.HeaderText = "Jabatan";
             Jabatan.MinimumWidth = 6;
             Jabatan.Name = "Jabatan";
@@ -142,16 +124,15 @@
             // 
             // FormPegawai
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1578, 841);
+            ClientSize = new Size(1262, 673);
             Controls.Add(editPegawai);
             Controls.Add(hapusPegawai);
             Controls.Add(dataGridPegawai);
             Controls.Add(tambahDataPegawai);
             Controls.Add(labelJudul);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 4, 4, 4);
             Name = "FormPegawai";
             Text = "FormPegawai";
             Load += FormPegawai_Load;
@@ -165,7 +146,6 @@
         private DataGridView dataGridPegawai;
         private Button hapusPegawai;
         private Button editPegawai;
-        private DataGridViewTextBoxColumn Status;
         private DataGridViewTextBoxColumn NamaPegawai;
         private DataGridViewTextBoxColumn NUPTK;
         private DataGridViewTextBoxColumn Jabatan;
