@@ -14,20 +14,21 @@ namespace Project_akhir_PBO.Model
         public int Id_Tugas { get; set; }
 
         [Required]
+        [MaxLength(255)]
         public string Nama_Tugas { get; set; }
 
         public string Deskripsi_Tugas { get; set; }
 
-        [ForeignKey("Kode_Mapel")]
+        [Required]
         public int Kode_Mapel { get; set; }
 
+        [ForeignKey("Kode_Mapel")]
         public virtual Mapel Mapel { get; set; }
 
-        [ForeignKey("Id_Status")]
+        [Required]
         public int Id_Status { get; set; }
 
-        public virtual Status_Tugas Status_Tugas { get; set; }
-
-        public virtual ICollection<Penilaian> Penilaians { get; set; }
+        [ForeignKey("Id_Status")]
+        public virtual StatusTugas StatusTugas { get; set; }
     }
 }

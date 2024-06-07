@@ -33,12 +33,12 @@ namespace Project_akhir_PBO.Context
             return dataStatusTugas;
         }
 
-        public static void store(Status_Tugas statusTugasBaru)
+        public static void store(StatusTugas statusTugasBaru)
         {
             string query = $"INSERT INTO {table}(status_tugas) VALUES(@status_tugas)";
             NpgsqlParameter[] parameters =
             {
-            new NpgsqlParameter("@status_tugas", NpgsqlDbType.Varchar){Value = statusTugasBaru.Status},
+            new NpgsqlParameter("@status_tugas", NpgsqlDbType.Varchar){Value = statusTugasBaru.Status_Tugas},
         };
             Database.commandExecutor(query, parameters);
         }
@@ -53,12 +53,12 @@ namespace Project_akhir_PBO.Context
             Database.commandExecutor(query, parameters);
         }
 
-        public static void update(Status_Tugas statusTugasEdit)
+        public static void update(StatusTugas statusTugasEdit)
         {
             string query = $"UPDATE {table} SET status_tugas = @status_tugas WHERE id_status = @id";
             NpgsqlParameter[] parameters =
             {
-            new NpgsqlParameter("@status_tugas", NpgsqlDbType.Varchar){Value = statusTugasEdit.Status},
+            new NpgsqlParameter("@status_tugas", NpgsqlDbType.Varchar){Value = statusTugasEdit.Status_Tugas},
             new NpgsqlParameter("@id", NpgsqlDbType.Integer){Value = statusTugasEdit.Id_Status},
         };
             Database.commandExecutor(query, parameters);

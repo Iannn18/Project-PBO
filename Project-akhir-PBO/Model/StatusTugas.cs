@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-    public class Status_Tugas
+    public class StatusTugas
     {
         [Key]
         public int Id_Status { get; set; }
 
         [Required]
-        public string Status { get; set; }
+        [MaxLength(255)]
+        public string Status_Tugas { get; set; }
 
         public virtual ICollection<Penugasan> Penugasans { get; set; }
     }

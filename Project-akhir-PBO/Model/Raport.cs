@@ -14,13 +14,19 @@ namespace Project_akhir_PBO.Model
         public int Id_Raport { get; set; }
 
         [Required]
+        [MaxLength(255)]
         public string Semester { get; set; }
 
+        [Required]
+        [MaxLength(255)]
+        public string NISN { get; set; }
+
         [ForeignKey("NISN")]
-        public int NISN { get; set; }
         public virtual Siswa Siswa { get; set; }
 
+        public long Id_Detail_Raport { get; set; }
 
-        public virtual ICollection<DetailRaport> DetailRaports { get; set; }
+        [ForeignKey("Id_Detail_Raport")]
+        public virtual DetailRaport DetailRaport { get; set; }
     }
 }

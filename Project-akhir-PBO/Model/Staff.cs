@@ -8,23 +8,54 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-	public class Staff : Person
-	{
-		[Key]
-		public int NUPTK { get; set; }
+    public class Staff
+    {
+        private DateOnly tanggal_lahir;
+        private string nomor_telepon;
+        private int nUPTK;
+        private string jabatan;
 
-		[Required]
-
-		[ForeignKey("Id_Jabatan")]
-		// public int Id_Jabatan { get; set; }
-		public string jabatan { get; set; }
-
-
-        public Staff(string nama, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, int NUPTK, string jabatan) : base(nama, tanggal_lahir, tempat_lahir, alamat, nomor_telepon) 
+        public Staff(string Nama_Staff, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, int NUPTK, string jabatan)
         {
-            this.NUPTK = NUPTK;
+            this.Nama_Staff = Nama_Staff;
+            this.tanggal_lahir = tanggal_lahir;
+            Tempat_Lahir = tempat_lahir;
+            Alamat = alamat;
+            this.nomor_telepon = nomor_telepon;
+            nUPTK = NUPTK;
             this.jabatan = jabatan;
         }
-	}
+
+        [Key]
+        [MaxLength(255)]
+        public string NUPTK { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        public string Nama_Staff { get; set; }
+
+        [Required]
+        public DateTime Tanggal_Lahir { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        public string Nomor_Telepon_Staff { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        public string Tempat_Lahir { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        public string Alamat { get; set; }
+
+        public int Id_Jabatan { get; set; }
+
+        [ForeignKey("Id_Jabatan")]
+        public virtual Jabatan Jabatan { get; set; }
+
+        public virtual ICollection<Kelas> Kelas { get; set; }
+        public virtual ICollection<Mapel> Mapels { get; set; }
+    }
 
 }
