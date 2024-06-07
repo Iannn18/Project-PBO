@@ -34,23 +34,12 @@ namespace Project_akhir_PBO.view
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bahasa.Text = textBoxbahasa.Text;
-            BIG.Text = textBoxBIG.Text;
-            matWa.Text = textBoxmatWa.Text;
-            matMin.Text = textBoxmatMin.Text;
-            fisika.Text = textBoxfisika.Text;
-            kimia.Text = textBoxkimia.Text;
-            biologi.Text = textBoxbiologi.Text;
-            pkn.Text = textBoxpkn.Text;
-            pkwu.Text = textBoxpkwu.Text;
-            seni.Text = textBoxseni.Text;
-            penjas.Text = textBoxpenjas.Text;
-            agama.Text = textBoxagama.Text;
+            
+        }
 
-            hadir.Text = textBoxhadir.Text;
-            izin.Text = textBoxizin.Text;
-            sakit.Text = textBoxsakit.Text;
-            alpa.Text = textBoxAlpa.Text;
+        private void textBoxbahasa_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
