@@ -15,10 +15,10 @@ namespace Project_akhir_PBO
     public partial class Dashboard : Form
     {
         FormDashboard formDashboard;
-        FormKelassemua formKelas1;
+        FormKelas formKelas;
+        FormKelassemua formKelassemua;
         FormMapel formMapel;
         FormPegawai formPegawai;
-        Formkelasguru formkelasguru;
         FormSiswa formSiswa;
 
         userContext? user;
@@ -117,23 +117,23 @@ namespace Project_akhir_PBO
 
         private void btnKelas_Click(object sender, EventArgs e)
         {
-            if (formkelasguru == null)
+            if (formKelas == null)
             {
-                formkelasguru = new Formkelasguru();
-                formkelasguru.FormClosed += Formkelasguru_FormClosed;
-                formkelasguru.MdiParent = this;
-                formkelasguru.Dock = DockStyle.Fill;
-                formkelasguru.Show();
+                formKelas = new FormKelas();
+                formKelas.FormClosed += FormKelas_FormClosed;
+                formKelas.MdiParent = this;
+                formKelas.Dock = DockStyle.Fill;
+                formKelas.Show();
             }
             else
             {
-                formkelasguru.Activate();
+                formKelas.Activate();
             }
         }
 
-        private void Formkelasguru_FormClosed(object? sender, FormClosedEventArgs e)
+        private void FormKelas_FormClosed(object? sender, FormClosedEventArgs e)
         {
-            formkelasguru = null;
+            formKelas = null;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
