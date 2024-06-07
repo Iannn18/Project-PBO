@@ -17,12 +17,12 @@ namespace Project_akhir_PBO
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labelHalaman_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void submit_Click(object sender, EventArgs e)
         {
 
         }
@@ -32,7 +32,7 @@ namespace Project_akhir_PBO
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void labelTempatLahirSiswa_Click(object sender, EventArgs e)
         {
 
         }
@@ -68,6 +68,36 @@ namespace Project_akhir_PBO
         }
 
         private void comboBoxkelassiswa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNamaSiswa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNISNSiswa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTanggalLahirSiswa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNoTelpSiswa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelAlamatSiswa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelKelasSiswa_Click(object sender, EventArgs e)
         {
 
         }
