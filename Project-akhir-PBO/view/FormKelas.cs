@@ -12,6 +12,7 @@ namespace Project_akhir_PBO
 {
     public partial class FormKelas : Form
     {
+        private Formkelasguru formkelasguru;
         public FormKelas()
         {
             InitializeComponent();
@@ -19,7 +20,30 @@ namespace Project_akhir_PBO
 
         private void btnKelasXA_Click(object sender, EventArgs e)
         {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                string dataToShow = clickedButton.Text;
 
+                if (formkelasguru == null)
+                {
+                    formkelasguru = new Formkelasguru();
+                    formkelasguru.FormClosed += Formkelasguru_FormClosed;
+                    formkelasguru.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
+                    formkelasguru.Dock = DockStyle.Fill;
+                    formkelasguru.Show();
+                }
+                else
+                {
+                    formkelasguru.Activate();
+                }
+
+                this.Close();
+            }
+        }
+        private void Formkelasguru_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formkelasguru = null;
         }
 
         private void btnKelasXB_Click(object sender, EventArgs e)

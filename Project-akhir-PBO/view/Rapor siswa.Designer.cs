@@ -402,6 +402,7 @@
             BIG.Size = new Size(58, 20);
             BIG.TabIndex = 33;
             BIG.Text = "label25";
+            BIG.Click += BIG_Click;
             // 
             // matWa
             // 
@@ -422,6 +423,7 @@
             matMin.Size = new Size(58, 20);
             matMin.TabIndex = 35;
             matMin.Text = "label24";
+            matMin.Click += matMin_Click;
             // 
             // fisika
             // 
