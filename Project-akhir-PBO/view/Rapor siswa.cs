@@ -34,7 +34,7 @@ namespace Project_akhir_PBO.view
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            bahasa.Text = "90";
         }
 
         private void textBoxbahasa_TextChanged(object sender, EventArgs e)
@@ -43,6 +43,16 @@ namespace Project_akhir_PBO.view
         }
 
         private void bahasa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BIG_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void matMin_Click(object sender, EventArgs e)
         {
 
         }
