@@ -10,20 +10,17 @@ namespace Project_akhir_PBO.Model
 {
     public class Staff
     {
-        private DateOnly tanggal_lahir;
-        private string nomor_telepon;
-        private int nUPTK;
-        private string jabatan;
+        public Staff() { }
 
-        public Staff(string Nama_Staff, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, int NUPTK, string jabatan)
+        public Staff(string namaStaff, DateTime tanggalLahir, string tempatLahir, string alamat, string nomorTelepon, string nuptk, int idJabatan)
         {
-            this.Nama_Staff = Nama_Staff;
-            this.tanggal_lahir = tanggal_lahir;
-            Tempat_Lahir = tempat_lahir;
+            Nama_Staff = namaStaff;
+            Tanggal_Lahir = tanggalLahir;
+            Tempat_Lahir = tempatLahir;
             Alamat = alamat;
-            this.nomor_telepon = nomor_telepon;
-            nUPTK = NUPTK;
-            this.jabatan = jabatan;
+            Nomor_Telepon_Staff = nomorTelepon;
+            NUPTK = nuptk;
+            Id_Jabatan = idJabatan;
         }
 
         [Key]

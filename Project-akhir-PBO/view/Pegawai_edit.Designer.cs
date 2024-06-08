@@ -142,6 +142,7 @@
             btnSubmit.TabIndex = 8;
             btnSubmit.Text = "Ubah Data";
             btnSubmit.UseVisualStyleBackColor = false;
+            btnSubmit.Click += btnSubmit_Click;
             // 
             // btnKembali
             // 

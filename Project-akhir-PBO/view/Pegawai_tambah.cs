@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 using Npgsql;
+using Project_akhir_PBO.Context;
 using Project_akhir_PBO.DB;
+using Project_akhir_PBO.Model;
 
 namespace Project_akhir_PBO
 {
@@ -25,6 +27,7 @@ namespace Project_akhir_PBO
 
         private void Pegawai_tambah_Load(object sender, EventArgs e)
         {
+
         }
 
         private void tBoxNamaPegawai_TextChanged(object sender, EventArgs e)
@@ -54,9 +57,9 @@ namespace Project_akhir_PBO
         private void cBoxJabatan_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-
         private void btnSubmitPgw_Click(object sender, EventArgs e)
         {
+            // Retrieve input data from the form fields.
             string nuptk = tBoxNUPTK.Text;
             string namaStaff = tBoxNamaPegawai.Text;
             DateTime tanggalLahir = DateTime.Parse(tBoxTglLahirPegawai.Text);
@@ -65,6 +68,7 @@ namespace Project_akhir_PBO
             string alamat = tBoxAlamatPegawai.Text;
             int idJabatan = cBoxJabatan.SelectedIndex + 1;
 
+            // Construct the confirmation message.
             string confirmationMessage = $"Apakah Anda ingin menambahkan pegawai berikut?\n\n" +
                                          $"NUPTK: {nuptk}\n" +
                                          $"Nama: {namaStaff}\n" +
@@ -74,26 +78,27 @@ namespace Project_akhir_PBO
                                          $"Alamat: {alamat}\n" +
                                          $"Jabatan: {cBoxJabatan.SelectedItem.ToString()}";
 
+            // Show a confirmation dialog.
             DialogResult dialogResult = MessageBox.Show(confirmationMessage, "Konfirmasi Penambahan Pegawai", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (dialogResult == DialogResult.Yes)
             {
-                string query = "INSERT INTO staff (nuptk, nama_staff, tanggal_lahir, nomor_telepon_staff, tempat_lahir, alamat, id_jabatan) VALUES (@nuptk, @nama_staff, @tanggal_lahir, @nomor_telepon_staff, @tempat_lahir, @alamat, @id_jabatan)";
-
-                NpgsqlParameter[] parameters = new NpgsqlParameter[]
+                // Create a new Staff object with the input data.
+                Staff newStaff = new Staff
                 {
-                    new NpgsqlParameter("@nuptk", nuptk),
-                    new NpgsqlParameter("@nama_staff", namaStaff),
-                    new NpgsqlParameter("@tanggal_lahir", tanggalLahir),
-                    new NpgsqlParameter("@nomor_telepon_staff", nomorTelepon),
-                    new NpgsqlParameter("@tempat_lahir", tempatLahir),
-                    new NpgsqlParameter("@alamat", alamat),
-                    new NpgsqlParameter("@id_jabatan", idJabatan)
+                    NUPTK = nuptk,
+                    Nama_Staff = namaStaff,
+                    Tanggal_Lahir = tanggalLahir,
+                    Nomor_Telepon_Staff = nomorTelepon,
+                    Tempat_Lahir = tempatLahir,
+                    Alamat = alamat,
+                    Id_Jabatan = idJabatan
                 };
 
                 try
                 {
-                    Database.commandExecutor(query, parameters);
+                    // Insert the new staff member into the database using the StaffContext.
+                    StaffContext.store(newStaff);
                     MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close(); // Close the current form
                     formPegawai.LoadData(); // Reload data in FormPegawai
@@ -101,6 +106,7 @@ namespace Project_akhir_PBO
                 }
                 catch (Exception ex)
                 {
+                    // Handle any errors that occur during the insert operation.
                     MessageBox.Show("Terjadi kesalahan: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }

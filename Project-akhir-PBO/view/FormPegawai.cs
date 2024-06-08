@@ -1,4 +1,5 @@
-﻿using Project_akhir_PBO.DB;
+﻿using Project_akhir_PBO.Context;
+using Project_akhir_PBO.DB;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -98,6 +99,33 @@ namespace Project_akhir_PBO
             formPegawai_edit = null;
             this.Show(); // Show the current form when Pegawai_edit is closed
             LoadData(); // Reload the data to refresh the DataGridView
+        }
+
+        private void hapusPegawai_Click(object sender, EventArgs e)
+        {
+             // Get the NUPTK from the form
+            /*string nuptk = .Text;
+
+            if (string.IsNullOrEmpty(nuptk))
+            {
+                MessageBox.Show("Please enter a NUPTK.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                // Call the destroy method to delete the staff from the database
+                StaffContext.destroy(nuptk);
+                MessageBox.Show("Staff member has been successfully deleted!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Optionally, you can refresh the form or close it after the deletion
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                // Handle any errors that occur during the deletion operation
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }*/
         }
     }
 }
