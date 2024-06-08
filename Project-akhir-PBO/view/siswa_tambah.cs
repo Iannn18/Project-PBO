@@ -39,7 +39,7 @@ namespace Project_akhir_PBO
             { "XI-A", 9 }, { "XI-B", 10 }, { "XI-C", 11 }, { "XI-D", 12 }, { "XI-E", 13 }, { "XI-F", 14 }, { "XI-G", 15 }, { "XI-H", 16 },
             { "XII-A", 17 }, { "XII-B", 18 }, { "XII-C", 19 }, { "XII-D", 20 }, { "XII-E", 21 }, { "XII-F", 22 }, { "XII-G", 23 }, { "XII-H", 24 }
         };
-    // Retrieve input data from the form fields.
+            // Retrieve input data from the form fields.
             string nisn = textBoxnisnsiswa.Text;
             string namaSiswa = textBoxnamasiswa.Text;
             DateTime tanggalLahir = DateTime.ParseExact(textBoxtanggalsiswa.Text, "yyyy-MM-dd", CultureInfo.InvariantCulture);
