@@ -10,11 +10,24 @@ namespace Project_akhir_PBO.Model
 {
     public class Siswa
     {
-        public Siswa(string? NISN, string? nama, int? Id_kelas)
+        public Siswa() { }
+
+        public Siswa(string nisn, string namaSiswa, DateTime tanggalLahir, string tempatLahir, string alamat, string nomorTelepon, int idKelas)
         {
-            this.NISN = NISN;
-            this.Nama_Siswa = nama;
-            this.Id_Kelas = Id_Kelas;
+            NISN = nisn;
+            Nama_Siswa = namaSiswa;
+            Tanggal_Lahir = tanggalLahir;
+            Tempat_Lahir = tempatLahir;
+            Alamat = alamat;
+            Nomor_Telepon_Siswa = nomorTelepon;
+            Id_Kelas = idKelas;
+        }
+
+        public Siswa(string nisn, string namaSiswa, int idKelas)
+        {
+            NISN = nisn;
+            Nama_Siswa = namaSiswa;
+            Id_Kelas = idKelas;
         }
 
         [Key]
