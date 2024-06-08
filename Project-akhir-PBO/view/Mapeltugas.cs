@@ -15,40 +15,58 @@ namespace Project_akhir_PBO
     public partial class Mapeltugas : Form
     {
         private TambahTugas formTambahTugas;
-        public Mapeltugas()
+        string kelas;
+        string mapel;
+        bool isHapus = false;
+        public Mapeltugas(string kelas, string mapel)
         {
             InitializeComponent();
+            this.kelas = kelas;
+            this.mapel = mapel;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         // Define the event handler outside of Mapeltugas_Load
         private void ListTugasControll_Click(object sender, EventArgs e)
         {
             // Get the parent control of the sender and cast it to ListTugasControll
             ListTugasControll clickedControl = ((Control)sender).Parent as ListTugasControll;
-
-            if (clickedControl != null)
+            if (isHapus = true)
             {
-                // Show a MessageBox
-                MessageBox.Show($"You clicked {clickedControl.judul}" +
-                    $"\n{clickedControl.deskripsi}" +
-                    $"\n{clickedControl.id}" +
-                    $"\n{clickedControl.id_mapel}" +
-                    $"\n{clickedControl.id_status}");
+                DialogResult dialogResult = MessageBox.Show("Apakah anda yakin ingin menghapus tugas ini?", "Konfirmasi", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    PenugasanContext.destroy(Convert.ToInt32(clickedControl.id));
+                    MessageBox.Show("Tugas berhasil dihapus");
+                    flowLayoutPanel1.Controls.Clear();
+                    Mapeltugas_Load(sender, e);
+                    btHapus_Click(null,null);
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                }
+                else
+                {
+                    if (clickedControl != null)
+                    {
+                        // Show a MessageBox
+                        MessageBox.Show($"You clicked {clickedControl.judul}" +
+                            $"\n{clickedControl.deskripsi}" +
+                            $"\n{clickedControl.id}" +
+                            $"\n{clickedControl.id_mapel}" +
+                            $"\n{clickedControl.id_status}");
+                    }
+
+                }
             }
+
         }
 
         private void Mapeltugas_Load(object sender, EventArgs e)
         {
 
+            this.labelnamaMapel.Text = mapel;
+            this.labelKelas.Text = kelas;
+            this.lbGuru.Text = PenugasanContext.getGuru(mapel);
             ListTugasControll[] listTugasControlls = new ListTugasControll[10];
             void populateFlow()
             {
@@ -71,28 +89,6 @@ namespace Project_akhir_PBO
 
                     flowLayoutPanel1.Controls.Add(control);
                 }
-                /*                for (int i = 0; i < 10; i++)
-                                {
-                                    listTugasControlls[i] = new ListTugasControll();
-                                    listTugasControlls[i].judul = "Tugas " + i;
-                                    listTugasControlls[i].deskripsi = "Deskripsi Tugas " + i;
-                                    listTugasControlls[i].Name = "Tugas " + i;
-                                    listTugasControlls[i].Click += ListTugasControll_Click;
-                                    foreach (Control childControl in listTugasControlls[i].Controls)
-                                    {
-                                        childControl.Click += ListTugasControll_Click;
-                                    }
-
-                                    if (flowLayoutPanel1.Controls.Count < 0)
-                                    {
-                                        flowLayoutPanel1.Controls.Clear();
-                                    }
-                                    else
-                                    {
-
-                                        flowLayoutPanel1.Controls.Add(listTugasControlls[i]);
-                                    }
-                                }*/
             }
             populateFlow();
 
@@ -103,34 +99,45 @@ namespace Project_akhir_PBO
 
         }
 
-        private void buttonTambahTugas_Click(object sender, EventArgs e)
-        {
-            Button clickedButton = sender as Button;
-            if (clickedButton != null)
-            {
-                string dataToShow = clickedButton.Text;
 
-                if (formTambahTugas == null)
+
+        private void btTambah_Click(object sender, EventArgs e)
+        {
+            using (formTambahTugas = new TambahTugas(kelas, mapel))
+            {
+                formTambahTugas.ShowDialog();
+                string result = formTambahTugas.Result;
+                if (result == "Yes")
                 {
-                    formTambahTugas = new TambahTugas();
-                    formTambahTugas.FormClosed += TambahTugas_FormClosed;
-                    formTambahTugas.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
-                    formTambahTugas.Dock = DockStyle.Fill;
-                    formTambahTugas.Show();
+                    flowLayoutPanel1.Controls.Clear();
+                    Mapeltugas_Load(sender, e);
                 }
                 else
                 {
-                    formTambahTugas.Activate();
+                    MessageBox.Show("Tugas gagal dibuat");
                 }
 
-                this.Close();
+            }
+
+        }
+
+        private void btHapus_Click(object sender, EventArgs e)
+        {
+            isHapus = !isHapus;
+            if (isHapus == true)
+            {
+                btHapus.BackColor = Color.Red;
+                btHapus.Text = "Batal";
+                btHapus.ForeColor = Color.White;
+                lbTopTugas.Text = "Click Tugas Untuk Menghapus Tugas";
+            }
+            else
+            {
+                btHapus.BackColor = Color.White;
+                btHapus.Text = "Hapus";
+                btHapus.ForeColor = Color.Black;
+                lbTopTugas.Text = "Daftar Tugas";
             }
         }
-        private void TambahTugas_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            formTambahTugas = null;
-        }
-
-
     }
 }

@@ -20,7 +20,7 @@ namespace Project_akhir_PBO
 
                 if (formMapeltugas == null)
                 {
-                    formMapeltugas = new Mapeltugas();
+                    formMapeltugas = new Mapeltugas("Kelas XA","Bahasa Indonesia");
                     formMapeltugas.FormClosed += Mapeltugas_FormClosed;
                     formMapeltugas.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
                     formMapeltugas.Dock = DockStyle.Fill;
