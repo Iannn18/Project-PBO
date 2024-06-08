@@ -21,35 +21,33 @@ namespace Project_akhir_PBO.Context
         {
             this.daftarSiswa = new List<Siswa>();
 
-            // Corrected SQL query to include 'id_kelas'
             string query = @"
-                SELECT s.nisn, s.nama_siswa, k.id_kelas
-                FROM siswa s
-                JOIN kelas k ON s.id_kelas = k.id_kelas";
+        SELECT s.nisn, s.nama_siswa, k.id_kelas, k.nama_kelas
+        FROM siswa s
+        JOIN kelas k ON s.id_kelas = k.id_kelas";
 
             DataTable dt = Database.queryExecutor(query);
-
-            // Checking the DataTable content
-            foreach (DataColumn column in dt.Columns)
-            {
-                Console.WriteLine(column.ColumnName);  // This will help confirm the actual columns returned
-            }
 
             foreach (DataRow row in dt.Rows)
             {
                 try
                 {
-                    // Parse the 'id_kelas' as an integer
                     int idKelas = int.Parse(row["id_kelas"].ToString());
-                    daftarSiswa.Add(new Siswa(row["nisn"].ToString(), row["nama_siswa"].ToString(), idKelas));
+                    string namaKelas = row["nama_kelas"].ToString();
+
+                    Siswa siswa = new Siswa(row["nisn"].ToString(), row["nama_siswa"].ToString(), idKelas);
+                    siswa.Kelas = new Kelas { Id_Kelas = idKelas, Nama_Kelas = namaKelas };
+
+                    daftarSiswa.Add(siswa);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine("Error processing row: " + ex.Message);
-                    // Handle exception, e.g., log the error or notify the user
                 }
             }
         }
+
+
 
         private static string table = "siswa";
 

@@ -43,7 +43,8 @@ namespace Project_akhir_PBO.Model
         public int Id_Kelas { get; set; }
 
         [ForeignKey("Id_Kelas")]
-        public virtual Kelas Kelas { get; set; }
+
+        public Kelas Kelas { get; set; }
 
         public virtual ICollection<Absensi> Absensis { get; set; }
         public virtual ICollection<Raport> Raports { get; set; }
