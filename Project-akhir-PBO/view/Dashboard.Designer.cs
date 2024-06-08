@@ -98,9 +98,6 @@
             flowLayoutPanel1.Controls.Add(pictureBox2);
             flowLayoutPanel1.Controls.Add(label1);
             flowLayoutPanel1.Controls.Add(btnDashboard);
-            flowLayoutPanel1.Controls.Add(GuruContainer);
-            flowLayoutPanel1.Controls.Add(AdminContainer);
-            flowLayoutPanel1.Controls.Add(btnLogOut);
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(350, 673);
@@ -109,9 +106,6 @@
             // 
             // GuruContainer
             // 
-            GuruContainer.Controls.Add(btnGuru);
-            GuruContainer.Controls.Add(btnKelas);
-            GuruContainer.Controls.Add(btnMapel);
             GuruContainer.Location = new Point(25, 145);
             GuruContainer.Margin = new Padding(25, 10, 0, 0);
             GuruContainer.Name = "GuruContainer";
@@ -174,9 +168,6 @@
             // 
             // AdminContainer
             // 
-            AdminContainer.Controls.Add(btnAdmin);
-            AdminContainer.Controls.Add(btnPegawai);
-            AdminContainer.Controls.Add(btnSiswa);
             AdminContainer.Location = new Point(25, 205);
             AdminContainer.Margin = new Padding(25, 10, 0, 0);
             AdminContainer.Name = "AdminContainer";
