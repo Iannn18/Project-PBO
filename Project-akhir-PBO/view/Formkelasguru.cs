@@ -3,11 +3,13 @@ using System.Data;
 using System.Windows.Forms;
 using Npgsql;
 using Project_akhir_PBO.DB;
+using Project_akhir_PBO.view;
 
 namespace Project_akhir_PBO
 {
     public partial class Formkelasguru : Form
     {
+        Rapor_siswa rapor_siswa;
         private string kelas;
         private int idKelas;
 
@@ -84,5 +86,33 @@ namespace Project_akhir_PBO
             // Handle the data error
             e.ThrowException = false;
         }
+
+        private void dataGridViewkelasguru_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Pastikan klik bukan pada header atau kolom yang tidak valid
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                // Logika untuk menampilkan form Rapor_siswa
+                if (rapor_siswa == null || rapor_siswa.IsDisposed)
+                {
+                    rapor_siswa = new Rapor_siswa();
+                    rapor_siswa.FormClosed += Rapor_siswa_FormClosed;
+                    rapor_siswa.MdiParent = this.MdiParent; // Set MdiParent to the parent of Formkelasguru
+                    rapor_siswa.Dock = DockStyle.Fill;
+                    rapor_siswa.Show();
+                }
+                else
+                {
+                    rapor_siswa.Activate();
+                }
+            }
+        }
+
+        private void Rapor_siswa_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            rapor_siswa = null;
+        }
+
+
     }
 }
