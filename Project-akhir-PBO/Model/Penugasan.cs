@@ -21,14 +21,15 @@ namespace Project_akhir_PBO.Model
 
         [Required]
         public int Kode_Mapel { get; set; }
+        [Required]
+        public int Id_Status { get; set; }
+
 
         [ForeignKey("Kode_Mapel")]
         public virtual Mapel Mapel { get; set; }
 
-        [Required]
-        public int Id_Status { get; set; }
-
         [ForeignKey("Id_Status")]
         public virtual StatusTugas StatusTugas { get; set; }
+
     }
 }

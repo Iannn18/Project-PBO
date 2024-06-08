@@ -22,6 +22,8 @@ namespace Project_akhir_PBO.Context
             return dataPenugasan;
         }
 
+        
+
         public static DataTable show(int id)
         {
             string query = $"SELECT * FROM {table} WHERE id_tugas = @id";
@@ -72,13 +74,38 @@ namespace Project_akhir_PBO.Context
 
         public static string getGuru(string mapel)
         {
-            string query = $"select staff.nama_staff from penugasan join mapel on mapel.kode_mapel = penugasan.kode_mapel join staff on staff.nuptk = mapel.nuptk where mapel.nama_mapel = @mapel";
+            string query = $"select DISTINCT s.nama_staff from mapel m join staff s on s.nuptk = m.nuptk where m.nama_mapel = @mapel";
             NpgsqlParameter[] parameters =
             {
                 new NpgsqlParameter("@mapel", NpgsqlDbType.Varchar){Value = mapel},
                 };
             DataTable dataGuru = Database.queryExecutor(query, parameters);
-            return dataGuru.Rows[0]["nama_staff"].ToString();
+            if (dataGuru.Rows.Count > 0)
+            {
+                return dataGuru.Rows[0]["nama_staff"].ToString();
+            }
+            else
+            {
+                return null; // or an appropriate default value
+            }
+        }
+        public static DataTable getTugasByMapel()
+        {
+            string query = $"select p.id_tugas,p.nama_tugas,p.deskripsi_tugas,p.kode_mapel,p.id_status from penugasan p join mapel m on m.kode_mapel = p.kode_mapel where m.nama_mapel = @mapel order by p.nama_tugas";
+            NpgsqlParameter[] parameters =
+            {
+                new NpgsqlParameter("@mapel", NpgsqlDbType.Varchar){Value = MapelContext.cmapel},
+            };
+            DataTable dataTugas = Database.queryExecutor(query,parameters);
+/*            DataTable kosoong = new DataTable();
+*/            if (dataTugas.Rows.Count > 0)
+            {
+                return dataTugas;
+            }
+            else
+            {
+                return null;
+            }
         }
 
     }

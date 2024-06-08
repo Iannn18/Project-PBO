@@ -13,12 +13,24 @@ namespace Project_akhir_PBO.Context
 {
     internal class MapelContext
     {
+        public static string cmapel = "";
         private static string table = "mapel";
 
         public static DataTable all()
         {
             string query = $"SELECT * FROM {table}";
             DataTable dataMapel = Database.queryExecutor(query);
+            return dataMapel;
+        }
+        public static DataTable getByMapelKelas(string mapel,string kelas)
+        {
+            string query = $"select m.kode_mapel,m.nama_mapel,m.deskripsi_mapel,m.id_kelas,m.nuptk from mapel m join kelas k ON k.id_kelas = m.id_kelas where k.nama_kelas = @kelas and m.nama_mapel = @mapel";
+            NpgsqlParameter[] parameters =
+            {
+                new NpgsqlParameter("@mapel", NpgsqlDbType.Varchar){Value = mapel},
+                new NpgsqlParameter("@kelas", NpgsqlDbType.Varchar){Value = kelas},
+            };
+            DataTable dataMapel = Database.queryExecutor(query, parameters);
             return dataMapel;
         }
 

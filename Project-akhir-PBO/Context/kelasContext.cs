@@ -13,6 +13,7 @@ namespace Project_akhir_PBO.Context
 {
     internal class KelasContext
     {
+        public static string ckelas = "";
         private static string table = "kelas";
 
         public static DataTable all()

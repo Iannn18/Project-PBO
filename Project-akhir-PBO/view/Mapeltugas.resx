@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label4.Text" xml:space="preserve">
+    <value>- Untuk mengganti status : Click Tugas
+   Hijau ( Sudah Selesai )
+   Putih ( Belum Selesai )
+- Untuk menghapus Click Tombol Hapus 
+   kemudian Click Tugas yang ingin dihapus
+- Untuk menambah data Click Tombol Tambah
+</value>
+  </data>
 </root>
