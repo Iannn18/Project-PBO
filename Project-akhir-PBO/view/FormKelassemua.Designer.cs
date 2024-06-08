@@ -15,476 +15,477 @@ namespace Project_akhir_PBO
 
         private void InitializeComponent()
         {
-            button2 = new Button();
-            button1 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            button16 = new Button();
-            button17 = new Button();
-            button18 = new Button();
-            button19 = new Button();
-            button20 = new Button();
-            button21 = new Button();
-            button22 = new Button();
-            button23 = new Button();
-            button24 = new Button();
+            buttonKelasXA = new Button();
+            buttonKelasXB = new Button();
+            buttonKelasXC = new Button();
+            buttonKelasXD = new Button();
+            buttonKelasXE = new Button();
+            buttonKelasXI_A = new Button();
+            buttonKelasXI_E = new Button();
+            buttonKelasXII_A = new Button();
+            buttonKelasXII_E = new Button();
+            buttonKelasXF = new Button();
+            buttonKelasXG = new Button();
+            buttonKelasXH = new Button();
+            buttonKelasXI_B = new Button();
+            buttonKelasXI_C = new Button();
+            buttonKelasXI_D = new Button();
+            buttonKelasXI_F = new Button();
+            buttonKelasXI_G = new Button();
+            buttonKelasXI_H = new Button();
+            buttonKelasXII_B = new Button();
+            buttonKelasXII_C = new Button();
+            buttonKelasXII_D = new Button();
+            buttonKelasXII_F = new Button();
+            buttonKelasXII_G = new Button();
+            buttonKelasXII_H = new Button();
             SuspendLayout();
             // 
-            // button2
+            // buttonKelasXA
             // 
-            button2.BackColor = Color.Black;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(519, 74);
-            button2.Margin = new Padding(6);
-            button2.Name = "button2";
-            button2.Size = new Size(179, 85);
-            button2.TabIndex = 12;
-            button2.Text = "Kelas X A";
-            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            buttonKelasXA.BackColor = Color.Black;
+            buttonKelasXA.FlatStyle = FlatStyle.Popup;
+            buttonKelasXA.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXA.ForeColor = Color.White;
+            buttonKelasXA.Location = new Point(513, 58);
+            buttonKelasXA.Margin = new Padding(6);
+            buttonKelasXA.Name = "buttonKelasXA";
+            buttonKelasXA.Size = new Size(179, 85);
+            buttonKelasXA.TabIndex = 12;
+            buttonKelasXA.Text = "Kelas X A";
+            buttonKelasXA.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXA.UseVisualStyleBackColor = false;
+            buttonKelasXA.Click += buttonKelasXA_Click;
             // 
-            // button1
+            // buttonKelasXB
             // 
-            button1.BackColor = Color.Black;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(745, 74);
-            button1.Margin = new Padding(6);
-            button1.Name = "button1";
-            button1.Size = new Size(179, 85);
-            button1.TabIndex = 13;
-            button1.Text = "Kelas X B";
-            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            buttonKelasXB.BackColor = Color.Black;
+            buttonKelasXB.FlatStyle = FlatStyle.Popup;
+            buttonKelasXB.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXB.ForeColor = Color.White;
+            buttonKelasXB.Location = new Point(739, 58);
+            buttonKelasXB.Margin = new Padding(6);
+            buttonKelasXB.Name = "buttonKelasXB";
+            buttonKelasXB.Size = new Size(179, 85);
+            buttonKelasXB.TabIndex = 13;
+            buttonKelasXB.Text = "Kelas X B";
+            buttonKelasXB.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXB.UseVisualStyleBackColor = false;
+            buttonKelasXB.Click += buttonKelasXB_Click;
             // 
-            // button3
+            // buttonKelasXC
             // 
-            button3.BackColor = Color.Black;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(970, 74);
-            button3.Margin = new Padding(6);
-            button3.Name = "button3";
-            button3.Size = new Size(179, 85);
-            button3.TabIndex = 14;
-            button3.Text = "Kelas X C";
-            button3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            buttonKelasXC.BackColor = Color.Black;
+            buttonKelasXC.FlatStyle = FlatStyle.Popup;
+            buttonKelasXC.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXC.ForeColor = Color.White;
+            buttonKelasXC.Location = new Point(964, 58);
+            buttonKelasXC.Margin = new Padding(6);
+            buttonKelasXC.Name = "buttonKelasXC";
+            buttonKelasXC.Size = new Size(179, 85);
+            buttonKelasXC.TabIndex = 14;
+            buttonKelasXC.Text = "Kelas X C";
+            buttonKelasXC.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXC.UseVisualStyleBackColor = false;
+            buttonKelasXC.Click += buttonKelasXC_Click;
             // 
-            // button4
+            // buttonKelasXD
             // 
-            button4.BackColor = Color.Black;
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(1191, 74);
-            button4.Margin = new Padding(6);
-            button4.Name = "button4";
-            button4.Size = new Size(179, 85);
-            button4.TabIndex = 15;
-            button4.Text = "Kelas X D";
-            button4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            buttonKelasXD.BackColor = Color.Black;
+            buttonKelasXD.FlatStyle = FlatStyle.Popup;
+            buttonKelasXD.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXD.ForeColor = Color.White;
+            buttonKelasXD.Location = new Point(1181, 58);
+            buttonKelasXD.Margin = new Padding(6);
+            buttonKelasXD.Name = "buttonKelasXD";
+            buttonKelasXD.Size = new Size(179, 85);
+            buttonKelasXD.TabIndex = 15;
+            buttonKelasXD.Text = "Kelas X D";
+            buttonKelasXD.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXD.UseVisualStyleBackColor = false;
+            buttonKelasXD.Click += buttonKelasXD_Click;
             // 
-            // button5
+            // buttonKelasXE
             // 
-            button5.BackColor = Color.Black;
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(519, 189);
-            button5.Margin = new Padding(6);
-            button5.Name = "button5";
-            button5.Size = new Size(179, 85);
-            button5.TabIndex = 16;
-            button5.Text = "Kelas X E";
-            button5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            buttonKelasXE.BackColor = Color.Black;
+            buttonKelasXE.FlatStyle = FlatStyle.Popup;
+            buttonKelasXE.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXE.ForeColor = Color.White;
+            buttonKelasXE.Location = new Point(513, 173);
+            buttonKelasXE.Margin = new Padding(6);
+            buttonKelasXE.Name = "buttonKelasXE";
+            buttonKelasXE.Size = new Size(179, 85);
+            buttonKelasXE.TabIndex = 16;
+            buttonKelasXE.Text = "Kelas X E";
+            buttonKelasXE.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXE.UseVisualStyleBackColor = false;
+            buttonKelasXE.Click += buttonKelasXE_Click;
             // 
-            // button6
+            // buttonKelasXI_A
             // 
-            button6.BackColor = Color.FromArgb(64, 0, 0);
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(519, 301);
-            button6.Margin = new Padding(6);
-            button6.Name = "button6";
-            button6.Size = new Size(179, 85);
-            button6.TabIndex = 17;
-            button6.Text = "Kelas XI A";
-            button6.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
+            buttonKelasXI_A.BackColor = Color.FromArgb(64, 0, 0);
+            buttonKelasXI_A.FlatStyle = FlatStyle.Popup;
+            buttonKelasXI_A.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXI_A.ForeColor = Color.White;
+            buttonKelasXI_A.Location = new Point(513, 285);
+            buttonKelasXI_A.Margin = new Padding(6);
+            buttonKelasXI_A.Name = "buttonKelasXI_A";
+            buttonKelasXI_A.Size = new Size(179, 85);
+            buttonKelasXI_A.TabIndex = 17;
+            buttonKelasXI_A.Text = "Kelas XI A";
+            buttonKelasXI_A.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXI_A.UseVisualStyleBackColor = false;
+            buttonKelasXI_A.Click += buttonKelasXI_A_Click;
             // 
-            // button7
+            // buttonKelasXI_E
             // 
-            button7.BackColor = Color.FromArgb(64, 0, 0);
-            button7.FlatStyle = FlatStyle.Popup;
-            button7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(519, 413);
-            button7.Margin = new Padding(6);
-            button7.Name = "button7";
-            button7.Size = new Size(179, 85);
-            button7.TabIndex = 18;
-            button7.Text = "Kelas XI E";
-            button7.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
+            buttonKelasXI_E.BackColor = Color.FromArgb(64, 0, 0);
+            buttonKelasXI_E.FlatStyle = FlatStyle.Popup;
+            buttonKelasXI_E.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXI_E.ForeColor = Color.White;
+            buttonKelasXI_E.Location = new Point(513, 397);
+            buttonKelasXI_E.Margin = new Padding(6);
+            buttonKelasXI_E.Name = "buttonKelasXI_E";
+            buttonKelasXI_E.Size = new Size(179, 85);
+            buttonKelasXI_E.TabIndex = 18;
+            buttonKelasXI_E.Text = "Kelas XI E";
+            buttonKelasXI_E.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXI_E.UseVisualStyleBackColor = false;
+            buttonKelasXI_E.Click += buttonKelasXI_E_Click;
             // 
-            // button8
+            // buttonKelasXII_A
             // 
-            button8.BackColor = Color.DarkSlateGray;
-            button8.FlatStyle = FlatStyle.Popup;
-            button8.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button8.ForeColor = Color.White;
-            button8.Location = new Point(519, 525);
-            button8.Margin = new Padding(6);
-            button8.Name = "button8";
-            button8.Size = new Size(179, 85);
-            button8.TabIndex = 19;
-            button8.Text = "Kelas XII A";
-            button8.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
+            buttonKelasXII_A.BackColor = Color.DarkSlateGray;
+            buttonKelasXII_A.FlatStyle = FlatStyle.Popup;
+            buttonKelasXII_A.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXII_A.ForeColor = Color.White;
+            buttonKelasXII_A.Location = new Point(513, 509);
+            buttonKelasXII_A.Margin = new Padding(6);
+            buttonKelasXII_A.Name = "buttonKelasXII_A";
+            buttonKelasXII_A.Size = new Size(179, 85);
+            buttonKelasXII_A.TabIndex = 19;
+            buttonKelasXII_A.Text = "Kelas XII A";
+            buttonKelasXII_A.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXII_A.UseVisualStyleBackColor = false;
+            buttonKelasXII_A.Click += buttonKelasXII_A_Click;
             // 
-            // button9
+            // buttonKelasXII_E
             // 
-            button9.BackColor = Color.DarkSlateGray;
-            button9.FlatStyle = FlatStyle.Popup;
-            button9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button9.ForeColor = Color.White;
-            button9.Location = new Point(519, 641);
-            button9.Margin = new Padding(6);
-            button9.Name = "button9";
-            button9.Size = new Size(179, 85);
-            button9.TabIndex = 20;
-            button9.Text = "Kelas XII E";
-            button9.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
+            buttonKelasXII_E.BackColor = Color.DarkSlateGray;
+            buttonKelasXII_E.FlatStyle = FlatStyle.Popup;
+            buttonKelasXII_E.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXII_E.ForeColor = Color.White;
+            buttonKelasXII_E.Location = new Point(513, 625);
+            buttonKelasXII_E.Margin = new Padding(6);
+            buttonKelasXII_E.Name = "buttonKelasXII_E";
+            buttonKelasXII_E.Size = new Size(179, 85);
+            buttonKelasXII_E.TabIndex = 20;
+            buttonKelasXII_E.Text = "Kelas XII E";
+            buttonKelasXII_E.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXII_E.UseVisualStyleBackColor = false;
+            buttonKelasXII_E.Click += buttonKelasXII_E_Click;
             // 
-            // button10
+            // buttonKelasXF
             // 
-            button10.BackColor = Color.Black;
-            button10.FlatStyle = FlatStyle.Popup;
-            button10.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button10.ForeColor = Color.White;
-            button10.Location = new Point(745, 189);
-            button10.Margin = new Padding(6);
-            button10.Name = "button10";
-            button10.Size = new Size(179, 85);
-            button10.TabIndex = 21;
-            button10.Text = "Kelas X F";
-            button10.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button10.UseVisualStyleBackColor = false;
-            button10.Click += button10_Click;
+            buttonKelasXF.BackColor = Color.Black;
+            buttonKelasXF.FlatStyle = FlatStyle.Popup;
+            buttonKelasXF.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXF.ForeColor = Color.White;
+            buttonKelasXF.Location = new Point(739, 173);
+            buttonKelasXF.Margin = new Padding(6);
+            buttonKelasXF.Name = "buttonKelasXF";
+            buttonKelasXF.Size = new Size(179, 85);
+            buttonKelasXF.TabIndex = 21;
+            buttonKelasXF.Text = "Kelas X F";
+            buttonKelasXF.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXF.UseVisualStyleBackColor = false;
+            buttonKelasXF.Click += buttonKelasXF_Click;
             // 
-            // button11
+            // buttonKelasXG
             // 
-            button11.BackColor = Color.Black;
-            button11.FlatStyle = FlatStyle.Popup;
-            button11.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button11.ForeColor = Color.White;
-            button11.Location = new Point(970, 189);
-            button11.Margin = new Padding(6);
-            button11.Name = "button11";
-            button11.Size = new Size(179, 85);
-            button11.TabIndex = 22;
-            button11.Text = "Kelas X G";
-            button11.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button11.UseVisualStyleBackColor = false;
-            button11.Click += button11_Click;
+            buttonKelasXG.BackColor = Color.Black;
+            buttonKelasXG.FlatStyle = FlatStyle.Popup;
+            buttonKelasXG.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXG.ForeColor = Color.White;
+            buttonKelasXG.Location = new Point(964, 173);
+            buttonKelasXG.Margin = new Padding(6);
+            buttonKelasXG.Name = "buttonKelasXG";
+            buttonKelasXG.Size = new Size(179, 85);
+            buttonKelasXG.TabIndex = 22;
+            buttonKelasXG.Text = "Kelas X G";
+            buttonKelasXG.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXG.UseVisualStyleBackColor = false;
+            buttonKelasXG.Click += buttonKelasXG_Click;
             // 
-            // button12
+            // buttonKelasXH
             // 
-            button12.BackColor = Color.Black;
-            button12.FlatStyle = FlatStyle.Popup;
-            button12.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button12.ForeColor = Color.White;
-            button12.Location = new Point(1191, 189);
-            button12.Margin = new Padding(6);
-            button12.Name = "button12";
-            button12.Size = new Size(179, 85);
-            button12.TabIndex = 23;
-            button12.Text = "Kelas X H";
-            button12.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button12.UseVisualStyleBackColor = false;
-            button12.Click += button12_Click;
+            buttonKelasXH.BackColor = Color.Black;
+            buttonKelasXH.FlatStyle = FlatStyle.Popup;
+            buttonKelasXH.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXH.ForeColor = Color.White;
+            buttonKelasXH.Location = new Point(1181, 173);
+            buttonKelasXH.Margin = new Padding(6);
+            buttonKelasXH.Name = "buttonKelasXH";
+            buttonKelasXH.Size = new Size(179, 85);
+            buttonKelasXH.TabIndex = 23;
+            buttonKelasXH.Text = "Kelas X H";
+            buttonKelasXH.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXH.UseVisualStyleBackColor = false;
+            buttonKelasXH.Click += buttonKelasXH_Click;
             // 
-            // button13
+            // buttonKelasXI_B
             // 
-            button13.BackColor = Color.FromArgb(64, 0, 0);
-            button13.FlatStyle = FlatStyle.Popup;
-            button13.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button13.ForeColor = Color.White;
-            button13.Location = new Point(745, 301);
-            button13.Margin = new Padding(6);
-            button13.Name = "button13";
-            button13.Size = new Size(179, 85);
-            button13.TabIndex = 24;
-            button13.Text = "Kelas XI B";
-            button13.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button13.UseVisualStyleBackColor = false;
-            button13.Click += button13_Click;
+            buttonKelasXI_B.BackColor = Color.FromArgb(64, 0, 0);
+            buttonKelasXI_B.FlatStyle = FlatStyle.Popup;
+            buttonKelasXI_B.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXI_B.ForeColor = Color.White;
+            buttonKelasXI_B.Location = new Point(739, 285);
+            buttonKelasXI_B.Margin = new Padding(6);
+            buttonKelasXI_B.Name = "buttonKelasXI_B";
+            buttonKelasXI_B.Size = new Size(179, 85);
+            buttonKelasXI_B.TabIndex = 24;
+            buttonKelasXI_B.Text = "Kelas XI B";
+            buttonKelasXI_B.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXI_B.UseVisualStyleBackColor = false;
+            buttonKelasXI_B.Click += buttonKelasXI_B_Click;
             // 
-            // button14
+            // buttonKelasXI_C
             // 
-            button14.BackColor = Color.FromArgb(64, 0, 0);
-            button14.FlatStyle = FlatStyle.Popup;
-            button14.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button14.ForeColor = Color.White;
-            button14.Location = new Point(970, 301);
-            button14.Margin = new Padding(6);
-            button14.Name = "button14";
-            button14.Size = new Size(179, 85);
-            button14.TabIndex = 25;
-            button14.Text = "Kelas XI C";
-            button14.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button14.UseVisualStyleBackColor = false;
-            button14.Click += button14_Click;
+            buttonKelasXI_C.BackColor = Color.FromArgb(64, 0, 0);
+            buttonKelasXI_C.FlatStyle = FlatStyle.Popup;
+            buttonKelasXI_C.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXI_C.ForeColor = Color.White;
+            buttonKelasXI_C.Location = new Point(964, 285);
+            buttonKelasXI_C.Margin = new Padding(6);
+            buttonKelasXI_C.Name = "buttonKelasXI_C";
+            buttonKelasXI_C.Size = new Size(179, 85);
+            buttonKelasXI_C.TabIndex = 25;
+            buttonKelasXI_C.Text = "Kelas XI C";
+            buttonKelasXI_C.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXI_C.UseVisualStyleBackColor = false;
+            buttonKelasXI_C.Click += buttonKelasXI_C_Click;
             // 
-            // button15
+            // buttonKelasXI_D
             // 
-            button15.BackColor = Color.FromArgb(64, 0, 0);
-            button15.FlatStyle = FlatStyle.Popup;
-            button15.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button15.ForeColor = Color.White;
-            button15.Location = new Point(1191, 301);
-            button15.Margin = new Padding(6);
-            button15.Name = "button15";
-            button15.Size = new Size(179, 85);
-            button15.TabIndex = 26;
-            button15.Text = "Kelas XI D";
-            button15.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button15.UseVisualStyleBackColor = false;
-            button15.Click += button15_Click;
+            buttonKelasXI_D.BackColor = Color.FromArgb(64, 0, 0);
+            buttonKelasXI_D.FlatStyle = FlatStyle.Popup;
+            buttonKelasXI_D.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXI_D.ForeColor = Color.White;
+            buttonKelasXI_D.Location = new Point(1181, 285);
+            buttonKelasXI_D.Margin = new Padding(6);
+            buttonKelasXI_D.Name = "buttonKelasXI_D";
+            buttonKelasXI_D.Size = new Size(179, 85);
+            buttonKelasXI_D.TabIndex = 26;
+            buttonKelasXI_D.Text = "Kelas XI D";
+            buttonKelasXI_D.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXI_D.UseVisualStyleBackColor = false;
+            buttonKelasXI_D.Click += buttonKelasXI_D_Click;
             // 
-            // button16
+            // buttonKelasXI_F
             // 
-            button16.BackColor = Color.FromArgb(64, 0, 0);
-            button16.FlatStyle = FlatStyle.Popup;
-            button16.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button16.ForeColor = Color.White;
-            button16.Location = new Point(745, 413);
-            button16.Margin = new Padding(6);
-            button16.Name = "button16";
-            button16.Size = new Size(179, 85);
-            button16.TabIndex = 27;
-            button16.Text = "Kelas XI F";
-            button16.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button16.UseVisualStyleBackColor = false;
-            button16.Click += button16_Click;
+            buttonKelasXI_F.BackColor = Color.FromArgb(64, 0, 0);
+            buttonKelasXI_F.FlatStyle = FlatStyle.Popup;
+            buttonKelasXI_F.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXI_F.ForeColor = Color.White;
+            buttonKelasXI_F.Location = new Point(739, 397);
+            buttonKelasXI_F.Margin = new Padding(6);
+            buttonKelasXI_F.Name = "buttonKelasXI_F";
+            buttonKelasXI_F.Size = new Size(179, 85);
+            buttonKelasXI_F.TabIndex = 27;
+            buttonKelasXI_F.Text = "Kelas XI F";
+            buttonKelasXI_F.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXI_F.UseVisualStyleBackColor = false;
+            buttonKelasXI_F.Click += buttonKelasXI_F_Click;
             // 
-            // button17
+            // buttonKelasXI_G
             // 
-            button17.BackColor = Color.FromArgb(64, 0, 0);
-            button17.FlatStyle = FlatStyle.Popup;
-            button17.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button17.ForeColor = Color.White;
-            button17.Location = new Point(970, 413);
-            button17.Margin = new Padding(6);
-            button17.Name = "button17";
-            button17.Size = new Size(179, 85);
-            button17.TabIndex = 28;
-            button17.Text = "Kelas XI G";
-            button17.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button17.UseVisualStyleBackColor = false;
-            button17.Click += button17_Click;
+            buttonKelasXI_G.BackColor = Color.FromArgb(64, 0, 0);
+            buttonKelasXI_G.FlatStyle = FlatStyle.Popup;
+            buttonKelasXI_G.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXI_G.ForeColor = Color.White;
+            buttonKelasXI_G.Location = new Point(964, 397);
+            buttonKelasXI_G.Margin = new Padding(6);
+            buttonKelasXI_G.Name = "buttonKelasXI_G";
+            buttonKelasXI_G.Size = new Size(179, 85);
+            buttonKelasXI_G.TabIndex = 28;
+            buttonKelasXI_G.Text = "Kelas XI G";
+            buttonKelasXI_G.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXI_G.UseVisualStyleBackColor = false;
+            buttonKelasXI_G.Click += buttonKelasXI_G_Click;
             // 
-            // button18
+            // buttonKelasXI_H
             // 
-            button18.BackColor = Color.FromArgb(64, 0, 0);
-            button18.FlatStyle = FlatStyle.Popup;
-            button18.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button18.ForeColor = Color.White;
-            button18.Location = new Point(1191, 413);
-            button18.Margin = new Padding(6);
-            button18.Name = "button18";
-            button18.Size = new Size(179, 85);
-            button18.TabIndex = 29;
-            button18.Text = "Kelas XI H";
-            button18.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button18.UseVisualStyleBackColor = false;
-            button18.Click += button18_Click;
+            buttonKelasXI_H.BackColor = Color.FromArgb(64, 0, 0);
+            buttonKelasXI_H.FlatStyle = FlatStyle.Popup;
+            buttonKelasXI_H.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXI_H.ForeColor = Color.White;
+            buttonKelasXI_H.Location = new Point(1181, 397);
+            buttonKelasXI_H.Margin = new Padding(6);
+            buttonKelasXI_H.Name = "buttonKelasXI_H";
+            buttonKelasXI_H.Size = new Size(179, 85);
+            buttonKelasXI_H.TabIndex = 29;
+            buttonKelasXI_H.Text = "Kelas XI H";
+            buttonKelasXI_H.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXI_H.UseVisualStyleBackColor = false;
+            buttonKelasXI_H.Click += buttonKelasXI_H_Click;
             // 
-            // button19
+            // buttonKelasXII_B
             // 
-            button19.BackColor = Color.DarkSlateGray;
-            button19.FlatStyle = FlatStyle.Popup;
-            button19.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button19.ForeColor = Color.White;
-            button19.Location = new Point(745, 525);
-            button19.Margin = new Padding(6);
-            button19.Name = "button19";
-            button19.Size = new Size(179, 85);
-            button19.TabIndex = 30;
-            button19.Text = "Kelas XII B";
-            button19.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button19.UseVisualStyleBackColor = false;
-            button19.Click += button19_Click;
+            buttonKelasXII_B.BackColor = Color.DarkSlateGray;
+            buttonKelasXII_B.FlatStyle = FlatStyle.Popup;
+            buttonKelasXII_B.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXII_B.ForeColor = Color.White;
+            buttonKelasXII_B.Location = new Point(739, 509);
+            buttonKelasXII_B.Margin = new Padding(6);
+            buttonKelasXII_B.Name = "buttonKelasXII_B";
+            buttonKelasXII_B.Size = new Size(179, 85);
+            buttonKelasXII_B.TabIndex = 30;
+            buttonKelasXII_B.Text = "Kelas XII B";
+            buttonKelasXII_B.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXII_B.UseVisualStyleBackColor = false;
+            buttonKelasXII_B.Click += buttonKelasXII_B_Click;
             // 
-            // button20
+            // buttonKelasXII_C
             // 
-            button20.BackColor = Color.DarkSlateGray;
-            button20.FlatStyle = FlatStyle.Popup;
-            button20.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button20.ForeColor = Color.White;
-            button20.Location = new Point(970, 525);
-            button20.Margin = new Padding(6);
-            button20.Name = "button20";
-            button20.Size = new Size(179, 85);
-            button20.TabIndex = 31;
-            button20.Text = "Kelas XII C";
-            button20.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button20.UseVisualStyleBackColor = false;
-            button20.Click += button20_Click;
+            buttonKelasXII_C.BackColor = Color.DarkSlateGray;
+            buttonKelasXII_C.FlatStyle = FlatStyle.Popup;
+            buttonKelasXII_C.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXII_C.ForeColor = Color.White;
+            buttonKelasXII_C.Location = new Point(964, 509);
+            buttonKelasXII_C.Margin = new Padding(6);
+            buttonKelasXII_C.Name = "buttonKelasXII_C";
+            buttonKelasXII_C.Size = new Size(179, 85);
+            buttonKelasXII_C.TabIndex = 31;
+            buttonKelasXII_C.Text = "Kelas XII C";
+            buttonKelasXII_C.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXII_C.UseVisualStyleBackColor = false;
+            buttonKelasXII_C.Click += buttonKelasXII_C_Click;
             // 
-            // button21
+            // buttonKelasXII_D
             // 
-            button21.BackColor = Color.DarkSlateGray;
-            button21.FlatStyle = FlatStyle.Popup;
-            button21.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button21.ForeColor = Color.White;
-            button21.Location = new Point(1191, 525);
-            button21.Margin = new Padding(6);
-            button21.Name = "button21";
-            button21.Size = new Size(179, 85);
-            button21.TabIndex = 32;
-            button21.Text = "Kelas XII D";
-            button21.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button21.UseVisualStyleBackColor = false;
-            button21.Click += button21_Click;
+            buttonKelasXII_D.BackColor = Color.DarkSlateGray;
+            buttonKelasXII_D.FlatStyle = FlatStyle.Popup;
+            buttonKelasXII_D.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXII_D.ForeColor = Color.White;
+            buttonKelasXII_D.Location = new Point(1181, 509);
+            buttonKelasXII_D.Margin = new Padding(6);
+            buttonKelasXII_D.Name = "buttonKelasXII_D";
+            buttonKelasXII_D.Size = new Size(179, 85);
+            buttonKelasXII_D.TabIndex = 32;
+            buttonKelasXII_D.Text = "Kelas XII D";
+            buttonKelasXII_D.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXII_D.UseVisualStyleBackColor = false;
+            buttonKelasXII_D.Click += buttonKelasXII_D_Click;
             // 
-            // button22
+            // buttonKelasXII_F
             // 
-            button22.BackColor = Color.DarkSlateGray;
-            button22.FlatStyle = FlatStyle.Popup;
-            button22.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button22.ForeColor = Color.White;
-            button22.Location = new Point(745, 641);
-            button22.Margin = new Padding(6);
-            button22.Name = "button22";
-            button22.Size = new Size(179, 85);
-            button22.TabIndex = 33;
-            button22.Text = "Kelas XII F";
-            button22.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button22.UseVisualStyleBackColor = false;
-            button22.Click += button22_Click;
+            buttonKelasXII_F.BackColor = Color.DarkSlateGray;
+            buttonKelasXII_F.FlatStyle = FlatStyle.Popup;
+            buttonKelasXII_F.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXII_F.ForeColor = Color.White;
+            buttonKelasXII_F.Location = new Point(739, 625);
+            buttonKelasXII_F.Margin = new Padding(6);
+            buttonKelasXII_F.Name = "buttonKelasXII_F";
+            buttonKelasXII_F.Size = new Size(179, 85);
+            buttonKelasXII_F.TabIndex = 33;
+            buttonKelasXII_F.Text = "Kelas XII F";
+            buttonKelasXII_F.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXII_F.UseVisualStyleBackColor = false;
+            buttonKelasXII_F.Click += buttonKelasXII_F_Click;
             // 
-            // button23
+            // buttonKelasXII_G
             // 
-            button23.BackColor = Color.DarkSlateGray;
-            button23.FlatStyle = FlatStyle.Popup;
-            button23.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button23.ForeColor = Color.White;
-            button23.Location = new Point(970, 641);
-            button23.Margin = new Padding(6);
-            button23.Name = "button23";
-            button23.Size = new Size(179, 85);
-            button23.TabIndex = 34;
-            button23.Text = "Kelas XII G";
-            button23.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button23.UseVisualStyleBackColor = false;
-            button23.Click += button23_Click;
+            buttonKelasXII_G.BackColor = Color.DarkSlateGray;
+            buttonKelasXII_G.FlatStyle = FlatStyle.Popup;
+            buttonKelasXII_G.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXII_G.ForeColor = Color.White;
+            buttonKelasXII_G.Location = new Point(964, 625);
+            buttonKelasXII_G.Margin = new Padding(6);
+            buttonKelasXII_G.Name = "buttonKelasXII_G";
+            buttonKelasXII_G.Size = new Size(179, 85);
+            buttonKelasXII_G.TabIndex = 34;
+            buttonKelasXII_G.Text = "Kelas XII G";
+            buttonKelasXII_G.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXII_G.UseVisualStyleBackColor = false;
+            buttonKelasXII_G.Click += buttonKelasXII_G_Click;
             // 
-            // button24
+            // buttonKelasXII_H
             // 
-            button24.BackColor = Color.DarkSlateGray;
-            button24.FlatStyle = FlatStyle.Popup;
-            button24.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button24.ForeColor = Color.White;
-            button24.Location = new Point(1191, 641);
-            button24.Margin = new Padding(6);
-            button24.Name = "button24";
-            button24.Size = new Size(179, 85);
-            button24.TabIndex = 35;
-            button24.Text = "Kelas XII H";
-            button24.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button24.UseVisualStyleBackColor = false;
-            button24.Click += button24_Click;
+            buttonKelasXII_H.BackColor = Color.DarkSlateGray;
+            buttonKelasXII_H.FlatStyle = FlatStyle.Popup;
+            buttonKelasXII_H.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            buttonKelasXII_H.ForeColor = Color.White;
+            buttonKelasXII_H.Location = new Point(1181, 625);
+            buttonKelasXII_H.Margin = new Padding(6);
+            buttonKelasXII_H.Name = "buttonKelasXII_H";
+            buttonKelasXII_H.Size = new Size(179, 85);
+            buttonKelasXII_H.TabIndex = 35;
+            buttonKelasXII_H.Text = "Kelas XII H";
+            buttonKelasXII_H.TextImageRelation = TextImageRelation.ImageBeforeText;
+            buttonKelasXII_H.UseVisualStyleBackColor = false;
+            buttonKelasXII_H.Click += buttonKelasXII_H_Click;
             // 
             // FormKelassemua
             // 
-            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1578, 841);
-            Controls.Add(button24);
-            Controls.Add(button23);
-            Controls.Add(button22);
-            Controls.Add(button21);
-            Controls.Add(button20);
-            Controls.Add(button19);
-            Controls.Add(button18);
-            Controls.Add(button17);
-            Controls.Add(button16);
-            Controls.Add(button15);
-            Controls.Add(button14);
-            Controls.Add(button13);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button1);
-            Controls.Add(button2);
+            Controls.Add(buttonKelasXII_H);
+            Controls.Add(buttonKelasXII_G);
+            Controls.Add(buttonKelasXII_F);
+            Controls.Add(buttonKelasXII_D);
+            Controls.Add(buttonKelasXII_C);
+            Controls.Add(buttonKelasXII_B);
+            Controls.Add(buttonKelasXI_H);
+            Controls.Add(buttonKelasXI_G);
+            Controls.Add(buttonKelasXI_F);
+            Controls.Add(buttonKelasXI_D);
+            Controls.Add(buttonKelasXI_C);
+            Controls.Add(buttonKelasXI_B);
+            Controls.Add(buttonKelasXH);
+            Controls.Add(buttonKelasXG);
+            Controls.Add(buttonKelasXF);
+            Controls.Add(buttonKelasXII_E);
+            Controls.Add(buttonKelasXII_A);
+            Controls.Add(buttonKelasXI_E);
+            Controls.Add(buttonKelasXI_A);
+            Controls.Add(buttonKelasXE);
+            Controls.Add(buttonKelasXD);
+            Controls.Add(buttonKelasXC);
+            Controls.Add(buttonKelasXB);
+            Controls.Add(buttonKelasXA);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(6);
             Name = "FormKelassemua";
             Text = "SIMASTER";
+            Load += FormKelassemua_Load;
             ResumeLayout(false);
         }
 
-        private Button button2;
-        private Button button1;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
-        private Button button15;
-        private Button button16;
-        private Button button17;
-        private Button button18;
-        private Button button19;
-        private Button button20;
-        private Button button21;
-        private Button button22;
-        private Button button23;
-        private Button button24;
+        private Button buttonKelasXA;
+        private Button buttonKelasXB;
+        private Button buttonKelasXC;
+        private Button buttonKelasXD;
+        private Button buttonKelasXE;
+        private Button buttonKelasXI_A;
+        private Button buttonKelasXI_E;
+        private Button buttonKelasXII_A;
+        private Button buttonKelasXII_E;
+        private Button buttonKelasXF;
+        private Button buttonKelasXG;
+        private Button buttonKelasXH;
+        private Button buttonKelasXI_B;
+        private Button buttonKelasXI_C;
+        private Button buttonKelasXI_D;
+        private Button buttonKelasXI_F;
+        private Button buttonKelasXI_G;
+        private Button buttonKelasXI_H;
+        private Button buttonKelasXII_B;
+        private Button buttonKelasXII_C;
+        private Button buttonKelasXII_D;
+        private Button buttonKelasXII_F;
+        private Button buttonKelasXII_G;
+        private Button buttonKelasXII_H;
     }
 }

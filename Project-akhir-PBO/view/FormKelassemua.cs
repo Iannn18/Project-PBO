@@ -1,3 +1,5 @@
+using Project_akhir_PBO.Context;
+using Project_akhir_PBO.Model;
 using System;
 using System.Windows.Forms;
 
@@ -5,131 +7,187 @@ namespace Project_akhir_PBO
 {
     public partial class FormKelassemua : Form
     {
-
+        private Mapeltugas formMapeltugas;
         public FormKelassemua()
         {
             InitializeComponent();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void FormKelassemua_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void button10_Click(object sender, EventArgs e)
+        private void HandleButtonClick(object sender, string kelas, string mapel)
         {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                string dataToShow = clickedButton.Text;
+
+                if (formMapeltugas == null)
+                {
+                    formMapeltugas = new Mapeltugas(kelas, mapel);
+                    formMapeltugas.FormClosed += Mapeltugas_FormClosed;
+                    formMapeltugas.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
+                    formMapeltugas.Dock = DockStyle.Fill;
+                    formMapeltugas.Show();
+                }
+                else
+                {
+                    formMapeltugas.Activate();
+                }
+
+                this.Close();
+            }
+        }
+
+        private void Mapeltugas_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formMapeltugas = null;
+        }
+
+        private void buttonKelasXA_Click(object sender, EventArgs e)
+        {
+            KelasContext.ckelas = "Kelas XA";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
+        }
+        private void buttonKelasXB_Click(object sender, EventArgs e)
+        {
+            KelasContext.ckelas = "Kelas XB";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
+        }
+
+        private void buttonKelasXF_Click(object sender, EventArgs e)
+        {
+            KelasContext.ckelas = "Kelas XF";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonKelasXC_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XC";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonKelasXD_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XD";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void buttonKelasXH_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XH";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void buttonKelasXG_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XG";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonKelasXE_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XE";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void buttonKelasXI_A_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XI A";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void buttonKelasXI_B_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XI B";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void buttonKelasXI_C_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XI C";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void buttonKelasXI_D_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XI D";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        private void buttonKelasXI_F_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XI F";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button17_Click(object sender, EventArgs e)
+        private void buttonKelasXI_G_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XI G";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void buttonKelasXI_H_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XI H";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button19_Click(object sender, EventArgs e)
+        private void buttonKelasXII_B_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XII B";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button20_Click(object sender, EventArgs e)
+        private void buttonKelasXII_C_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XII C";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button21_Click(object sender, EventArgs e)
+        private void buttonKelasXII_D_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XII D";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button22_Click(object sender, EventArgs e)
+        private void buttonKelasXII_F_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XII F";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button23_Click(object sender, EventArgs e)
+        private void buttonKelasXII_G_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XII G";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button24_Click(object sender, EventArgs e)
+        private void buttonKelasXII_H_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XII H";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void buttonKelasXI_E_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XI E";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void buttonKelasXII_A_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XII A";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void buttonKelasXII_E_Click(object sender, EventArgs e)
         {
-
+            KelasContext.ckelas = "Kelas XII E";
+            HandleButtonClick(sender, KelasContext.ckelas, MapelContext.cmapel);
         }
-
 
     }
 }

@@ -8,77 +8,59 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-	internal class Siswa : Person
-	{
-		[Key]
-		public int NISN { get; set; }
+    public class Siswa
+    {
+        public Siswa() { }
 
-		[Required]
+        public Siswa(string nisn, string namaSiswa, DateTime tanggalLahir, string tempatLahir, string alamat, string nomorTelepon, int idKelas)
+        {
+            NISN = nisn;
+            Nama_Siswa = namaSiswa;
+            Tanggal_Lahir = tanggalLahir;
+            Tempat_Lahir = tempatLahir;
+            Alamat = alamat;
+            Nomor_Telepon_Siswa = nomorTelepon;
+            Id_Kelas = idKelas;
+        }
 
-		[ForeignKey("Id_Kelas")]
-		public virtual Kelas Kelas { get; set; }
+        public Siswa(string nisn, string namaSiswa, int idKelas)
+        {
+            NISN = nisn;
+            Nama_Siswa = namaSiswa;
+            Id_Kelas = idKelas;
+        }
 
+        [Key]
+        [MaxLength(255)]
+        public string NISN { get; set; }
 
-		public virtual ICollection<Raport> Raports { get; set; }
-		public virtual ICollection<Absensi> Absensis { get; set; }
-		public virtual ICollection<Nomor_Telepon_Siswa> Nomor_Telepon_Siswas { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string Nama_Siswa { get; set; }
 
-		public Siswa(string nama, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, int NISN) : base(nama, tanggal_lahir, tempat_lahir, alamat, nomor_telepon)
-		{
-			this.NISN = NISN;
-		}
-	}
+        [Required]
+        public DateTime Tanggal_Lahir { get; set; }
 
-	internal class Raport
-	{
-		[Key]
-        public int Id_Raport { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string Nomor_Telepon_Siswa { get; set; }
 
-		[Required]
-        public string Semester { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string Tempat_Lahir { get; set; }
 
-		[ForeignKey("NISN")]
-		public int NISN { get; set; }
-        public virtual Siswa Siswa { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string Alamat { get; set; }
 
+        public int Id_Kelas { get; set; }
 
-        public virtual ICollection<Detail_Raport> Detail_Raports { get; set; }
-    }	
+        [ForeignKey("Id_Kelas")]
 
-	internal class Detail_Raport
-	{
-		[Key]
-        public int Id_Detail_Raport { get; set; }
+        public Kelas Kelas { get; set; }
 
-		[ForeignKey("Kode_Mapel")]
-        public string Kode_Mapel { get; set; }
+        public virtual ICollection<Absensi> Absensis { get; set; }
+        public virtual ICollection<Raport> Raports { get; set; }
 
-		public virtual Mapel Mapel { get; set; }
-    }	
-
-	internal class Absensi
-	{
-		[Key]
-        public int Id_Absensi { get; set; }
-
-		[ForeignKey("NISN")]
-        public int NISN { get; set; }
-
-        public virtual Siswa Siswa { get; set; }
-
-		public DateTime Waktu_Hadir { get; set; }
-    }	
-
-	internal class Nomor_Telepon_Siswa
-	{
-		[Key]
-        public int Id_Nomor_Telepon_Siswa { get; set; }
-
-		public long Nomor_Telepon_siswa { get; set; }
-
-		[ForeignKey("NISN")]
-        public int NISN { get; set; }
-
-        public virtual Siswa Siswa { get; set; }
     }
 }

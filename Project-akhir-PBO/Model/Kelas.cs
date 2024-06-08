@@ -8,18 +8,24 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-	internal class Kelas
-	{
-		[Key]
-		public int Id_Kelas { get; set; }
+    public class Kelas
+    {
+        [Key]
+        public int Id_Kelas { get; set; }
 
-		[Required]
-		public string Nama_Kelas { get; set; } 
-		public int Jumlah_Siswa {  get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string Nama_Kelas { get; set; }
 
-		[ForeignKey("NUPTK")]
-		public virtual Staff Staff { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string NUPTK { get; set; }
 
-		public virtual ICollection<Siswa> Siswas { get; set; }
-	}
+        [ForeignKey("NUPTK")]
+        public virtual Staff Staff { get; set; }
+
+        public virtual ICollection<Siswa> Siswas { get; set; }
+
+        public virtual ICollection<Mapel> Mapels { get; set; }
+    }
 }

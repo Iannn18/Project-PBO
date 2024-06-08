@@ -7,15 +7,17 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-	internal class Jabatan
-	{
-		[Key]
-		public int Id_Jabatan { get; set; }
-		[Required]
-		public string Nama_Jabatan { get; set; }
+    public class Jabatan
+    {
+        [Key]
+        public int Id_Jabatan { get; set; }
 
-		public string Deskripsi { get; set; }
-		
-		public virtual ICollection<Staff> Staffs { get; set;}
-	}
+        [Required]
+        [MaxLength(255)]
+        public string jabatan { get; set; }
+
+        public string Deskripsi { get; set; }
+
+        public virtual ICollection<Staff> Staffs { get; set; }
+    }
 }

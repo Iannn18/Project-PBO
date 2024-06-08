@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Project_akhir_PBO.Context;
+using Project_akhir_PBO.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,22 +14,62 @@ namespace Project_akhir_PBO
 {
     public partial class Pegawai_edit : Form
     {
+        FormPegawai formPegawai;
+        private Dictionary<TextBox, string> placeholderTexts = new Dictionary<TextBox, string>();
         public Pegawai_edit()
         {
             InitializeComponent();
+            InitializePlaceholderTexts();
+        }
+        private void InitializePlaceholderTexts()
+        {
+            // Define placeholder texts for each TextBox
+            placeholderTexts[tBoxNamaPegawai] = "Nama Pegawai";
+            placeholderTexts[tBoxNUPTK] = "NUPTK";
+            placeholderTexts[tBoxTglLahirPgw] = "Tanggal Lahir(YYYY-MM-DD)";
+            placeholderTexts[tBoxTeleponPgw] = "Nomor Telepon pegawai";
+            placeholderTexts[tBoxTmptLahirPgw] = "Tempat Lahir pegawai";
+            placeholderTexts[tBoxAlamatPgw] = "Alamat pegawai";
+
+            // Initialize each TextBox with its placeholder text
+            foreach (var textBox in placeholderTexts.Keys)
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+                textBox.Enter += RemovePlaceholder;
+                textBox.Leave += SetPlaceholder;
+            }
+        }
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == placeholderTexts[textBox])
+            {
+                textBox.Text = "";
+                textBox.ForeColor = Color.Black;
+            }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+            }
+        }
+        private void labelTglLahir_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labelHalaman_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panelEditPegawai_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -36,5 +78,160 @@ namespace Project_akhir_PBO
         {
 
         }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            //jika tombol ini di klik , maka akan kembali ke form pegawai
+            Button button = sender as Button;
+            if (button != null)
+            {
+                string dataToShow = button.Text;
+
+                if (formPegawai == null)
+                {
+                    formPegawai = new FormPegawai();
+                    formPegawai.FormClosed += FormPegawai_FormClosed;
+                    formPegawai.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
+                    formPegawai.Dock = DockStyle.Fill;
+                    formPegawai.Show();
+                }
+                else
+                {
+                    formPegawai.Activate();
+                }
+
+                this.Close();
+            }
+
+        }
+
+        private void FormPegawai_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formPegawai = null;
+        }
+
+        private void tBoxTmptLahirPgw_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelJabatan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxNamaPegawai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxNUPTK_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxTglLahirPgw_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxTeleponPgw_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tBoxAlamatPgw_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBoxJabatan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNama_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNUPTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTelepon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTmptLahir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelAlamat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            // Retrieve input data from the form fields.
+            string nuptk = tBoxNUPTK.Text;
+            string namaStaff = tBoxNamaPegawai.Text;
+            DateTime tanggalLahir = DateTime.Parse(tBoxTglLahirPgw.Text);
+            string nomorTelepon = tBoxTeleponPgw.Text;
+            string tempatLahir = tBoxTmptLahirPgw.Text;
+            string alamat = tBoxAlamatPgw.Text;
+            int idJabatan = cBoxJabatan.SelectedIndex + 1;
+
+            // Construct the confirmation message.
+            string confirmationMessage = $"Apakah Anda ingin mengubah data pegawai berikut?\n\n" +
+                                         $"NUPTK: {nuptk}\n" +
+                                         $"Nama: {namaStaff}\n" +
+                                         $"Tanggal Lahir: {tanggalLahir.ToShortDateString()}\n" +
+                                         $"No. Telepon: {nomorTelepon}\n" +
+                                         $"Tempat Lahir: {tempatLahir}\n" +
+                                         $"Alamat: {alamat}\n" +
+                                         $"Jabatan: {cBoxJabatan.SelectedItem.ToString()}";
+
+            // Show a confirmation dialog.
+            DialogResult dialogResult = MessageBox.Show(confirmationMessage, "Konfirmasi Perubahan Data Pegawai", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                // Create a new Staff object with the updated data.
+                Staff updatedStaff = new Staff
+                {
+                    NUPTK = nuptk,
+                    Nama_Staff = namaStaff,
+                    Tanggal_Lahir = tanggalLahir,
+                    Nomor_Telepon_Staff = nomorTelepon,
+                    Tempat_Lahir = tempatLahir,
+                    Alamat = alamat,
+                    Id_Jabatan = idJabatan
+                };
+
+                try
+                {
+                    // Update the staff member in the database using the StaffContext.
+                    StaffContext.update(updatedStaff);
+                    MessageBox.Show("Data berhasil diubah!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close(); // Close the current 
+                    using (FormPegawai formPegawai = new FormPegawai())
+                    {
+                        formPegawai.Show(); // Show the FormPegawai form
+                        formPegawai.LoadData(); // Reload data in FormPegawai
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle any errors that occur during the update operation.
+                    MessageBox.Show("Terjadi kesalahan: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
     }
 }

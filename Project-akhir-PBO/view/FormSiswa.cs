@@ -1,21 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
+using Project_akhir_PBO.DB;
+using Project_akhir_PBO.Context;
+using Project_akhir_PBO.Model;
+using Project_akhir_PBO.view;
 
 namespace Project_akhir_PBO
 {
     public partial class FormSiswa : Form
     {
         siswa_tambah formSiswaTambah;
+        Form_siswa_edit formSiswaEdit;
+        siswaContext siswaContext;
+
         public FormSiswa()
         {
             InitializeComponent();
+
+            siswaContext = new siswaContext();
+
+            siswaContext.loadSiswa();
+
+            dataGridView1.Rows.Clear();
+
+            foreach (Siswa data in siswaContext.daftarSiswa!)
+            {
+                dataGridView1.Rows.Add(data.NISN, data.Nama_Siswa, data.Kelas.Nama_Kelas);
+            }
+
+            // MessageBox.Show($"nisn: {siswaContext.daftarSiswa![0].NISN}, nama: {siswaContext.daftarSiswa![0].nama}");
+
+            // dataGridView1.DataSource = siswaContext.daftarSiswa;
+
         }
 
         private void buttontambahsiswa_Click(object sender, EventArgs e)
@@ -39,7 +57,7 @@ namespace Project_akhir_PBO
             }
         }
 
-        private void FormSiswaTambah_FormClosed(object? sender, FormClosedEventArgs e)
+        private void FormSiswaTambah_FormClosed(object sender, FormClosedEventArgs e)
         {
             formSiswaTambah = null;
         }
@@ -47,6 +65,88 @@ namespace Project_akhir_PBO
         private void FormSiswa_Load(object sender, EventArgs e)
         {
 
+
+        }
+
+        private void LoadData()
+        {
+            siswaContext.loadSiswa();  // Pastikan fungsi ini mengambil data terbaru dari database
+            dataGridView1.Rows.Clear();  // Bersihkan baris yang ada sebelum memuat yang baru
+
+            foreach (Siswa data in siswaContext.daftarSiswa)
+            {
+                dataGridView1.Rows.Add(data.NISN, data.Nama_Siswa, data.Kelas.Nama_Kelas);
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                string nisn = selectedRow.Cells["clmNISNSiswa"].Value.ToString();
+                string nama = selectedRow.Cells["clmNamaSiswa"].Value.ToString();
+                string kelas = selectedRow.Cells["clmKelas"].Value.ToString();
+
+                DialogResult result = MessageBox.Show($"Apakah Anda yakin ingin menghapus siswa berikut?\n\nNISN: {nisn}\nNama: {nama}\nKelas: {kelas}", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    string deleteQuery = "DELETE FROM siswa WHERE nisn = @nisn";
+                    NpgsqlParameter[] parameters = new NpgsqlParameter[]
+                    {
+                        new NpgsqlParameter("@nisn", nisn)
+                    };
+
+                    try
+                    {
+                        Database.commandExecutor(deleteQuery, parameters);
+                        MessageBox.Show("Data siswa berhasil dihapus.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadData();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Terjadi kesalahan saat menghapus data siswa: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Silakan pilih siswa yang ingin dihapus, Pastikan menekan bagian paling kiri dari baris data untuk MEMILIH.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                if (formSiswaEdit == null)
+                {
+                    formSiswaEdit = new Form_siswa_edit();
+                    formSiswaEdit.FormClosed += Siswa_edit_FormClosed;
+                    formSiswaEdit.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormPegawai
+                    formSiswaEdit.Dock = DockStyle.Fill;
+                    formSiswaEdit.Show();
+                }
+                else
+                {
+                    formSiswaEdit.Activate();
+                }
+
+                this.Hide(); // Hide the current form
+            }
+        }
+        private void Siswa_edit_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formSiswaEdit = null;
+            this.Show(); // Show the current form when Pegawai_edit is closed
+            LoadData(); // Reload the data to refresh the DataGridView
         }
     }
 }

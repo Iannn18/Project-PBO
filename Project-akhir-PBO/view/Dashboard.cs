@@ -10,25 +10,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Project_akhir_PBO.Context;
+
 namespace Project_akhir_PBO
 {
     public partial class Dashboard : Form
     {
         FormDashboard formDashboard;
-        FormKelassemua formKelas1;
+        FormKelas formKelas;
+        FormKelassemua formKelassemua;
         FormMapel formMapel;
         FormPegawai formPegawai;
-        Formkelasguru formkelasguru;
         FormSiswa formSiswa;
 
-        userContext? user;
 
 
 
-
-        public Dashboard(userContext user)
+        public Dashboard()
         {
-            this.user = user;
             InitializeComponent();
         }
 
@@ -39,7 +38,32 @@ namespace Project_akhir_PBO
         private void Dashboard_Load(object sender, EventArgs e)
         {
             // Mencoba akses data akun
-            // MessageBox.Show($"{user!.akun!.nama}");
+            // MessageBox.Show($"{userContext.akun!.NUPTK}");
+            // MessageBox.Show($"{userContext.akun!.Nama_Staff}");
+            // MessageBox.Show($"{userContext.akun!.Alamat}");
+            // MessageBox.Show($"{userContext.akun!.Nomor_Telepon_Staff}");
+            // MessageBox.Show($"{userContext.akun!.Id_Jabatan}");
+
+            if (userContext.akun!.Id_Jabatan == 1)
+            {
+
+                AdminContainer.Controls.Add(btnAdmin);
+                AdminContainer.Controls.Add(btnPegawai);
+                AdminContainer.Controls.Add(btnSiswa);
+
+                flowLayoutPanel1.Controls.Add(AdminContainer);
+
+            } else if (userContext.akun.Id_Jabatan == 2) {
+
+                GuruContainer.Controls.Add(btnGuru);
+                GuruContainer.Controls.Add(btnKelas);
+                GuruContainer.Controls.Add(btnMapel);
+
+
+                flowLayoutPanel1.Controls.Add(GuruContainer);
+            }
+
+            flowLayoutPanel1.Controls.Add(btnLogOut);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -117,23 +141,23 @@ namespace Project_akhir_PBO
 
         private void btnKelas_Click(object sender, EventArgs e)
         {
-            if (formkelasguru == null)
+            if (formKelas == null)
             {
-                formkelasguru = new Formkelasguru();
-                formkelasguru.FormClosed += Formkelasguru_FormClosed;
-                formkelasguru.MdiParent = this;
-                formkelasguru.Dock = DockStyle.Fill;
-                formkelasguru.Show();
+                formKelas = new FormKelas();
+                formKelas.FormClosed += FormKelas_FormClosed;
+                formKelas.MdiParent = this;
+                formKelas.Dock = DockStyle.Fill;
+                formKelas.Show();
             }
             else
             {
-                formkelasguru.Activate();
+                formKelas.Activate();
             }
         }
 
-        private void Formkelasguru_FormClosed(object? sender, FormClosedEventArgs e)
+        private void FormKelas_FormClosed(object? sender, FormClosedEventArgs e)
         {
-            formkelasguru = null;
+            formKelas = null;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

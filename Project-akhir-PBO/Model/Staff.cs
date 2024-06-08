@@ -8,93 +8,51 @@ using System.Threading.Tasks;
 
 namespace Project_akhir_PBO.Model
 {
-	public class Staff : Person
-	{
-		[Key]
-		public int NUPTK { get; set; }
-
-		[Required]
-
-		[ForeignKey("Id_Jabatan")]
-		// public int Id_Jabatan { get; set; }
-		public string jabatan { get; set; }
-
-
-        public Staff(string nama, DateOnly tanggal_lahir, string tempat_lahir, string alamat, string nomor_telepon, int NUPTK, string jabatan) : base(nama, tanggal_lahir, tempat_lahir, alamat, nomor_telepon) 
-        {
-            this.NUPTK = NUPTK;
-            this.jabatan = jabatan;
-        }
-	}
-
-	internal class Mapel
-	{
-		[Key]
-        public string Kode_Mapel { get; set; }
-
-		[Required]
-        public string Nama_Mapel { get; set; }
-		public string Deskripsi_Mapel { get; set; }
-
-		[ForeignKey("Id_Kelas")]
-        public int Id_Kelas { get; set; }
-
-		public virtual Kelas Kelas { get; set; }
-
-		public virtual ICollection<Penugasan> Penugasans { get; set; }
-
-        public virtual ICollection<Detail_Raport> Detail_Raports { get; set; }
-    }
-
-	internal class Penugasan
-	{
-        [Key]
-        public int Id_Tugas { get; set; }
-
-        [Required]
-        public string Nama_Tugas { get; set; }
-
-        public string Deskripsi_Tugas { get; set; }
-
-        [ForeignKey("Kode_Mapel")]
-        public int Kode_Mapel { get; set; }
-
-        public virtual Mapel Mapel { get; set; }
-
-        [ForeignKey("Id_Status")]
-        public int Id_Status { get; set; }
-
-        public virtual Status_Tugas Status_Tugas { get; set; }
-
-        public virtual ICollection<Penilaian> Penilaians { get; set; }
-    }
-
-	internal class Penilaian
-	{
-        [Key]
-        public int Id_Penilaian { get; set; }
-
-        [ForeignKey("NISN")]
-        public int NISN { get; set; }
-
-        public virtual Siswa Siswa { get; set; }
-
-        [ForeignKey("Id_Tugas")]
-        public int Id_Tugas { get; set; }
-
-        public virtual Penugasan Penugasan { get; set; }
-
-        public int Nilai { get; set; }
-    }
-
-    internal class Status_Tugas 
+    public class Staff
     {
+        public Staff() { }
+
+        public Staff(string namaStaff, DateTime tanggalLahir, string tempatLahir, string alamat, string nomorTelepon, string nuptk, int idJabatan)
+        {
+            Nama_Staff = namaStaff;
+            Tanggal_Lahir = tanggalLahir;
+            Tempat_Lahir = tempatLahir;
+            Alamat = alamat;
+            Nomor_Telepon_Staff = nomorTelepon;
+            NUPTK = nuptk;
+            Id_Jabatan = idJabatan;
+        }
+
         [Key]
-        public int Id_Status { get; set; }
+        [MaxLength(255)]
+        public string NUPTK { get; set; }
 
         [Required]
-        public string Status { get; set; }
+        [MaxLength(255)]
+        public string Nama_Staff { get; set; }
 
-        public virtual ICollection<Penugasan> Penugasans { get; set; }
+        [Required]
+        public DateTime Tanggal_Lahir { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        public string Nomor_Telepon_Staff { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        public string Tempat_Lahir { get; set; }
+
+        [Required]
+        [MaxLength(255)]
+        public string Alamat { get; set; }
+
+        public int Id_Jabatan { get; set; }
+
+        [ForeignKey("Id_Jabatan")]
+        public virtual Jabatan Jabatan { get; set; }
+
+        public virtual ICollection<Kelas> Kelas { get; set; }
+        public virtual ICollection<Mapel> Mapels { get; set; }
     }
+
 }
