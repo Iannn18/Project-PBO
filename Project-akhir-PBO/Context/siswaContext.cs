@@ -16,26 +16,38 @@ namespace Project_akhir_PBO.Context
     public class siswaContext
     {
         public List<Siswa>? daftarSiswa;
-        
+
         public void loadSiswa()
         {
             this.daftarSiswa = new List<Siswa>();
 
+            // Corrected SQL query to include 'id_kelas'
             string query = @"
-                SELECT *
+                SELECT s.nisn, s.nama_siswa, k.id_kelas
                 FROM siswa s
                 JOIN kelas k ON s.id_kelas = k.id_kelas";
 
             DataTable dt = Database.queryExecutor(query);
 
+            // Checking the DataTable content
+            foreach (DataColumn column in dt.Columns)
+            {
+                Console.WriteLine(column.ColumnName);  // This will help confirm the actual columns returned
+            }
+
             foreach (DataRow row in dt.Rows)
             {
-                // dataGridView1.Rows.Add(row["NISN"], row["Nama"], row["Kelas"]);
-
-                // daftarSiswa.Add(new Siswa(NISN: row["nisn"].ToString(), nama: row["nama_siswa"].ToString(), nama_kelas: row["nama_kelas"].ToString(), tanggal_lahir: new DateOnly(2015,03,05), tempat_lahir: row["tmpt"].ToString(), alamat: row["alamat"].ToString(), nomor_telepon: row["telepon"].ToString()));
-                // daftarSiswa.Add(new Siswa(NISN: "3087", nama: "Edo Supardi", nama_kelas: "X-A", tanggal_lahir: new DateOnly(2015,03,05), tempat_lahir: "Jember", alamat: "Rambi", nomor_telepon: "08921321543"));
-                daftarSiswa.Add(new Siswa(NISN: row["nisn"].ToString(), nama: row["nama_siswa"].ToString(), nama_kelas: row["nama_kelas"].ToString(), tanggal_lahir: new DateOnly(2015,03,05), tempat_lahir: row["tempat_lahir"].ToString(), alamat: row["alamat"].ToString(), nomor_telepon: row["nomor_telepon_siswa"].ToString()));
-
+                try
+                {
+                    // Parse the 'id_kelas' as an integer
+                    int idKelas = int.Parse(row["id_kelas"].ToString());
+                    daftarSiswa.Add(new Siswa(row["nisn"].ToString(), row["nama_siswa"].ToString(), idKelas));
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error processing row: " + ex.Message);
+                    // Handle exception, e.g., log the error or notify the user
+                }
             }
         }
 
