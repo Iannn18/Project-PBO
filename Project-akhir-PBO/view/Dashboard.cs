@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Project_akhir_PBO.Context;
+
 namespace Project_akhir_PBO
 {
     public partial class Dashboard : Form
@@ -42,7 +44,26 @@ namespace Project_akhir_PBO
             // MessageBox.Show($"{userContext.akun!.Nomor_Telepon_Staff}");
             // MessageBox.Show($"{userContext.akun!.Id_Jabatan}");
 
+            if (userContext.akun!.Id_Jabatan == 1)
+            {
 
+                AdminContainer.Controls.Add(btnAdmin);
+                AdminContainer.Controls.Add(btnPegawai);
+                AdminContainer.Controls.Add(btnSiswa);
+
+                flowLayoutPanel1.Controls.Add(AdminContainer);
+
+            } else if (userContext.akun.Id_Jabatan == 2) {
+
+                GuruContainer.Controls.Add(btnGuru);
+                GuruContainer.Controls.Add(btnKelas);
+                GuruContainer.Controls.Add(btnMapel);
+
+
+                flowLayoutPanel1.Controls.Add(GuruContainer);
+            }
+
+            flowLayoutPanel1.Controls.Add(btnLogOut);
         }
 
         private void button2_Click(object sender, EventArgs e)

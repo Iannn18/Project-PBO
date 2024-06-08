@@ -31,10 +31,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(462, 55);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(323, 33);
             label1.Name = "label1";
-            label1.Size = new Size(107, 48);
+            label1.Size = new Size(74, 32);
             label1.TabIndex = 0;
             label1.Text = "Kelas";
             // 
@@ -42,12 +41,12 @@
             // 
             dataGridViewkelasguru.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewkelasguru.Columns.AddRange(new DataGridViewColumn[] { NamaLengkap, Column1 });
-            dataGridViewkelasguru.Location = new Point(462, 155);
-            dataGridViewkelasguru.Margin = new Padding(4, 5, 4, 5);
+            dataGridViewkelasguru.Location = new Point(323, 93);
             dataGridViewkelasguru.Name = "dataGridViewkelasguru";
             dataGridViewkelasguru.RowHeadersWidth = 62;
-            dataGridViewkelasguru.Size = new Size(1000, 625);
+            dataGridViewkelasguru.Size = new Size(700, 375);
             dataGridViewkelasguru.TabIndex = 0;
+            dataGridViewkelasguru.CellClick += dataGridViewkelasguru_CellClick;
             dataGridViewkelasguru.CellContentClick += dataGridViewkelasguru_CellContentClick;
             dataGridViewkelasguru.CellValueChanged += dataGridViewkelasguru_CellValueChanged;
             dataGridViewkelasguru.DataError += dataGridViewkelasguru_DataError;
@@ -77,13 +76,12 @@
             // 
             // Formkelasguru
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1578, 841);
+            ClientSize = new Size(1105, 505);
             Controls.Add(dataGridViewkelasguru);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Formkelasguru";
             Text = "Formkelasguru";
             Load += Formkelasguru_Load;

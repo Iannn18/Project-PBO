@@ -15,11 +15,50 @@ namespace Project_akhir_PBO
     public partial class Pegawai_edit : Form
     {
         private FormPegawai formPegawai;
+        private Dictionary<TextBox, string> placeholderTexts = new Dictionary<TextBox, string>();
         public Pegawai_edit()
         {
             InitializeComponent();
+            InitializePlaceholderTexts();
+        }
+        private void InitializePlaceholderTexts()
+        {
+            // Define placeholder texts for each TextBox
+            placeholderTexts[tBoxNamaPegawai] = "Nama Pegawai";
+            placeholderTexts[tBoxNUPTK] = "NUPTK";
+            placeholderTexts[tBoxTglLahirPgw] = "Tanggal Lahir(YYYY-MM-DD)";
+            placeholderTexts[tBoxTeleponPgw] = "Nomor Telepon pegawai";
+            placeholderTexts[tBoxTmptLahirPgw] = "Tempat Lahir pegawai";
+            placeholderTexts[tBoxAlamatPgw] = "Alamat pegawai";
+
+            // Initialize each TextBox with its placeholder text
+            foreach (var textBox in placeholderTexts.Keys)
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+                textBox.Enter += RemovePlaceholder;
+                textBox.Leave += SetPlaceholder;
+            }
+        }
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == placeholderTexts[textBox])
+            {
+                textBox.Text = "";
+                textBox.ForeColor = Color.Black;
+            }
         }
 
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+            }
+        }
         private void labelTglLahir_Click(object sender, EventArgs e)
         {
 

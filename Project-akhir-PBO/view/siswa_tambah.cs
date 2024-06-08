@@ -17,11 +17,53 @@ namespace Project_akhir_PBO
     {
         private Dictionary<string, int> classMappings;
         private siswa_tambah siswatambah;
+        private Dictionary<TextBox, string> placeholderTexts = new Dictionary<TextBox, string>();
+        FormSiswa formSiswa;
 
         public siswa_tambah()
         {
             InitializeComponent();
             this.siswatambah = siswatambah;
+            InitializePlaceholderTexts();
+        }
+        private void InitializePlaceholderTexts()
+        {
+            // Define placeholder texts for each TextBox
+            placeholderTexts[textBoxnamasiswa] = "Nama Siswa";
+            placeholderTexts[textBoxnisnsiswa] = "NISN";
+            placeholderTexts[textBoxtanggalsiswa] = "Tanggal Lahir(YYYY-MM-DD)";
+            placeholderTexts[textBoxnohpsiswa] = "Nomor Telepon Siswa";
+            placeholderTexts[textBoxlahirsiswa] = "Tempat Lahir Siswa";
+            placeholderTexts[textBoxalamatsiswa] = "Alamat Siswa";
+
+            // Initialize each TextBox with its placeholder text
+            foreach (var textBox in placeholderTexts.Keys)
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+                textBox.Enter += RemovePlaceholder;
+                textBox.Leave += SetPlaceholder;
+            }
+        }
+
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == placeholderTexts[textBox])
+            {
+                textBox.Text = "";
+                textBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+            }
         }
 
         private void labelHalaman_Click(object sender, EventArgs e)
@@ -33,7 +75,7 @@ namespace Project_akhir_PBO
         {
 
 
-        classMappings = new Dictionary<string, int>
+            classMappings = new Dictionary<string, int>
         {
             { "X-A", 1 }, { "X-B", 2 }, { "X-C", 3 }, { "X-D", 4 }, { "X-E", 5 }, { "X-F", 6 }, { "X-G", 7 }, { "X-H", 8 },
             { "XI-A", 9 }, { "XI-B", 10 }, { "XI-C", 11 }, { "XI-D", 12 }, { "XI-E", 13 }, { "XI-F", 14 }, { "XI-G", 15 }, { "XI-H", 16 },
@@ -46,8 +88,8 @@ namespace Project_akhir_PBO
             string nomorTelepon = textBoxnohpsiswa.Text;
             string tempatLahir = textBoxlahirsiswa.Text;
             string alamat = textBoxalamatsiswa.Text;
-/*            int idKelas = int.Parse(comboBoxkelassiswa.SelectedValue.ToString());
-*/          
+            /*            int idKelas = int.Parse(comboBoxkelassiswa.SelectedValue.ToString());
+            */
 
 
             int idKelas = classMappings[comboBoxkelassiswa.Text];
@@ -140,7 +182,7 @@ namespace Project_akhir_PBO
 
         private void comboBoxkelassiswa_SelectedIndexChanged(object sender, EventArgs e)
         {
-    
+
         }
 
         private void labelNamaSiswa_Click(object sender, EventArgs e)
@@ -171,6 +213,36 @@ namespace Project_akhir_PBO
         private void labelKelasSiswa_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormPegawai_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formSiswa = null;
+        }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            //jika tombol ini di klik , maka akan kembali ke form pegawai
+            Button button = sender as Button;
+            if (button != null)
+            {
+                string dataToShow = button.Text;
+
+                if (formSiswa == null)
+                {
+                    formSiswa = new FormSiswa();
+                    formSiswa.FormClosed += FormPegawai_FormClosed;
+                    formSiswa.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
+                    formSiswa.Dock = DockStyle.Fill;
+                    formSiswa.Show();
+                }
+                else
+                {
+                    formSiswa.Activate();
+                }
+
+                this.Close();
+            }
         }
     }
 }
