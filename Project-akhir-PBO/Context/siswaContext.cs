@@ -85,22 +85,7 @@ namespace Project_akhir_PBO.Context
             Database.commandExecutor(query, parameters);
         }
 
-        // Get the class name based on the id_kelas
-        /*public static string GetClassName(int id_kelas)
-        {
-            string[] classNames = { "X-A", "X-B", "X-C", "X-D", "X-E", "X-F", "X-G", "X-H", "X-I", "X-J", "X-K", "X-L", "XI-A", "XI-B", "XI-C", "XI-D", "XI-E", "XI-F", "XI-G", "XI-H", "XI-I", "XI-J", "XI-K", "XI-L" };
-
-            if (id_kelas >= 1 && id_kelas <= classNames.Length)
-            {
-                return classNames[id_kelas - 1];
-            }
-            else
-            {
-                throw new ArgumentException("Invalid id_kelas");
-            }
-        }*/
-
-            public static void destroy(string nisn)
+        public static void destroy(string nisn)
         {
             string query = $"DELETE FROM {table} WHERE nisn = @nisn";
             NpgsqlParameter[] parameters =
