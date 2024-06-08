@@ -42,7 +42,7 @@ namespace Project_akhir_PBO.view
 
         private void btnSelesai_Click(object sender, EventArgs e)
         {
-            raporSiswa.bahasa.Text = editBahasa.Text;
+            
         }
 
         private void EditRaporSiswa_Load(object sender, EventArgs e)

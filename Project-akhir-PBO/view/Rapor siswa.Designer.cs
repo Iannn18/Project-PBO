@@ -57,83 +57,89 @@
             tanggalLahir = new Label();
             alamat = new Label();
             noTelp = new Label();
-            bahasa = new Label();
-            BIG = new Label();
-            matWa = new Label();
-            matMin = new Label();
-            fisika = new Label();
-            kimia = new Label();
-            biologi = new Label();
-            pkn = new Label();
-            pkwu = new Label();
-            seni = new Label();
-            agama = new Label();
-            penjas = new Label();
-            hadir = new Label();
-            izin = new Label();
-            sakit = new Label();
-            alpa = new Label();
-            button1 = new Button();
-            btnKembali = new Button();
+            btnEditData = new Button();
+            btnSelesai = new Button();
+            tboxBindo = new TextBox();
+            tboxNilaiInggris = new TextBox();
+            tboxNilaiMtkWajib = new TextBox();
+            tboxNilaiMtkMinat = new TextBox();
+            tboxNilaiFisika = new TextBox();
+            tboxNilaiKimia = new TextBox();
+            txboxNilaiBiologi = new TextBox();
+            tboxNilaiPPKN = new TextBox();
+            tboxNilaiPKWU = new TextBox();
+            tboxNilaiAgama = new TextBox();
+            tboxNilaiJasmani = new TextBox();
+            tboxHadir = new TextBox();
+            tboxIzin = new TextBox();
+            tboxSakit = new TextBox();
+            tboxAlpa = new TextBox();
+            tboxNilaiSeni = new TextBox();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(600, 29);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(660, 54);
             label1.Name = "label1";
-            label1.Size = new Size(56, 20);
+            label1.Size = new Size(45, 15);
             label1.TabIndex = 0;
             label1.Text = "Nama :";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(600, 49);
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(660, 69);
             label2.Name = "label2";
-            label2.Size = new Size(46, 20);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 1;
             label2.Text = "NISN:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(600, 69);
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(660, 84);
             label3.Name = "label3";
-            label3.Size = new Size(77, 20);
+            label3.Size = new Size(67, 15);
             label3.TabIndex = 2;
             label3.Text = "Semester :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(600, 89);
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(660, 99);
             label4.Name = "label4";
-            label4.Size = new Size(101, 20);
+            label4.Size = new Size(82, 15);
             label4.TabIndex = 3;
             label4.Text = "Tanggal lahir :";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(600, 109);
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(660, 114);
             label5.Name = "label5";
-            label5.Size = new Size(64, 20);
+            label5.Size = new Size(52, 15);
             label5.TabIndex = 4;
             label5.Text = "Alamat :";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.ForeColor = SystemColors.ActiveCaptionText;
-            label6.Location = new Point(600, 129);
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(660, 129);
             label6.Name = "label6";
-            label6.Size = new Size(71, 20);
+            label6.Size = new Size(58, 15);
             label6.TabIndex = 5;
             label6.Text = "No. Telp :";
             // 
@@ -141,9 +147,9 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = SystemColors.ActiveCaptionText;
-            label7.Location = new Point(600, 158);
+            label7.Location = new Point(661, 166);
             label7.Name = "label7";
-            label7.Size = new Size(131, 20);
+            label7.Size = new Size(104, 15);
             label7.TabIndex = 6;
             label7.Text = "Bahasa Indonesia :";
             // 
@@ -151,9 +157,9 @@
             // 
             label8.AutoSize = true;
             label8.ForeColor = SystemColors.ActiveCaptionText;
-            label8.Location = new Point(600, 187);
+            label8.Location = new Point(661, 188);
             label8.Name = "label8";
-            label8.Size = new Size(112, 20);
+            label8.Size = new Size(89, 15);
             label8.TabIndex = 7;
             label8.Text = "Bahasa Inggris :";
             // 
@@ -161,9 +167,9 @@
             // 
             label9.AutoSize = true;
             label9.ForeColor = SystemColors.ActiveCaptionText;
-            label9.Location = new Point(600, 216);
+            label9.Location = new Point(661, 210);
             label9.Name = "label9";
-            label9.Size = new Size(137, 20);
+            label9.Size = new Size(109, 15);
             label9.TabIndex = 8;
             label9.Text = "Matematika Wajib :";
             // 
@@ -171,9 +177,9 @@
             // 
             label10.AutoSize = true;
             label10.ForeColor = SystemColors.ActiveCaptionText;
-            label10.Location = new Point(600, 245);
+            label10.Location = new Point(661, 232);
             label10.Name = "label10";
-            label10.Size = new Size(137, 20);
+            label10.Size = new Size(110, 15);
             label10.TabIndex = 9;
             label10.Text = "Matematika minat :";
             // 
@@ -181,9 +187,9 @@
             // 
             label11.AutoSize = true;
             label11.ForeColor = SystemColors.ActiveCaptionText;
-            label11.Location = new Point(600, 275);
+            label11.Location = new Point(661, 254);
             label11.Name = "label11";
-            label11.Size = new Size(52, 20);
+            label11.Size = new Size(42, 15);
             label11.TabIndex = 10;
             label11.Text = "Fisika :";
             // 
@@ -191,9 +197,9 @@
             // 
             label12.AutoSize = true;
             label12.ForeColor = SystemColors.ActiveCaptionText;
-            label12.Location = new Point(600, 306);
+            label12.Location = new Point(661, 278);
             label12.Name = "label12";
-            label12.Size = new Size(54, 20);
+            label12.Size = new Size(43, 15);
             label12.TabIndex = 11;
             label12.Text = "Kimia :";
             // 
@@ -201,9 +207,9 @@
             // 
             label13.AutoSize = true;
             label13.ForeColor = SystemColors.ActiveCaptionText;
-            label13.Location = new Point(600, 335);
+            label13.Location = new Point(661, 299);
             label13.Name = "label13";
-            label13.Size = new Size(64, 20);
+            label13.Size = new Size(50, 15);
             label13.TabIndex = 12;
             label13.Text = "Biologi :";
             // 
@@ -211,9 +217,9 @@
             // 
             label14.AutoSize = true;
             label14.ForeColor = SystemColors.ActiveCaptionText;
-            label14.Location = new Point(600, 364);
+            label14.Location = new Point(661, 321);
             label14.Name = "label14";
-            label14.Size = new Size(52, 20);
+            label14.Size = new Size(43, 15);
             label14.TabIndex = 13;
             label14.Text = "PPKN :";
             // 
@@ -221,9 +227,9 @@
             // 
             label15.AutoSize = true;
             label15.ForeColor = SystemColors.ActiveCaptionText;
-            label15.Location = new Point(600, 393);
+            label15.Location = new Point(661, 343);
             label15.Name = "label15";
-            label15.Size = new Size(57, 20);
+            label15.Size = new Size(46, 15);
             label15.TabIndex = 14;
             label15.Text = "PKWU :";
             // 
@@ -231,9 +237,9 @@
             // 
             label16.AutoSize = true;
             label16.ForeColor = SystemColors.ActiveCaptionText;
-            label16.Location = new Point(599, 422);
+            label16.Location = new Point(660, 364);
             label16.Name = "label16";
-            label16.Size = new Size(97, 20);
+            label16.Size = new Size(77, 15);
             label16.TabIndex = 15;
             label16.Text = "Seni Budaya :";
             // 
@@ -241,9 +247,9 @@
             // 
             label17.AutoSize = true;
             label17.ForeColor = SystemColors.ActiveCaptionText;
-            label17.Location = new Point(599, 451);
+            label17.Location = new Point(660, 386);
             label17.Name = "label17";
-            label17.Size = new Size(64, 20);
+            label17.Size = new Size(51, 15);
             label17.TabIndex = 16;
             label17.Text = "Agama :";
             // 
@@ -251,19 +257,20 @@
             // 
             label18.AutoSize = true;
             label18.ForeColor = SystemColors.ActiveCaptionText;
-            label18.Location = new Point(599, 482);
+            label18.Location = new Point(660, 410);
             label18.Name = "label18";
-            label18.Size = new Size(144, 20);
+            label18.Size = new Size(117, 15);
             label18.TabIndex = 17;
             label18.Text = "Pendidikan Jasmani :";
             // 
             // label19
             // 
             label19.AutoSize = true;
+            label19.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label19.ForeColor = SystemColors.ActiveCaptionText;
-            label19.Location = new Point(599, 515);
+            label19.Location = new Point(660, 447);
             label19.Name = "label19";
-            label19.Size = new Size(92, 20);
+            label19.Size = new Size(76, 15);
             label19.TabIndex = 18;
             label19.Text = "KEHADIRAN";
             // 
@@ -271,9 +278,9 @@
             // 
             label20.AutoSize = true;
             label20.ForeColor = SystemColors.ActiveCaptionText;
-            label20.Location = new Point(599, 535);
+            label20.Location = new Point(660, 466);
             label20.Name = "label20";
-            label20.Size = new Size(53, 20);
+            label20.Size = new Size(42, 15);
             label20.TabIndex = 19;
             label20.Text = "Hadir :";
             // 
@@ -281,9 +288,9 @@
             // 
             label21.AutoSize = true;
             label21.ForeColor = SystemColors.ActiveCaptionText;
-            label21.Location = new Point(600, 566);
+            label21.Location = new Point(661, 489);
             label21.Name = "label21";
-            label21.Size = new Size(39, 20);
+            label21.Size = new Size(31, 15);
             label21.TabIndex = 20;
             label21.Text = "Izin :";
             // 
@@ -291,9 +298,9 @@
             // 
             label22.AutoSize = true;
             label22.ForeColor = SystemColors.ActiveCaptionText;
-            label22.Location = new Point(600, 628);
+            label22.Location = new Point(661, 536);
             label22.Name = "label22";
-            label22.Size = new Size(47, 20);
+            label22.Size = new Size(37, 15);
             label22.TabIndex = 21;
             label22.Text = "Alpa :";
             // 
@@ -301,276 +308,269 @@
             // 
             label23.AutoSize = true;
             label23.ForeColor = SystemColors.ActiveCaptionText;
-            label23.Location = new Point(599, 597);
+            label23.Location = new Point(660, 513);
             label23.Name = "label23";
-            label23.Size = new Size(48, 20);
+            label23.Size = new Size(38, 15);
             label23.TabIndex = 22;
             label23.Text = "Sakit :";
             // 
             // nama
             // 
             nama.AutoSize = true;
-            nama.ForeColor = SystemColors.ActiveCaptionText;
-            nama.Location = new Point(710, 29);
+            nama.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            nama.ForeColor = Color.Black;
+            nama.Location = new Point(756, 54);
             nama.Name = "nama";
-            nama.Size = new Size(106, 20);
+            nama.Size = new Size(87, 15);
             nama.TabIndex = 26;
             nama.Text = "Dita Leni Rafia";
             // 
             // nisn
             // 
             nisn.AutoSize = true;
-            nisn.ForeColor = SystemColors.ActiveCaptionText;
-            nisn.Location = new Point(710, 49);
+            nisn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            nisn.ForeColor = Color.Black;
+            nisn.Location = new Point(756, 69);
             nisn.Name = "nisn";
-            nisn.Size = new Size(81, 20);
+            nisn.Size = new Size(70, 15);
             nisn.TabIndex = 27;
             nisn.Text = "123808123";
             // 
             // semester
             // 
             semester.AutoSize = true;
-            semester.ForeColor = SystemColors.ActiveCaptionText;
-            semester.Location = new Point(710, 69);
+            semester.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            semester.ForeColor = Color.Black;
+            semester.Location = new Point(756, 84);
             semester.Name = "semester";
-            semester.Size = new Size(25, 20);
+            semester.Size = new Size(21, 15);
             semester.TabIndex = 28;
             semester.Text = "13";
             // 
             // tanggalLahir
             // 
             tanggalLahir.AutoSize = true;
-            tanggalLahir.ForeColor = SystemColors.ActiveCaptionText;
-            tanggalLahir.Location = new Point(710, 89);
+            tanggalLahir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            tanggalLahir.ForeColor = Color.Black;
+            tanggalLahir.Location = new Point(756, 99);
             tanggalLahir.Name = "tanggalLahir";
-            tanggalLahir.Size = new Size(85, 20);
+            tanggalLahir.Size = new Size(73, 15);
             tanggalLahir.TabIndex = 29;
             tanggalLahir.Text = "2004-08-17";
             // 
             // alamat
             // 
             alamat.AutoSize = true;
-            alamat.ForeColor = SystemColors.ActiveCaptionText;
-            alamat.Location = new Point(710, 109);
+            alamat.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            alamat.ForeColor = Color.Black;
+            alamat.Location = new Point(756, 114);
             alamat.Name = "alamat";
-            alamat.Size = new Size(154, 20);
+            alamat.Size = new Size(127, 15);
             alamat.TabIndex = 30;
             alamat.Text = "Jalan Kebaikan No. 10";
             // 
             // noTelp
             // 
             noTelp.AutoSize = true;
-            noTelp.ForeColor = SystemColors.ActiveCaptionText;
-            noTelp.Location = new Point(710, 129);
+            noTelp.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            noTelp.ForeColor = Color.Black;
+            noTelp.Location = new Point(756, 129);
             noTelp.Name = "noTelp";
-            noTelp.Size = new Size(65, 20);
+            noTelp.Size = new Size(56, 15);
             noTelp.TabIndex = 31;
             noTelp.Text = "0824434";
             // 
-            // bahasa
+            // btnEditData
             // 
-            bahasa.AutoSize = true;
-            bahasa.ForeColor = SystemColors.ActiveCaptionText;
-            bahasa.Location = new Point(803, 158);
-            bahasa.Name = "bahasa";
-            bahasa.Size = new Size(56, 20);
-            bahasa.TabIndex = 32;
-            bahasa.Text = "Bahasa";
-            bahasa.Click += bahasa_Click;
+            btnEditData.ForeColor = SystemColors.ActiveCaptionText;
+            btnEditData.Location = new Point(540, 290);
+            btnEditData.Margin = new Padding(3, 2, 3, 2);
+            btnEditData.Name = "btnEditData";
+            btnEditData.Size = new Size(82, 22);
+            btnEditData.TabIndex = 64;
+            btnEditData.Text = "Edit Data";
+            btnEditData.UseVisualStyleBackColor = true;
+            btnEditData.Click += btnEditData_Click;
             // 
-            // BIG
+            // btnSelesai
             // 
-            BIG.AutoSize = true;
-            BIG.ForeColor = SystemColors.ActiveCaptionText;
-            BIG.Location = new Point(803, 187);
-            BIG.Name = "BIG";
-            BIG.Size = new Size(58, 20);
-            BIG.TabIndex = 33;
-            BIG.Text = "label25";
-            BIG.Click += BIG_Click;
+            btnSelesai.ForeColor = Color.Black;
+            btnSelesai.Location = new Point(540, 328);
+            btnSelesai.Margin = new Padding(3, 2, 3, 2);
+            btnSelesai.Name = "btnSelesai";
+            btnSelesai.Size = new Size(82, 22);
+            btnSelesai.TabIndex = 65;
+            btnSelesai.Text = "Selesai";
+            btnSelesai.UseVisualStyleBackColor = true;
+            btnSelesai.Click += btnSelesai_Click;
             // 
-            // matWa
+            // tboxBindo
             // 
-            matWa.AutoSize = true;
-            matWa.ForeColor = SystemColors.ActiveCaptionText;
-            matWa.Location = new Point(803, 216);
-            matWa.Name = "matWa";
-            matWa.Size = new Size(58, 20);
-            matWa.TabIndex = 34;
-            matWa.Text = "label24";
+            tboxBindo.BorderStyle = BorderStyle.None;
+            tboxBindo.Location = new Point(839, 164);
+            tboxBindo.Name = "tboxBindo";
+            tboxBindo.Size = new Size(44, 16);
+            tboxBindo.TabIndex = 66;
+            tboxBindo.TextChanged += tboxBindo_TextChanged;
             // 
-            // matMin
+            // tboxNilaiInggris
             // 
-            matMin.AutoSize = true;
-            matMin.ForeColor = SystemColors.ActiveCaptionText;
-            matMin.Location = new Point(803, 245);
-            matMin.Name = "matMin";
-            matMin.Size = new Size(58, 20);
-            matMin.TabIndex = 35;
-            matMin.Text = "label24";
-            matMin.Click += matMin_Click;
+            tboxNilaiInggris.BorderStyle = BorderStyle.None;
+            tboxNilaiInggris.Location = new Point(839, 186);
+            tboxNilaiInggris.Name = "tboxNilaiInggris";
+            tboxNilaiInggris.Size = new Size(44, 16);
+            tboxNilaiInggris.TabIndex = 67;
+            tboxNilaiInggris.TextChanged += tboxNilaiInggris_TextChanged;
             // 
-            // fisika
+            // tboxNilaiMtkWajib
             // 
-            fisika.AutoSize = true;
-            fisika.ForeColor = SystemColors.ActiveCaptionText;
-            fisika.Location = new Point(803, 275);
-            fisika.Name = "fisika";
-            fisika.Size = new Size(58, 20);
-            fisika.TabIndex = 36;
-            fisika.Text = "label24";
+            tboxNilaiMtkWajib.BorderStyle = BorderStyle.None;
+            tboxNilaiMtkWajib.Location = new Point(839, 208);
+            tboxNilaiMtkWajib.Name = "tboxNilaiMtkWajib";
+            tboxNilaiMtkWajib.Size = new Size(44, 16);
+            tboxNilaiMtkWajib.TabIndex = 68;
+            tboxNilaiMtkWajib.TextChanged += tboxNilaiMtkWajib_TextChanged;
             // 
-            // kimia
+            // tboxNilaiMtkMinat
             // 
-            kimia.AutoSize = true;
-            kimia.ForeColor = SystemColors.ActiveCaptionText;
-            kimia.Location = new Point(803, 306);
-            kimia.Name = "kimia";
-            kimia.Size = new Size(58, 20);
-            kimia.TabIndex = 37;
-            kimia.Text = "label24";
+            tboxNilaiMtkMinat.BorderStyle = BorderStyle.None;
+            tboxNilaiMtkMinat.Location = new Point(839, 230);
+            tboxNilaiMtkMinat.Name = "tboxNilaiMtkMinat";
+            tboxNilaiMtkMinat.Size = new Size(44, 16);
+            tboxNilaiMtkMinat.TabIndex = 69;
+            tboxNilaiMtkMinat.TextChanged += tboxNilaiMtkMinat_TextChanged;
             // 
-            // biologi
+            // tboxNilaiFisika
             // 
-            biologi.AutoSize = true;
-            biologi.ForeColor = SystemColors.ActiveCaptionText;
-            biologi.Location = new Point(803, 335);
-            biologi.Name = "biologi";
-            biologi.Size = new Size(58, 20);
-            biologi.TabIndex = 38;
-            biologi.Text = "label24";
+            tboxNilaiFisika.BorderStyle = BorderStyle.None;
+            tboxNilaiFisika.Location = new Point(839, 252);
+            tboxNilaiFisika.Name = "tboxNilaiFisika";
+            tboxNilaiFisika.Size = new Size(44, 16);
+            tboxNilaiFisika.TabIndex = 70;
+            tboxNilaiFisika.TextChanged += tboxNilaiFisika_TextChanged;
             // 
-            // pkn
+            // tboxNilaiKimia
             // 
-            pkn.AutoSize = true;
-            pkn.ForeColor = SystemColors.ActiveCaptionText;
-            pkn.Location = new Point(803, 364);
-            pkn.Name = "pkn";
-            pkn.Size = new Size(58, 20);
-            pkn.TabIndex = 39;
-            pkn.Text = "label24";
+            tboxNilaiKimia.BorderStyle = BorderStyle.None;
+            tboxNilaiKimia.Location = new Point(839, 274);
+            tboxNilaiKimia.Name = "tboxNilaiKimia";
+            tboxNilaiKimia.Size = new Size(44, 16);
+            tboxNilaiKimia.TabIndex = 71;
+            tboxNilaiKimia.TextChanged += tboxNilaiKimia_TextChanged;
             // 
-            // pkwu
+            // txboxNilaiBiologi
             // 
-            pkwu.AutoSize = true;
-            pkwu.ForeColor = SystemColors.ActiveCaptionText;
-            pkwu.Location = new Point(803, 393);
-            pkwu.Name = "pkwu";
-            pkwu.Size = new Size(58, 20);
-            pkwu.TabIndex = 40;
-            pkwu.Text = "label24";
+            txboxNilaiBiologi.BorderStyle = BorderStyle.None;
+            txboxNilaiBiologi.Location = new Point(839, 296);
+            txboxNilaiBiologi.Name = "txboxNilaiBiologi";
+            txboxNilaiBiologi.Size = new Size(44, 16);
+            txboxNilaiBiologi.TabIndex = 72;
+            txboxNilaiBiologi.TextChanged += txboxNilaiBiologi_TextChanged;
             // 
-            // seni
+            // tboxNilaiPPKN
             // 
-            seni.AutoSize = true;
-            seni.ForeColor = SystemColors.ActiveCaptionText;
-            seni.Location = new Point(803, 422);
-            seni.Name = "seni";
-            seni.Size = new Size(58, 20);
-            seni.TabIndex = 41;
-            seni.Text = "label24";
+            tboxNilaiPPKN.BorderStyle = BorderStyle.None;
+            tboxNilaiPPKN.Location = new Point(839, 319);
+            tboxNilaiPPKN.Name = "tboxNilaiPPKN";
+            tboxNilaiPPKN.Size = new Size(44, 16);
+            tboxNilaiPPKN.TabIndex = 73;
+            tboxNilaiPPKN.TextChanged += tboxNilaiPPKN_TextChanged;
             // 
-            // agama
+            // tboxNilaiPKWU
             // 
-            agama.AutoSize = true;
-            agama.ForeColor = SystemColors.ActiveCaptionText;
-            agama.Location = new Point(803, 451);
-            agama.Name = "agama";
-            agama.Size = new Size(58, 20);
-            agama.TabIndex = 42;
-            agama.Text = "label24";
+            tboxNilaiPKWU.BorderStyle = BorderStyle.None;
+            tboxNilaiPKWU.Location = new Point(839, 342);
+            tboxNilaiPKWU.Name = "tboxNilaiPKWU";
+            tboxNilaiPKWU.Size = new Size(44, 16);
+            tboxNilaiPKWU.TabIndex = 74;
+            tboxNilaiPKWU.TextChanged += tboxNilaiPKWU_TextChanged;
             // 
-            // penjas
+            // tboxNilaiAgama
             // 
-            penjas.AutoSize = true;
-            penjas.ForeColor = SystemColors.ActiveCaptionText;
-            penjas.Location = new Point(803, 482);
-            penjas.Name = "penjas";
-            penjas.Size = new Size(58, 20);
-            penjas.TabIndex = 43;
-            penjas.Text = "label24";
+            tboxNilaiAgama.BorderStyle = BorderStyle.None;
+            tboxNilaiAgama.Location = new Point(839, 385);
+            tboxNilaiAgama.Name = "tboxNilaiAgama";
+            tboxNilaiAgama.Size = new Size(44, 16);
+            tboxNilaiAgama.TabIndex = 76;
+            tboxNilaiAgama.TextChanged += tboxNilaiAgama_TextChanged;
             // 
-            // hadir
+            // tboxNilaiJasmani
             // 
-            hadir.AutoSize = true;
-            hadir.ForeColor = SystemColors.ActiveCaptionText;
-            hadir.Location = new Point(803, 535);
-            hadir.Name = "hadir";
-            hadir.Size = new Size(58, 20);
-            hadir.TabIndex = 44;
-            hadir.Text = "label24";
+            tboxNilaiJasmani.BorderStyle = BorderStyle.None;
+            tboxNilaiJasmani.Location = new Point(839, 407);
+            tboxNilaiJasmani.Name = "tboxNilaiJasmani";
+            tboxNilaiJasmani.Size = new Size(44, 16);
+            tboxNilaiJasmani.TabIndex = 77;
+            tboxNilaiJasmani.TextChanged += tboxNilaiJasmani_TextChanged;
             // 
-            // izin
+            // tboxHadir
             // 
-            izin.AutoSize = true;
-            izin.ForeColor = SystemColors.ActiveCaptionText;
-            izin.Location = new Point(803, 566);
-            izin.Name = "izin";
-            izin.Size = new Size(58, 20);
-            izin.TabIndex = 45;
-            izin.Text = "label24";
+            tboxHadir.BorderStyle = BorderStyle.None;
+            tboxHadir.Location = new Point(839, 468);
+            tboxHadir.Name = "tboxHadir";
+            tboxHadir.Size = new Size(44, 16);
+            tboxHadir.TabIndex = 78;
+            tboxHadir.TextChanged += tboxHadir_TextChanged;
             // 
-            // sakit
+            // tboxIzin
             // 
-            sakit.AutoSize = true;
-            sakit.Location = new Point(803, 597);
-            sakit.Name = "sakit";
-            sakit.Size = new Size(58, 20);
-            sakit.TabIndex = 46;
-            sakit.Text = "label24";
+            tboxIzin.BorderStyle = BorderStyle.None;
+            tboxIzin.Location = new Point(839, 490);
+            tboxIzin.Name = "tboxIzin";
+            tboxIzin.Size = new Size(44, 16);
+            tboxIzin.TabIndex = 79;
+            tboxIzin.TextChanged += tboxIzin_TextChanged;
             // 
-            // alpa
+            // tboxSakit
             // 
-            alpa.AutoSize = true;
-            alpa.Location = new Point(803, 628);
-            alpa.Name = "alpa";
-            alpa.Size = new Size(58, 20);
-            alpa.TabIndex = 47;
-            alpa.Text = "label24";
+            tboxSakit.BorderStyle = BorderStyle.None;
+            tboxSakit.Location = new Point(839, 513);
+            tboxSakit.Name = "tboxSakit";
+            tboxSakit.Size = new Size(44, 16);
+            tboxSakit.TabIndex = 80;
+            tboxSakit.TextChanged += tboxSakit_TextChanged;
             // 
-            // button1
+            // tboxAlpa
             // 
-            button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(482, 275);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 64;
-            button1.Text = "Edit Data";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            tboxAlpa.BorderStyle = BorderStyle.None;
+            tboxAlpa.Location = new Point(839, 535);
+            tboxAlpa.Name = "tboxAlpa";
+            tboxAlpa.Size = new Size(44, 16);
+            tboxAlpa.TabIndex = 81;
+            tboxAlpa.TextChanged += tboxAlpa_TextChanged;
             // 
-            // btnKembali
+            // tboxNilaiSeni
             // 
-            btnKembali.Location = new Point(482, 326);
-            btnKembali.Name = "btnKembali";
-            btnKembali.Size = new Size(94, 29);
-            btnKembali.TabIndex = 65;
-            btnKembali.Text = "Kembali";
-            btnKembali.UseVisualStyleBackColor = true;
+            tboxNilaiSeni.BorderStyle = BorderStyle.None;
+            tboxNilaiSeni.Location = new Point(839, 364);
+            tboxNilaiSeni.Name = "tboxNilaiSeni";
+            tboxNilaiSeni.Size = new Size(45, 16);
+            tboxNilaiSeni.TabIndex = 83;
+            tboxNilaiSeni.TextChanged += tboxNilaiSeni_TextChanged;
             // 
             // Rapor_siswa
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1262, 673);
-            Controls.Add(btnKembali);
-            Controls.Add(button1);
-            Controls.Add(alpa);
-            Controls.Add(sakit);
-            Controls.Add(izin);
-            Controls.Add(hadir);
-            Controls.Add(penjas);
-            Controls.Add(agama);
-            Controls.Add(seni);
-            Controls.Add(pkwu);
-            Controls.Add(pkn);
-            Controls.Add(biologi);
-            Controls.Add(kimia);
-            Controls.Add(fisika);
-            Controls.Add(matMin);
-            Controls.Add(matWa);
-            Controls.Add(BIG);
-            Controls.Add(bahasa);
+            ClientSize = new Size(1104, 505);
+            Controls.Add(tboxNilaiSeni);
+            Controls.Add(tboxAlpa);
+            Controls.Add(tboxSakit);
+            Controls.Add(tboxIzin);
+            Controls.Add(tboxHadir);
+            Controls.Add(tboxNilaiJasmani);
+            Controls.Add(tboxNilaiAgama);
+            Controls.Add(tboxNilaiPKWU);
+            Controls.Add(tboxNilaiPPKN);
+            Controls.Add(txboxNilaiBiologi);
+            Controls.Add(tboxNilaiKimia);
+            Controls.Add(tboxNilaiFisika);
+            Controls.Add(tboxNilaiMtkMinat);
+            Controls.Add(tboxNilaiMtkWajib);
+            Controls.Add(tboxNilaiInggris);
+            Controls.Add(tboxBindo);
+            Controls.Add(btnSelesai);
+            Controls.Add(btnEditData);
             Controls.Add(noTelp);
             Controls.Add(alamat);
             Controls.Add(tanggalLahir);
@@ -601,6 +601,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Rapor_siswa";
             Text = "Rapor_siswa";
             Load += Rapor_siswa_Load;
@@ -639,23 +640,23 @@
         private Label tanggalLahir;
         private Label alamat;
         private Label noTelp;
-        private Label BIG;
-        private Label matWa;
-        private Label matMin;
-        private Label fisika;
-        private Label kimia;
-        private Label biologi;
-        private Label pkn;
-        private Label pkwu;
-        private Label seni;
-        private Label agama;
-        private Label penjas;
-        private Label hadir;
-        private Label izin;
-        private Label sakit;
-        private Label alpa;
-        private Button button1;
-        public Label bahasa;
-        private Button btnKembali;
+        private Button btnEditData;
+        private Button btnSelesai;
+        private TextBox tboxBindo;
+        private TextBox tboxNilaiInggris;
+        private TextBox tboxNilaiMtkWajib;
+        private TextBox tboxNilaiMtkMinat;
+        private TextBox tboxNilaiFisika;
+        private TextBox tboxNilaiKimia;
+        private TextBox txboxNilaiBiologi;
+        private TextBox tboxNilaiPPKN;
+        private TextBox tboxNilaiPKWU;
+        private TextBox tboxNilaiAgama;
+        private TextBox tboxNilaiJasmani;
+        private TextBox tboxHadir;
+        private TextBox tboxIzin;
+        private TextBox tboxSakit;
+        private TextBox tboxAlpa;
+        private TextBox tboxNilaiSeni;
     }
 }
