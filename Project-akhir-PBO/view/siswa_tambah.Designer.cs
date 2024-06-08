@@ -67,30 +67,32 @@
             panel1.Controls.Add(labelNISNSiswa);
             panel1.Controls.Add(labelNamaSiswa);
             panel1.Controls.Add(labelHalaman);
-            panel1.Location = new Point(586, 44);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(513, 33);
             panel1.Name = "panel1";
-            panel1.Size = new Size(539, 582);
+            panel1.Size = new Size(472, 437);
             panel1.TabIndex = 0;
             // 
             // comboBoxkelassiswa
             // 
             comboBoxkelassiswa.FormattingEnabled = true;
-            comboBoxkelassiswa.Items.AddRange(new object[] { "X-A", "X-B", "X-C", "X-D", "X-E", "X-F", "X-G", "X-H", "XI-A", "XI-B", "XI-C", "XI-D", "XI-E", "XI-F", "XI-G", "XI-H", "XII-A", "XII-B", "XII-C", "XII-D", "XII-E", "XII-F", "XII-G", "XII-H" });
-            comboBoxkelassiswa.Location = new Point(195, 406);
-            comboBoxkelassiswa.Margin = new Padding(3, 4, 3, 4);
+            comboBoxkelassiswa.Location = new Point(171, 304);
             comboBoxkelassiswa.Name = "comboBoxkelassiswa";
-            comboBoxkelassiswa.Size = new Size(305, 28);
+            comboBoxkelassiswa.Size = new Size(267, 23);
             comboBoxkelassiswa.TabIndex = 16;
+            comboBoxkelassiswa.Items.AddRange(new object[]
+{
+            "X-A", "X-B", "X-C", "X-D", "X-E", "X-F", "X-G", "X-H",
+            "XI-A", "XI-B", "XI-C", "XI-D", "XI-E", "XI-F", "XI-G", "XI-H",
+            "XII-A", "XII-B", "XII-C", "XII-D", "XII-E", "XII-F", "XII-G", "XII-H"});
             comboBoxkelassiswa.SelectedIndexChanged += comboBoxkelassiswa_SelectedIndexChanged;
             // 
             // labelKelasSiswa
             // 
             labelKelasSiswa.AutoSize = true;
             labelKelasSiswa.ForeColor = Color.Black;
-            labelKelasSiswa.Location = new Point(38, 410);
+            labelKelasSiswa.Location = new Point(33, 308);
             labelKelasSiswa.Name = "labelKelasSiswa";
-            labelKelasSiswa.Size = new Size(44, 20);
+            labelKelasSiswa.Size = new Size(34, 15);
             labelKelasSiswa.TabIndex = 15;
             labelKelasSiswa.Text = "Kelas";
             labelKelasSiswa.Click += labelKelasSiswa_Click;
@@ -99,9 +101,9 @@
             // 
             labelAlamatSiswa.AutoSize = true;
             labelAlamatSiswa.ForeColor = Color.Black;
-            labelAlamatSiswa.Location = new Point(35, 356);
+            labelAlamatSiswa.Location = new Point(31, 267);
             labelAlamatSiswa.Name = "labelAlamatSiswa";
-            labelAlamatSiswa.Size = new Size(57, 20);
+            labelAlamatSiswa.Size = new Size(45, 15);
             labelAlamatSiswa.TabIndex = 14;
             labelAlamatSiswa.Text = "Alamat";
             labelAlamatSiswa.Click += labelAlamatSiswa_Click;
@@ -110,9 +112,9 @@
             // 
             labelTempatLahirSiswa.AutoSize = true;
             labelTempatLahirSiswa.ForeColor = Color.Black;
-            labelTempatLahirSiswa.Location = new Point(34, 306);
+            labelTempatLahirSiswa.Location = new Point(30, 230);
             labelTempatLahirSiswa.Name = "labelTempatLahirSiswa";
-            labelTempatLahirSiswa.Size = new Size(95, 20);
+            labelTempatLahirSiswa.Size = new Size(75, 15);
             labelTempatLahirSiswa.TabIndex = 13;
             labelTempatLahirSiswa.Text = "Tempat Lahir";
             labelTempatLahirSiswa.Click += labelTempatLahirSiswa_Click;
@@ -121,37 +123,34 @@
             // 
             labelNoTelpSiswa.AutoSize = true;
             labelNoTelpSiswa.ForeColor = Color.Black;
-            labelNoTelpSiswa.Location = new Point(34, 258);
+            labelNoTelpSiswa.Location = new Point(30, 194);
             labelNoTelpSiswa.Name = "labelNoTelpSiswa";
-            labelNoTelpSiswa.Size = new Size(89, 20);
+            labelNoTelpSiswa.Size = new Size(70, 15);
             labelNoTelpSiswa.TabIndex = 12;
             labelNoTelpSiswa.Text = "No. Telepon";
             labelNoTelpSiswa.Click += labelNoTelpSiswa_Click;
             // 
             // textBoxalamatsiswa
             // 
-            textBoxalamatsiswa.Location = new Point(197, 352);
-            textBoxalamatsiswa.Margin = new Padding(3, 4, 3, 4);
+            textBoxalamatsiswa.Location = new Point(172, 264);
             textBoxalamatsiswa.Name = "textBoxalamatsiswa";
-            textBoxalamatsiswa.Size = new Size(303, 27);
+            textBoxalamatsiswa.Size = new Size(266, 23);
             textBoxalamatsiswa.TabIndex = 10;
             textBoxalamatsiswa.TextChanged += textBoxalamatsiswa_TextChanged;
             // 
             // textBoxlahirsiswa
             // 
-            textBoxlahirsiswa.Location = new Point(195, 302);
-            textBoxlahirsiswa.Margin = new Padding(3, 4, 3, 4);
+            textBoxlahirsiswa.Location = new Point(171, 226);
             textBoxlahirsiswa.Name = "textBoxlahirsiswa";
-            textBoxlahirsiswa.Size = new Size(305, 27);
+            textBoxlahirsiswa.Size = new Size(267, 23);
             textBoxlahirsiswa.TabIndex = 9;
             textBoxlahirsiswa.TextChanged += textBoxlahirsiswa_TextChanged;
             // 
             // textBoxnohpsiswa
             // 
-            textBoxnohpsiswa.Location = new Point(195, 254);
-            textBoxnohpsiswa.Margin = new Padding(3, 4, 3, 4);
+            textBoxnohpsiswa.Location = new Point(171, 190);
             textBoxnohpsiswa.Name = "textBoxnohpsiswa";
-            textBoxnohpsiswa.Size = new Size(305, 27);
+            textBoxnohpsiswa.Size = new Size(267, 23);
             textBoxnohpsiswa.TabIndex = 8;
             textBoxnohpsiswa.TextChanged += textBoxnohpsiswa_TextChanged;
             // 
@@ -159,10 +158,9 @@
             // 
             submit.BackColor = SystemColors.ActiveCaptionText;
             submit.ForeColor = Color.White;
-            submit.Location = new Point(38, 494);
-            submit.Margin = new Padding(3, 4, 3, 4);
+            submit.Location = new Point(33, 370);
             submit.Name = "submit";
-            submit.Size = new Size(463, 38);
+            submit.Size = new Size(405, 28);
             submit.TabIndex = 7;
             submit.Text = "Submit";
             submit.UseVisualStyleBackColor = false;
@@ -172,10 +170,9 @@
             // 
             textBoxtanggalsiswa.Font = new Font("Segoe UI", 8F);
             textBoxtanggalsiswa.ForeColor = SystemColors.GrayText;
-            textBoxtanggalsiswa.Location = new Point(195, 206);
-            textBoxtanggalsiswa.Margin = new Padding(3, 4, 3, 4);
+            textBoxtanggalsiswa.Location = new Point(171, 154);
             textBoxtanggalsiswa.Name = "textBoxtanggalsiswa";
-            textBoxtanggalsiswa.Size = new Size(305, 25);
+            textBoxtanggalsiswa.Size = new Size(267, 22);
             textBoxtanggalsiswa.TabIndex = 6;
             textBoxtanggalsiswa.TextChanged += textBoxtanggalsiswa_TextChanged;
             // 
@@ -183,10 +180,9 @@
             // 
             textBoxnisnsiswa.Font = new Font("Segoe UI", 8F);
             textBoxnisnsiswa.ForeColor = SystemColors.GrayText;
-            textBoxnisnsiswa.Location = new Point(195, 160);
-            textBoxnisnsiswa.Margin = new Padding(3, 4, 3, 4);
+            textBoxnisnsiswa.Location = new Point(171, 120);
             textBoxnisnsiswa.Name = "textBoxnisnsiswa";
-            textBoxnisnsiswa.Size = new Size(305, 25);
+            textBoxnisnsiswa.Size = new Size(267, 22);
             textBoxnisnsiswa.TabIndex = 5;
             textBoxnisnsiswa.TextChanged += textBoxnisnsiswa_TextChanged;
             // 
@@ -194,10 +190,9 @@
             // 
             textBoxnamasiswa.Font = new Font("Segoe UI", 8F);
             textBoxnamasiswa.ForeColor = SystemColors.GrayText;
-            textBoxnamasiswa.Location = new Point(195, 114);
-            textBoxnamasiswa.Margin = new Padding(3, 4, 3, 4);
+            textBoxnamasiswa.Location = new Point(171, 86);
             textBoxnamasiswa.Name = "textBoxnamasiswa";
-            textBoxnamasiswa.Size = new Size(305, 25);
+            textBoxnamasiswa.Size = new Size(267, 22);
             textBoxnamasiswa.TabIndex = 4;
             textBoxnamasiswa.TextChanged += textBoxnamasiswa_TextChanged;
             // 
@@ -206,9 +201,9 @@
             labelTanggalLahirSiswa.AutoSize = true;
             labelTanggalLahirSiswa.BackColor = Color.Transparent;
             labelTanggalLahirSiswa.ForeColor = Color.Black;
-            labelTanggalLahirSiswa.Location = new Point(33, 214);
+            labelTanggalLahirSiswa.Location = new Point(29, 160);
             labelTanggalLahirSiswa.Name = "labelTanggalLahirSiswa";
-            labelTanggalLahirSiswa.Size = new Size(97, 20);
+            labelTanggalLahirSiswa.Size = new Size(77, 15);
             labelTanggalLahirSiswa.TabIndex = 3;
             labelTanggalLahirSiswa.Text = "Tanggal Lahir";
             labelTanggalLahirSiswa.Click += labelTanggalLahirSiswa_Click;
@@ -218,9 +213,9 @@
             labelNISNSiswa.AutoSize = true;
             labelNISNSiswa.BackColor = Color.Transparent;
             labelNISNSiswa.ForeColor = Color.Black;
-            labelNISNSiswa.Location = new Point(34, 166);
+            labelNISNSiswa.Location = new Point(30, 124);
             labelNISNSiswa.Name = "labelNISNSiswa";
-            labelNISNSiswa.Size = new Size(43, 20);
+            labelNISNSiswa.Size = new Size(34, 15);
             labelNISNSiswa.TabIndex = 2;
             labelNISNSiswa.Text = "NISN";
             labelNISNSiswa.Click += labelNISNSiswa_Click;
@@ -230,9 +225,9 @@
             labelNamaSiswa.AutoSize = true;
             labelNamaSiswa.BackColor = Color.Transparent;
             labelNamaSiswa.ForeColor = Color.Black;
-            labelNamaSiswa.Location = new Point(34, 116);
+            labelNamaSiswa.Location = new Point(30, 87);
             labelNamaSiswa.Name = "labelNamaSiswa";
-            labelNamaSiswa.Size = new Size(49, 20);
+            labelNamaSiswa.Size = new Size(39, 15);
             labelNamaSiswa.TabIndex = 1;
             labelNamaSiswa.Text = "Nama";
             labelNamaSiswa.Click += labelNamaSiswa_Click;
@@ -242,21 +237,20 @@
             labelHalaman.AutoSize = true;
             labelHalaman.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelHalaman.ForeColor = Color.Black;
-            labelHalaman.Location = new Point(34, 34);
+            labelHalaman.Location = new Point(30, 26);
             labelHalaman.Name = "labelHalaman";
-            labelHalaman.Size = new Size(176, 35);
+            labelHalaman.Size = new Size(139, 28);
             labelHalaman.TabIndex = 0;
             labelHalaman.Text = "Tambah Siswa";
             labelHalaman.Click += labelHalaman_Click;
             // 
             // siswa_tambah
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1445, 882);
+            ClientSize = new Size(1264, 662);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "siswa_tambah";
             Text = "siswa_tambah";
             Load += siswa_tambah_Load;
