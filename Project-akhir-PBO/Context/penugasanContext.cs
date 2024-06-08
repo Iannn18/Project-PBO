@@ -69,6 +69,18 @@ namespace Project_akhir_PBO.Context
         };
             Database.commandExecutor(query, parameters);
         }
+
+        public static string getGuru(string mapel)
+        {
+            string query = $"select staff.nama_staff from penugasan join mapel on mapel.kode_mapel = penugasan.kode_mapel join staff on staff.nuptk = mapel.nuptk where mapel.nama_mapel = @mapel";
+            NpgsqlParameter[] parameters =
+            {
+                new NpgsqlParameter("@mapel", NpgsqlDbType.Varchar){Value = mapel},
+                };
+            DataTable dataGuru = Database.queryExecutor(query, parameters);
+            return dataGuru.Rows[0]["nama_staff"].ToString();
+        }
+
     }
 
 }
