@@ -6,7 +6,6 @@ using System.Data;
 
 namespace Project_akhir_PBO.Context
 {
-    // Interface for AbsensiContext
     public interface IAbsensiContext
     {
         DataTable All();
@@ -16,7 +15,6 @@ namespace Project_akhir_PBO.Context
         void Update(Absensi absensiEdit);
     }
 
-    // Implementation of the IAbsensiContext interface
     internal class AbsensiContext : IAbsensiContext
     {
         private static string table = "absensi";
