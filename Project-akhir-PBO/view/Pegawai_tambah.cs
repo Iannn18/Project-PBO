@@ -111,5 +111,34 @@ namespace Project_akhir_PBO
                 }
             }
         }
+
+        private void FormPegawai_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            formPegawai = null;
+        }
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            //jika tombol ini di klik , maka akan kembali ke form pegawai
+            Button button = sender as Button;
+            if (button != null)
+            {
+                string dataToShow = button.Text;
+
+                if (formPegawai == null)
+                {
+                    formPegawai = new FormPegawai();
+                    formPegawai.FormClosed += FormPegawai_FormClosed;
+                    formPegawai.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormKelas1
+                    formPegawai.Dock = DockStyle.Fill;
+                    formPegawai.Show();
+                }
+                else
+                {
+                    formPegawai.Activate();
+                }
+
+                this.Close();
+            }
+        }
     }
 }

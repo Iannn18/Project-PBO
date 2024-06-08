@@ -57,9 +57,9 @@
             labelHalaman.ForeColor = Color.Black;
             labelHalaman.Location = new Point(85, 27);
             labelHalaman.Name = "labelHalaman";
-            labelHalaman.Size = new Size(180, 28);
+            labelHalaman.Size = new Size(126, 28);
             labelHalaman.TabIndex = 1;
-            labelHalaman.Text = "Edit Akun Pegawai";
+            labelHalaman.Text = "Edit Pegawai";
             labelHalaman.Click += labelHalaman_Click;
             // 
             // labelNama

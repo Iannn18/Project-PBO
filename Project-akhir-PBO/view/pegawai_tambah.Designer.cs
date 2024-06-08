@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panelPegawai = new Panel();
+            btnKembali = new Button();
             labelJbtnPgw = new Label();
             labelAlmtPgw = new Label();
             labelTmptLahirPgw = new Label();
@@ -51,6 +52,7 @@
             // panelPegawai
             // 
             panelPegawai.BorderStyle = BorderStyle.FixedSingle;
+            panelPegawai.Controls.Add(btnKembali);
             panelPegawai.Controls.Add(labelJbtnPgw);
             panelPegawai.Controls.Add(labelAlmtPgw);
             panelPegawai.Controls.Add(labelTmptLahirPgw);
@@ -73,6 +75,18 @@
             panelPegawai.Size = new Size(635, 600);
             panelPegawai.TabIndex = 1;
             panelPegawai.Paint += labelJudulHalaman_Paint;
+            // 
+            // btnKembali
+            // 
+            btnKembali.BackColor = Color.Black;
+            btnKembali.ForeColor = Color.White;
+            btnKembali.Location = new Point(191, 512);
+            btnKembali.Name = "btnKembali";
+            btnKembali.Size = new Size(258, 34);
+            btnKembali.TabIndex = 17;
+            btnKembali.Text = "Kembali";
+            btnKembali.UseVisualStyleBackColor = false;
+            btnKembali.Click += btnKembali_Click;
             // 
             // labelJbtnPgw
             // 
@@ -156,7 +170,7 @@
             // 
             btnSubmitPgw.BackColor = SystemColors.ActiveCaptionText;
             btnSubmitPgw.ForeColor = SystemColors.ButtonHighlight;
-            btnSubmitPgw.Location = new Point(14, 510);
+            btnSubmitPgw.Location = new Point(23, 467);
             btnSubmitPgw.Margin = new Padding(3, 4, 3, 4);
             btnSubmitPgw.Name = "btnSubmitPgw";
             btnSubmitPgw.Size = new Size(587, 38);
@@ -202,9 +216,9 @@
             labelJudulHalaman.ForeColor = Color.Black;
             labelJudulHalaman.Location = new Point(37, 14);
             labelJudulHalaman.Name = "labelJudulHalaman";
-            labelJudulHalaman.Size = new Size(273, 35);
+            labelJudulHalaman.Size = new Size(206, 35);
             labelJudulHalaman.TabIndex = 4;
-            labelJudulHalaman.Text = "Tambah Akun Pegawai";
+            labelJudulHalaman.Text = "Tambah Pegawai";
             labelJudulHalaman.Click += labelJudulHalaman_Click;
             // 
             // tBoxTglLahirPegawai
@@ -274,5 +288,6 @@
         private TextBox tBoxTelponPegawai;
         private Label labelAlmtPgw;
         private Label labelJbtnPgw;
+        private Button btnKembali;
     }
 }
