@@ -25,7 +25,7 @@ namespace Project_akhir_PBO
 
             foreach(Siswa data in siswaContext.daftarSiswa!)
             {
-                dataGridView1.Rows.Add(data.NISN, data.Nama_Siswa, data.Id_Kelas);
+                dataGridView1.Rows.Add(data.NISN, data.Nama_Siswa, data.Kelas.Nama_Kelas);
             }
 
             // MessageBox.Show($"nisn: {siswaContext.daftarSiswa![0].NISN}, nama: {siswaContext.daftarSiswa![0].nama}");
@@ -73,6 +73,7 @@ namespace Project_akhir_PBO
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
         }
 
         private void btnHapus_Click(object sender, EventArgs e)

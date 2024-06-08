@@ -10,11 +10,11 @@ namespace Project_akhir_PBO.Model
 {
     public class Siswa
     {
-        public Siswa(string? NISN, string? nama, string? nama_kelas, DateOnly tanggal_lahir, string? tempat_lahir, string? alamat, string? nomor_telepon)
+        public Siswa(string? NISN, string? nama, int? Id_kelas)
         {
             this.NISN = NISN;
-            Tempat_Lahir = tempat_lahir;
-            Alamat = alamat;
+            this.Nama_Siswa = nama;
+            this.Id_Kelas = Id_Kelas;
         }
 
         [Key]
@@ -43,7 +43,8 @@ namespace Project_akhir_PBO.Model
         public int Id_Kelas { get; set; }
 
         [ForeignKey("Id_Kelas")]
-        public virtual Kelas Kelas { get; set; }
+
+        public Kelas Kelas { get; set; }
 
         public virtual ICollection<Absensi> Absensis { get; set; }
         public virtual ICollection<Raport> Raports { get; set; }
