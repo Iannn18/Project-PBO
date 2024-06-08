@@ -10,12 +10,54 @@ namespace Project_akhir_PBO
     public partial class Pegawai_tambah : Form
     {
         private FormPegawai formPegawai;
+        private Dictionary<TextBox, string> placeholderTexts = new Dictionary<TextBox, string>();
 
         public Pegawai_tambah(FormPegawai formPegawai)
         {
             InitializeComponent();
             this.formPegawai = formPegawai;
+            InitializePlaceholderTexts();
         }
+        private void InitializePlaceholderTexts()
+        {
+            // Define placeholder texts for each TextBox
+            placeholderTexts[tBoxNamaPegawai] = "Nama Pegawai";
+            placeholderTexts[tBoxNUPTK] = "NUPTK";
+            placeholderTexts[tBoxTglLahirPegawai] = "Tanggal Lahir(YYYY-MM-DD)";
+            placeholderTexts[tBoxTelponPegawai] = "Nomor Telepon pegawai";
+            placeholderTexts[tBoxTmptLahirPegawai] = "Tempat Lahir pegawai";
+            placeholderTexts[tBoxAlamatPegawai] = "Alamat pegawai";
+
+            // Initialize each TextBox with its placeholder text
+            foreach (var textBox in placeholderTexts.Keys)
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+                textBox.Enter += RemovePlaceholder;
+                textBox.Leave += SetPlaceholder;
+            }
+        }
+
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == placeholderTexts[textBox])
+            {
+                textBox.Text = "";
+                textBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+            }
+        }
+
 
         private void labelJudulHalaman_Paint(object sender, PaintEventArgs e)
         {

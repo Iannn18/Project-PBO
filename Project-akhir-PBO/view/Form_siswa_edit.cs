@@ -16,11 +16,51 @@ namespace Project_akhir_PBO.view
     public partial class Form_siswa_edit : Form
     {
         private FormSiswa formSiswa;
+        private Dictionary<TextBox, string> placeholderTexts = new Dictionary<TextBox, string>();
         public Form_siswa_edit()
         {
             InitializeComponent();
+            InitializePlaceholderTexts();
+        }
+        private void InitializePlaceholderTexts()
+        {
+            // Define placeholder texts for each TextBox
+            placeholderTexts[tBoxNamaSw] = "Nama Siswa";
+            placeholderTexts[tBoxNISN] = "NISN";
+            placeholderTexts[tBoxTglLahir] = "Tanggal Lahir(YYYY-MM-DD)";
+            placeholderTexts[tBoxNoTelp] = "Nomor Telepon Siswa";
+            placeholderTexts[tBoxTmptLahir] = "Tempat Lahir Siswa";
+            placeholderTexts[tBoxAlamat] = "Alamat Siswa";
+
+            // Initialize each TextBox with its placeholder text
+            foreach (var textBox in placeholderTexts.Keys)
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+                textBox.Enter += RemovePlaceholder;
+                textBox.Leave += SetPlaceholder;
+            }
         }
 
+        private void RemovePlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Text == placeholderTexts[textBox])
+            {
+                textBox.Text = "";
+                textBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void SetPlaceholder(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                textBox.Text = placeholderTexts[textBox];
+                textBox.ForeColor = Color.Gray;
+            }
+        }
         private void Form_siswa_edit_Load(object sender, EventArgs e)
         {
 
