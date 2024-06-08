@@ -68,7 +68,13 @@ namespace Project_akhir_PBO
 
         private void LoadData()
         {
-            
+            siswaContext.loadSiswa();  // Pastikan fungsi ini mengambil data terbaru dari database
+            dataGridView1.Rows.Clear();  // Bersihkan baris yang ada sebelum memuat yang baru
+
+            foreach (Siswa data in siswaContext.daftarSiswa)
+            {
+                dataGridView1.Rows.Add(data.NISN, data.Nama_Siswa, data.Kelas.Nama_Kelas);
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
