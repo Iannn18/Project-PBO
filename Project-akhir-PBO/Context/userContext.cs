@@ -21,8 +21,17 @@ namespace Project_akhir_PBO.Context
             if (username == "admin" && password == "admin") // -> ubah berdasarkan result dari query
             {
                 // Inisiasi properti dalam bentuk objek Staff berdasarkan hasil query
-                this.akun = new Staff(Nama_Staff: "Edo", tanggal_lahir: new DateOnly(2015, 10, 21), tempat_lahir: "Jember", alamat: "Rambi", nomor_telepon: "089342326231", NUPTK: 3087, jabatan: "Admin");
-                
+                //this.akun = new Staff(namaStaff: "Edo", tanggalLahir: new DateOnly(2015, 10, 21), tempatLahir: "Jember", alamat: "Rambi", nomorTelepon: 089342326231, nuptk: 3087, idJabatan: 1);
+                this.akun = new Staff(
+                namaStaff: "Edo",
+                tanggalLahir: new DateTime(2015, 10, 21),
+                tempatLahir: "Jember",
+                alamat: "Rambi",
+                nomorTelepon: "089342326231",
+                nuptk: "3087",
+                idJabatan: 1
+);
+
                 status = true;
             }
 
