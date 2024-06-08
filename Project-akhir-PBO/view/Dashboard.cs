@@ -21,14 +21,11 @@ namespace Project_akhir_PBO
         FormPegawai formPegawai;
         FormSiswa formSiswa;
 
-        userContext? user;
 
 
 
-
-        public Dashboard(userContext user)
+        public Dashboard()
         {
-            this.user = user;
             InitializeComponent();
         }
 
@@ -39,7 +36,13 @@ namespace Project_akhir_PBO
         private void Dashboard_Load(object sender, EventArgs e)
         {
             // Mencoba akses data akun
-            // MessageBox.Show($"{user!.akun!.nama}");
+            // MessageBox.Show($"{userContext.akun!.NUPTK}");
+            // MessageBox.Show($"{userContext.akun!.Nama_Staff}");
+            // MessageBox.Show($"{userContext.akun!.Alamat}");
+            // MessageBox.Show($"{userContext.akun!.Nomor_Telepon_Staff}");
+            // MessageBox.Show($"{userContext.akun!.Id_Jabatan}");
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
