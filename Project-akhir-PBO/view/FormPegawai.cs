@@ -1,4 +1,5 @@
-﻿using Project_akhir_PBO.Context;
+﻿using Npgsql;
+using Project_akhir_PBO.Context;
 using Project_akhir_PBO.DB;
 using System;
 using System.Collections.Generic;
@@ -103,7 +104,40 @@ namespace Project_akhir_PBO
 
         private void hapusPegawai_Click(object sender, EventArgs e)
         {
-             // Get the NUPTK from the form
+            if (dataGridPegawai.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dataGridPegawai.SelectedRows[0];
+                string nama = selectedRow.Cells["NamaPegawai"].Value.ToString();
+                string nuptk = selectedRow.Cells["NUPTK"].Value.ToString();
+                string jabatan = selectedRow.Cells["Jabatan"].Value.ToString();
+
+                DialogResult result = MessageBox.Show($"Apakah Anda yakin ingin menghapus pegawai berikut?\n\nNUPTK: {nuptk}\nNama: {nama}\nJabatan: {jabatan}", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    string deleteQuery = "DELETE FROM staff WHERE nuptk = @nuptk";
+                    NpgsqlParameter[] parameters = new NpgsqlParameter[]
+                    {
+                        new NpgsqlParameter("@nuptk", nuptk)
+                    };
+
+                    try
+                    {
+                        Database.commandExecutor(deleteQuery, parameters);
+                        MessageBox.Show("Data pegawai berhasil dihapus.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadData();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Terjadi kesalahan saat menghapus data pegawai: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Silakan pilih pegawai yang ingin dihapus, Pastikan menekan bagian paling kiri dari baris data untuk MEMILIH.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            // Get the NUPTK from the form
             /*string nuptk = .Text;
 
             if (string.IsNullOrEmpty(nuptk))

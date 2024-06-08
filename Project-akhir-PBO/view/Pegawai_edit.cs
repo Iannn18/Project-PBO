@@ -14,7 +14,7 @@ namespace Project_akhir_PBO
 {
     public partial class Pegawai_edit : Form
     {
-        private FormPegawai formPegawai;
+        FormPegawai formPegawai;
         private Dictionary<TextBox, string> placeholderTexts = new Dictionary<TextBox, string>();
         public Pegawai_edit()
         {
@@ -218,9 +218,12 @@ namespace Project_akhir_PBO
                     // Update the staff member in the database using the StaffContext.
                     StaffContext.update(updatedStaff);
                     MessageBox.Show("Data berhasil diubah!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close(); // Close the current form
-                    formPegawai.LoadData(); // Reload data in FormPegawai
-                    formPegawai.Show(); // Show the FormPegawai form
+                    this.Close(); // Close the current 
+                    using (FormPegawai formPegawai = new FormPegawai())
+                    {
+                        formPegawai.Show(); // Show the FormPegawai form
+                        formPegawai.LoadData(); // Reload data in FormPegawai
+                    }
                 }
                 catch (Exception ex)
                 {
