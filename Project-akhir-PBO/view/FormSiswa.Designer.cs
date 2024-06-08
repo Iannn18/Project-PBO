@@ -17,9 +17,9 @@
 
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             buttontambahsiswa = new Button();
             btnEdit = new Button();
             btnHapus = new Button();
@@ -55,6 +55,7 @@
             btnEdit.TabIndex = 1;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = false;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnHapus
             // 
@@ -83,9 +84,9 @@
             // 
             // clmNISNSiswa
             // 
-            dataGridViewCellStyle4.ForeColor = Color.Black;
-            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
-            clmNISNSiswa.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            clmNISNSiswa.DefaultCellStyle = dataGridViewCellStyle1;
             clmNISNSiswa.HeaderText = "NISN";
             clmNISNSiswa.MinimumWidth = 6;
             clmNISNSiswa.Name = "clmNISNSiswa";
@@ -93,9 +94,9 @@
             // 
             // clmNamaSiswa
             // 
-            dataGridViewCellStyle5.ForeColor = Color.Black;
-            dataGridViewCellStyle5.SelectionForeColor = Color.Black;
-            clmNamaSiswa.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
+            clmNamaSiswa.DefaultCellStyle = dataGridViewCellStyle2;
             clmNamaSiswa.HeaderText = "Nama";
             clmNamaSiswa.MinimumWidth = 6;
             clmNamaSiswa.Name = "clmNamaSiswa";
@@ -103,9 +104,9 @@
             // 
             // clmKelas
             // 
-            dataGridViewCellStyle6.ForeColor = Color.Black;
-            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
-            clmKelas.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            clmKelas.DefaultCellStyle = dataGridViewCellStyle3;
             clmKelas.HeaderText = "Kelas";
             clmKelas.MinimumWidth = 6;
             clmKelas.Name = "clmKelas";

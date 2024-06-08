@@ -5,12 +5,14 @@ using Npgsql;
 using Project_akhir_PBO.DB;
 using Project_akhir_PBO.Context;
 using Project_akhir_PBO.Model;
+using Project_akhir_PBO.view;
 
 namespace Project_akhir_PBO
 {
     public partial class FormSiswa : Form
     {
         siswa_tambah formSiswaTambah;
+        Form_siswa_edit formSiswaEdit;
         siswaContext siswaContext;
 
         public FormSiswa()
@@ -23,7 +25,7 @@ namespace Project_akhir_PBO
 
             dataGridView1.Rows.Clear();
 
-            foreach(Siswa data in siswaContext.daftarSiswa!)
+            foreach (Siswa data in siswaContext.daftarSiswa!)
             {
                 dataGridView1.Rows.Add(data.NISN, data.Nama_Siswa, data.Kelas.Nama_Kelas);
             }
@@ -63,7 +65,7 @@ namespace Project_akhir_PBO
         private void FormSiswa_Load(object sender, EventArgs e)
         {
 
-            
+
         }
 
         private void LoadData()
@@ -117,6 +119,34 @@ namespace Project_akhir_PBO
             {
                 MessageBox.Show("Silakan pilih siswa yang ingin dihapus, Pastikan menekan bagian paling kiri dari baris data untuk MEMILIH.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                if (formSiswaEdit == null)
+                {
+                    formSiswaEdit = new Form_siswa_edit();
+                    formSiswaEdit.FormClosed += Siswa_edit_FormClosed;
+                    formSiswaEdit.MdiParent = this.MdiParent; // Set MdiParent to the parent of FormPegawai
+                    formSiswaEdit.Dock = DockStyle.Fill;
+                    formSiswaEdit.Show();
+                }
+                else
+                {
+                    formSiswaEdit.Activate();
+                }
+
+                this.Hide(); // Hide the current form
+            }
+        }
+        private void Siswa_edit_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formSiswaEdit = null;
+            this.Show(); // Show the current form when Pegawai_edit is closed
+            LoadData(); // Reload the data to refresh the DataGridView
         }
     }
 }
