@@ -81,5 +81,15 @@ namespace Project_akhir_PBO.Context
             };
             Database.commandExecutor(query, parameters);
         }
+        public static int getIdByMapel(string mapel)
+        {
+            string query = $"SELECT kode_mapel FROM {table} WHERE nama_mapel = @mapel";
+            NpgsqlParameter[] parameters =
+            {
+                new NpgsqlParameter("@mapel", NpgsqlDbType.Varchar){Value = mapel},
+            };
+            DataTable dataMapel = Database.queryExecutor(query, parameters);
+            return Convert.ToInt32(dataMapel.Rows[0]["kode_mapel"]);
+        }
     }
 }
