@@ -122,7 +122,7 @@ namespace Project_akhir_PBO
                 }
                 else
                 {
-                    MessageBox.Show("Tidak ada tugas");
+                    lbTopTugas.Text = "           Tugas Kosong";
                 }
 
             }
