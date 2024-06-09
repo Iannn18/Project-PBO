@@ -175,7 +175,11 @@ namespace Project_akhir_PBO
                 btHapus.BackColor = Color.Red;
                 btHapus.Text = "Batal";
                 btHapus.ForeColor = Color.White;
-                lbTopTugas.Text = "Click Tugas Untuk Menghapus Tugas";
+                lbTopTugas.Text = "Click Tugas Untuk Menghapus";
+                foreach (Control control in this.Controls)
+                {
+                this.Cursor = Cursors.Hand;
+                }
             }
             else
             {
@@ -183,6 +187,10 @@ namespace Project_akhir_PBO
                 btHapus.Text = "Hapus";
                 btHapus.ForeColor = Color.Black;
                 lbTopTugas.Text = "           Daftar Tugas";
+                foreach (Control control in this.Controls)
+                {
+                    this.Cursor = Cursors.Default;
+                }
             }
         }
     }
