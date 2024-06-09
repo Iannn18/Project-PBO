@@ -91,12 +91,13 @@ namespace Project_akhir_PBO.Context
         }
         public static DataTable getTugasByMapel()
         {
-            string query = $"select p.id_tugas,p.nama_tugas,p.deskripsi_tugas,p.kode_mapel,p.id_status from penugasan p join mapel m on m.kode_mapel = p.kode_mapel where m.nama_mapel = @mapel order by p.nama_tugas";
+            string query = $"SELECT p.id_tugas, p.nama_tugas, p.deskripsi_tugas, p.kode_mapel, p.id_status FROM penugasan p JOIN mapel m ON m.kode_mapel = p.kode_mapel JOIN kelas k ON k.id_kelas = m.id_kelas WHERE m.nama_mapel = @mapel AND k.nama_kelas = @kelas ORDER BY p.nama_tugas;";
             NpgsqlParameter[] parameters =
             {
                 new NpgsqlParameter("@mapel", NpgsqlDbType.Varchar){Value = MapelContext.cmapel},
+                new NpgsqlParameter("@kelas", NpgsqlDbType.Varchar){Value = KelasContext.ckelas}
             };
-            DataTable dataTugas = Database.queryExecutor(query,parameters);
+            DataTable dataTugas = Database.queryExecutor(query,parameters); 
 /*            DataTable kosoong = new DataTable();
 */            if (dataTugas.Rows.Count > 0)
             {

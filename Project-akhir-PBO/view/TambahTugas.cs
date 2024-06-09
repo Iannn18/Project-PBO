@@ -45,7 +45,7 @@ namespace Project_akhir_PBO
                 Penugasan penugasanBaru = new Penugasan();
                 penugasanBaru.Nama_Tugas = TextboxJudultugas.Text;
                 penugasanBaru.Deskripsi_Tugas = textBoxTulispertanyaan.Text;
-                penugasanBaru.Kode_Mapel = MapelContext.getIdByMapel(MapelContext.cmapel);
+                penugasanBaru.Kode_Mapel = MapelContext.getIdByMapel();
                 penugasanBaru.Id_Status = 1;
                 PenugasanContext.store(penugasanBaru);
                 MessageBox.Show("Tugas berhasil dibuat");
