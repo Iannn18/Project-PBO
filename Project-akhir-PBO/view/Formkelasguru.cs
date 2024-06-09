@@ -94,21 +94,27 @@ namespace Project_akhir_PBO
             // Pastikan klik bukan pada header atau kolom yang tidak valid
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                // Logika untuk menampilkan form Rapor_siswa
-                if (rapor_siswa == null || rapor_siswa.IsDisposed)
+                // Modify this condition to check if the clicked column is "NamaLengkap"
+                if (dataGridViewkelasguru.Columns[e.ColumnIndex].Name == "NamaLengkap")
                 {
-                    rapor_siswa = new Rapor_siswa();
-                    rapor_siswa.FormClosed += Rapor_siswa_FormClosed;
-                    rapor_siswa.MdiParent = this.MdiParent; // Set MdiParent to the parent of Formkelasguru
-                    rapor_siswa.Dock = DockStyle.Fill;
-                    rapor_siswa.Show();
-                }
-                else
-                {
-                    rapor_siswa.Activate();
+                    // Logika untuk menampilkan form Rapor_siswa
+                    if (rapor_siswa == null || rapor_siswa.IsDisposed)
+                    {
+                        string nisn = dataGridViewkelasguru.Rows[e.RowIndex].Cells["ColumnNISN"].Value.ToString();
+                        rapor_siswa = new Rapor_siswa(); // Assuming Rapor_siswa takes NISN as an argument
+                        rapor_siswa.FormClosed += Rapor_siswa_FormClosed;
+                        rapor_siswa.MdiParent = this.MdiParent; // Set MdiParent to the parent of Formkelasguru
+                        rapor_siswa.Dock = DockStyle.Fill;
+                        rapor_siswa.Show();
+                    }
+                    else
+                    {
+                        rapor_siswa.Activate();
+                    }
                 }
             }
         }
+
 
         private void Rapor_siswa_FormClosed(object sender, FormClosedEventArgs e)
         {
