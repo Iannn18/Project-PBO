@@ -257,7 +257,7 @@
             // cBoxJabatan
             // 
             cBoxJabatan.FormattingEnabled = true;
-            cBoxJabatan.Items.AddRange(new object[] { "Guru", "Staff TU" });
+            cBoxJabatan.Items.AddRange(new object[] { "Staff TU", "Guru" });
             cBoxJabatan.Location = new Point(195, 369);
             cBoxJabatan.Name = "cBoxJabatan";
             cBoxJabatan.Size = new Size(426, 28);
