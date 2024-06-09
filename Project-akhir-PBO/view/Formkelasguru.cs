@@ -29,7 +29,7 @@ namespace Project_akhir_PBO
         private void LoadSiswaData()
         {
             string query = @"
-                SELECT s.nama_siswa AS NamaLengkap, sa.nama_status AS Status
+                SELECT s.nama_siswa AS NamaLengkap, sa.nama_status AS Status, s.nisn AS NISN
                 FROM siswa s
                 JOIN absensi a ON s.nisn = a.nisn
                 JOIN status_absensi sa ON a.id_status_absen = sa.id_status_absen
@@ -48,7 +48,9 @@ namespace Project_akhir_PBO
                 int index = dataGridViewkelasguru.Rows.Add();
                 dataGridViewkelasguru.Rows[index].Cells["NamaLengkap"].Value = row["NamaLengkap"];
                 dataGridViewkelasguru.Rows[index].Cells["Column1"].Value = row["Status"];
+                dataGridViewkelasguru.Rows[index].Cells["ColumnNISN"].Value = row["NISN"]; // Add this line
             }
+
         }
 
         private void dataGridViewkelasguru_CellContentClick(object sender, DataGridViewCellEventArgs e)
